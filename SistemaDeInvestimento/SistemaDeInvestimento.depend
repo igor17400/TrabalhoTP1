@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1600831668 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
+	<iostream>
+	"Usuario.h"
+
+1600831530 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\usuario.h
+	<iostream>
+	<string>
+
+1600831746 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\usuario.cpp
+	<iostream>
+	"Usuario.h"
+
