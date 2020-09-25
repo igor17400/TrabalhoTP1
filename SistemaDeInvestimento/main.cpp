@@ -11,6 +11,7 @@ int main()
     // Comando para corrigir erros de acentuação no cmd Windows
     setlocale (LC_ALL, "portuguese");
 
+    // Pré popular o 'banco' de usuários
     Usuario usuario1(
         "Igor",
         "Condominio estancia jardim botanico",
@@ -20,6 +21,8 @@ int main()
     );
 
     usuario1.VerInfoUsuario();
+
+
 
     return 0;
 }
