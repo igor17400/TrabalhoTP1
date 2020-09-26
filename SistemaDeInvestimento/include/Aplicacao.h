@@ -3,23 +3,26 @@
 
 #include <iostream>
 #include <string>
+
+#include "CodigoAplicacao.h"
+#include "ValorAplicacao.h"
+#include "Data.h"
+#include "Conta.h"
+
 using namespace std;
 
 class Aplicacao
 {
     public:
-        Aplicacao(string codigoAplicacao, double valorAplicacao);
-
-        void setCodigoAplicacao(string codigoAplicacao);
-        void setValorAplicacao(double valorAplicacao);
-        void setData(string data);
+        Aplicacao(const Conta &conta, const CodigoAplicacao &, const ValorAplicacao &, const Data &);
 
     protected:
 
     private:
-        string codigoAplicacao;
-        double valorAplicacao;
-        string data;
+        const Conta conta;
+        const CodigoAplicacao codigoAplicacao;
+        const ValorAplicacao valorAplicacao;
+        const Data dataObj;
 };
 
 #endif // APLICACAO_H
