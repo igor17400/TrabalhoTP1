@@ -1,17 +1,21 @@
-#include "Conta.h"
 #include <iostream>
 #include <string>
+
+#include "Conta.h"
+#include "Usuario.h"
+
+
 using namespace std;
 
-Conta::Conta(string codigoBanco, string codigoAgencia, int numero) {
-    setCodigoBanco(codigoBanco);
+Conta::Conta(const Usuario& usuario, const CodigoBanco& codigoBanco, string codigoAgencia, int numero)
+    :   usuario(usuario),
+        codigoBanco(codigoBanco)
+
+{
     setCodigoAgencia(codigoAgencia);
     setNumero(numero);
 }
 
-void Conta::setCodigoBanco(string codigoBanco) {
-    this->codigoBanco = codigoBanco;
-}
 
 void Conta::setCodigoAgencia(string codigoAgencia) {
     this->codigoAgencia = codigoAgencia;
@@ -19,10 +23,6 @@ void Conta::setCodigoAgencia(string codigoAgencia) {
 
 void Conta::setNumero(int numero) {
     this->numero = numero;
-}
-
-string Conta::getCodigoBanco() {
-    return this->codigoBanco;
 }
 
 string Conta::getCodigoAgencia() {

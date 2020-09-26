@@ -3,25 +3,28 @@
 
 #include <iostream>
 #include <string>
+
+#include "Usuario.h"
+#include "CodigoBanco.h"
+
 using namespace std;
 
 class Conta
 {
     public:
-        Conta(string codigoBanco, string codigoAgencia, int numero);
+        Conta(const Usuario &, const CodigoBanco &, string codigoAgencia, int numero);
 
-        void setCodigoBanco(string);
         void setCodigoAgencia(string);
         void setNumero(int);
 
-        string getCodigoBanco();
         string getCodigoAgencia();
         int getNumero();
 
     protected:
 
     private:
-        string codigoBanco;
+        const Usuario usuario;
+        const CodigoBanco codigoBanco;
         string codigoAgencia;
         int numero;
 };

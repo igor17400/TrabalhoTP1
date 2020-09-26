@@ -1,48 +1,34 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 
+#include <string>
 #include <stdexcept>
+
+#include "Nome.h"
+#include "CPF.h"
+#include "Senha.h"
+#include "Endereco.h"
+#include "CEP.h"
+
 using namespace std;
 
 
 class Usuario
 {
-    public:
-        Usuario(string nome, string cpf, string senha, string endereco, string cep);
+public:
+    Usuario(const Nome& nome, const CPF& cpf, const Senha& senha, const Endereco& endereco, const CEP& cep);
 
-        void validarNome(string) throw (invalid_argument);
-        void validarCpf(string) throw (invalid_argument);
-        void validarSenha(string) throw (invalid_argument);
-        void validarEndereco(string) throw (invalid_argument);
-        void validarCep(string) throw (invalid_argument);
+    void VerInfoUsuario();
+    static void RequestLogin();
 
-        void SetNome(string) throw (invalid_argument);
-        void SetCpf(string) throw (invalid_argument);
-        void SetSenha(string) throw (invalid_argument);
-        void SetEndereco(string) throw (invalid_argument);
-        void SetCep(string) throw (invalid_argument);
+protected:
 
-        string GetNome();
-        string GetEndereco();
-        string GetCep();
-        string GetCpf();
-        string GetSenha();
-
-        bool CheckLogin(string nome, string password);
-
-        void VerInfoUsuario();
-        static void RequestLogin();
-
-    protected:
-
-    private:
-        string nome;
-        string endereco;
-        string cep;
-        string cpf;
-        string senha;
-
-        bool checkCPF(const int * const cpf);
+private:
+    const CPF cpf;
+    const Nome nome;
+    const Endereco endereco;
+    const CEP cep;
+    const Senha senha;
 };
 
 #endif // USUARIO_H
