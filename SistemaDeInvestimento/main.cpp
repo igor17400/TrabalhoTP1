@@ -5,6 +5,7 @@
 #include "Usuario.h"
 #include "Conta.h"
 #include "Aplicacao.h"
+#include "Produto.h"
 
 using namespace std;
 
@@ -43,6 +44,15 @@ int main()
     Aplicacao aplicacao1(conta, codigoAplicacao, valorAplicacao, dataObj);
 
     // ------- Cadastrar Produto ------------
+    CodigoProduto codigoProduto("12345");
+    Classe classe("12345");
+    Emissor emissor("Emissor XYZ");
+    Prazo prazo(12);
+    Data vecimento("26/09/2021");
+    Taxa taxa(5.00);
+    Horario horario("15:30");
+    ValorMinimo valorMinimo(50.00);
+    Produto produto(codigoProduto, classe, emissor, prazo, vecimento, taxa, horario, valorMinimo);
 
 
     return 0;
