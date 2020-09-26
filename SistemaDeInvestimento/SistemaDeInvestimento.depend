@@ -1,15 +1,46 @@
 # depslib dependency file v1.0
-1600997517 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
+1601132782 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
 	"Usuario.h"
 
-1600998856 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\usuario.h
+1601132080 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\usuario.h
+	<stdexcept>
+
+1601132755 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\usuario.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	"Usuario.h"
+
+1601127548 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
+	"Conta.h"
 	<iostream>
 	<string>
 
-1600998717 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\usuario.cpp
+1601129725 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
 	<iostream>
-	"Usuario.h"
+	<string>
+
+1601127599 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\aplicacao.cpp
+	"Aplicacao.h"
+	<ctime>
+	<iostream>
+	<string>
+
+1601127369 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\aplicacao.h
+	<iostream>
+	<string>
+
+1601128454 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\produto.cpp
+	"Produto.h"
+	"Conta.h"
+	<ctime>
+	<iostream>
+	<string>
+
+1601128485 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\produto.h
+	"Conta.h"
 

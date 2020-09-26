@@ -13,10 +13,10 @@ int main()
 
     // Pré popular o 'banco' de usuários
     Usuario usuario1(
-        "Igor",
-        "Condominio estancia jardim botanico",
+        "Igor Lima",
+        "Cond. E. Jardim Bot.",
         "71680365",
-        "06589184191",
+        "065.891.841-94",
         "12345"
     );
 

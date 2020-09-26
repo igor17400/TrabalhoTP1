@@ -1,8 +1,7 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 
-#include <iostream>
-#include <string>
+#include <stdexcept>
 using namespace std;
 
 
@@ -11,11 +10,17 @@ class Usuario
     public:
         Usuario(string nome, string cpf, string senha, string endereco, string cep);
 
-        void SetNome(string);
-        void SetCpf(string);
-        void SetSenha(string);
-        void SetEndereco(string);
-        void SetCep(string);
+        void validarNome(string) throw (invalid_argument);
+        void validarCpf(string) throw (invalid_argument);
+        void validarSenha(string) throw (invalid_argument);
+        void validarEndereco(string) throw (invalid_argument);
+        void validarCep(string) throw (invalid_argument);
+
+        void SetNome(string) throw (invalid_argument);
+        void SetCpf(string) throw (invalid_argument);
+        void SetSenha(string) throw (invalid_argument);
+        void SetEndereco(string) throw (invalid_argument);
+        void SetCep(string) throw (invalid_argument);
 
         string GetNome();
         string GetEndereco();
@@ -36,6 +41,8 @@ class Usuario
         string cep;
         string cpf;
         string senha;
+
+        bool checkCPF(const int * const cpf);
 };
 
 #endif // USUARIO_H
