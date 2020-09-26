@@ -29,5 +29,5 @@ string CodigoBanco::GetCodigoBanco() {
 }
 
 void CodigoBanco::Print() const {
-    cout << "Código do Banco: " << this->codigo;
+    cout << "Código do Banco: " << this->codigo << endl;
 }

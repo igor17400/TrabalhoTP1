@@ -7,28 +7,15 @@
 
 using namespace std;
 
-Conta::Conta(const Usuario& usuario, const CodigoBanco& codigoBanco, string codigoAgencia, int numero)
+Conta::Conta(const Usuario& usuario, const CodigoBanco& codigoBanco, const CodigoAgencia& codigoAgencia, const Numero& numero)
     :   usuario(usuario),
-        codigoBanco(codigoBanco)
+        codigoBanco(codigoBanco),
+        codigoAgencia(codigoAgencia),
+        numero(numero)
+        {}
 
-{
-    setCodigoAgencia(codigoAgencia);
-    setNumero(numero);
-}
-
-
-void Conta::setCodigoAgencia(string codigoAgencia) {
-    this->codigoAgencia = codigoAgencia;
-}
-
-void Conta::setNumero(int numero) {
-    this->numero = numero;
-}
-
-string Conta::getCodigoAgencia() {
-    return this->codigoAgencia;
-}
-
-int Conta::getNumero() {
-    return this->numero;
+void Conta::Display(){
+    codigoBanco.Print();
+    codigoAgencia.Print();
+    numero.Print();
 }

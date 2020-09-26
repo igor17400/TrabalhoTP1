@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1601146879 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
+1601148557 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
 	"Usuario.h"
+	"Conta.h"
 
 1601146789 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\usuario.h
 	<string>
@@ -22,17 +23,19 @@
 	"Usuario.h"
 	"CPF.h"
 
-1601141653 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
+1601148541 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
 	<iostream>
 	<string>
 	"Conta.h"
 	"Usuario.h"
 
-1601147529 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
+1601148390 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
 	<iostream>
 	<string>
 	"Usuario.h"
 	"CodigoBanco.h"
+	"CodigoAgencia.h"
+	"Numero.h"
 
 1601127599 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\aplicacao.cpp
 	"Aplicacao.h"
@@ -126,11 +129,37 @@
 	<string.h>
 	<stdexcept>
 
-1601147538 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
+1601148574 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
 	<sstream>
 	<stdexcept>
 	"CodigoBanco.h"
+
+1601147822 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\codigoagencia.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CodigoAgencia.h"
+
+1601147761 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601147956 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\numero.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601148057 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\numero.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Numero.h"
 
