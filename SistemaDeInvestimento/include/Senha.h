@@ -10,7 +10,7 @@ using namespace std;
 class Senha
 {
     public:
-        Senha(string senha="000");
+        Senha(string senha="123456");
         void ValidarSenha(string) throw (invalid_argument);
         void SetSenha(string) throw (invalid_argument);
         string GetSenha();
@@ -22,6 +22,7 @@ class Senha
 
     private:
         string senha;
+        bool UniqueSenha(string);
 };
 
 #endif // SENHA_H

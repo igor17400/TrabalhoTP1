@@ -14,7 +14,15 @@ CEP::CEP(string cep)
 }
 
 void CEP::ValidarCep(string cep) throw (invalid_argument) {
-    if (cep == "000000") {
+    std::string::size_type sz;
+    long cep_dec = std::stol (cep,&sz);
+
+    if (!( (cep_dec >= 1000000  && cep_dec <= 5999999)  ||
+           (cep_dec >= 8000000  && cep_dec <= 8499999)  ||
+           (cep_dec >= 20000000 && cep_dec <= 26600999) ||
+           (cep_dec >= 70000000 && cep_dec <= 70999999) ||
+           (cep_dec >= 40000000 && cep_dec <= 41999999) ||
+           (cep_dec >= 60000000 && cep_dec <= 60999999) )) {
         throw invalid_argument("CEP inválido.");
     }
 }

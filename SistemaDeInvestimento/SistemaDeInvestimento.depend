@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1601151701 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
+1601320493 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
 	"Usuario.h"
 	"Conta.h"
 	"Aplicacao.h"
+	"Produto.h"
+	"Testes.h"
 
 1601146789 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\usuario.h
 	<string>
@@ -98,7 +100,7 @@
 	<string.h>
 	<stdexcept>
 
-1601146078 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\nome.cpp
+1601158379 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\nome.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -106,12 +108,12 @@
 	<stdexcept>
 	"Nome.h"
 
-1601145488 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\senha.h
+1601320785 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\senha.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601145438 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\senha.cpp
+1601320917 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\senha.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -119,12 +121,12 @@
 	<stdexcept>
 	"Senha.h"
 
-1601146100 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\endereco.h
+1601318218 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\endereco.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601146124 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\endereco.cpp
+1601318235 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\endereco.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -132,7 +134,7 @@
 	<stdexcept>
 	"Endereco.h"
 
-1601146842 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\cep.cpp
+1601320073 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\cep.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -140,7 +142,7 @@
 	<stdexcept>
 	"CEP.h"
 
-1601146764 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\cep.h
+1601321743 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\cep.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -310,4 +312,19 @@
 	<sstream>
 	<stdexcept>
 	"ValorMinimo.h"
+
+1601320417 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\testes.h
+	"Nome.h"
+	"CPF.h"
+	"Endereco.h"
+	"CEP.h"
+	"Senha.h"
+
+1601320464 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\testes.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"testes.h"
 

@@ -10,7 +10,7 @@ using namespace std;
 class Endereco
 {
     public:
-        Endereco(string endereco="default");
+        Endereco(string endereco="Default");
 
         void ValidarEndereco(string) throw (invalid_argument);
         void SetEndereco(string) throw (invalid_argument);

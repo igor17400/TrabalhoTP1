@@ -14,7 +14,6 @@ Nome::Nome(string nome) {
 
 void Nome::ValidarNome(string nome) throw (invalid_argument) {
     if (nome.length() < 5 || nome.length() > 30) {
-        cout << "Nome não pode ter menos que 5 caracteres e mais de 30 caracteres. Nome inserido: " << nome << endl;
         throw invalid_argument("Nome inválido.");
     }
 }

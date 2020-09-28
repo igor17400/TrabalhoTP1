@@ -10,8 +10,8 @@ using namespace std;
 class CEP
 {
     public:
-        CEP(string cep="000000");
-        void ValidarCep(string) throw (invalid_argument);
+        CEP(string cep="1000000");
+
         void SetCep(string) throw (invalid_argument);
         string GetCep();
 
@@ -21,6 +21,7 @@ class CEP
 
     private:
         string cep;
+        void ValidarCep(string) throw (invalid_argument);
 };
 
 #endif // CEP_H

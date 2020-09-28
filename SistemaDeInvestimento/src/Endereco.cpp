@@ -14,17 +14,14 @@ Endereco::Endereco(string endereco){
 
 void Endereco::ValidarEndereco(string endereco) throw (invalid_argument) {
     if (endereco.length() < 5 || endereco.length() > 21) {
-        cout << "Endereço não pode ter menos que 5 caracteres e mais de 20 caracteres. Endereço inserido: " << endereco << endl;
         throw invalid_argument("Endereço inválido.");
     }
 
     if (!isupper(endereco[0])) {
-        cout << "Endereço precisa conter a primeira letra sendo maiúscula. Endereço inserido: " << endereco << endl;
         throw invalid_argument("Endereço inválido.");
     }
 
     if (isdigit(endereco[0])) {
-        cout << "Endereço não pode conter um número como primeiro caractere. Endereço inserido: " << endereco << endl;
         throw invalid_argument("Endereço inválido.");
     }
 }
