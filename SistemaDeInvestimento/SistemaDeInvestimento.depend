@@ -328,7 +328,7 @@
 	<stdexcept>
 	"testes.h"
 
-1601358743 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
+1601387311 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
@@ -380,12 +380,12 @@
 	"CodigoAgencia.h"
 	"Numero.h"
 
-1601357577 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
+1601387884 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357493 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
+1601387580 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -403,7 +403,7 @@
 	"Data.h"
 	"Conta.h"
 
-1601357541 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
+1601387720 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -428,12 +428,12 @@
 	"ValorMinimo.h"
 	"Prazo.h"
 
-1601357618 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
+1601388182 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357447 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
+1601386931 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -459,7 +459,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601358862 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
+1601387923 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
 	"Nome.h"
 	"CPF.h"
 	"Endereco.h"
@@ -495,7 +495,7 @@
 	<stdexcept>
 	"CEP.h"
 
-1601357465 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\classe.cpp
+1601387510 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\classe.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -503,7 +503,7 @@
 	<stdexcept>
 	"Classe.h"
 
-1601358136 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoagencia.cpp
+1601387573 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoagencia.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -511,7 +511,7 @@
 	<stdexcept>
 	"CodigoAgencia.h"
 
-1601357556 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoaplicacao.cpp
+1601387745 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoaplicacao.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -519,7 +519,7 @@
 	<stdexcept>
 	"CodigoAplicacao.h"
 
-1601357594 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
+1601387982 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -661,7 +661,7 @@
 	<stdexcept>
 	"ValorAplicacao.h"
 
-1601358585 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
+1601358933 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>

@@ -14,14 +14,19 @@ CodigoAgencia::CodigoAgencia(string codigo) {
     SetCodigoAgencia(codigo);
 }
 
-void CodigoAgencia::ValidarCodigoAgencia(string codigo) throw (invalid_argument) {
-    if (codigo == "0000") {
-        throw invalid_argument("Código de Agência inválido.");
-    }
+void CodigoAgencia::ValidarCodigoAgencia(char codigo[]) throw (invalid_argument) {
+    int x = atoi(codigo);
+    if(x > 9999 || x == 0000 || x < 0)
+        throw invalid_argument("Codigo de agência inválido.");
 }
 
 void CodigoAgencia::SetCodigoAgencia(string codigo) throw (invalid_argument) {
-    ValidarCodigoAgencia(codigo);
+    int n = codigo.length();
+    char char_array[n + 1];
+    strcpy(char_array, codigo.c_str());
+
+
+    ValidarCodigoAgencia(char_array);
     this->codigo = codigo;
 }
 

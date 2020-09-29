@@ -186,7 +186,7 @@ class TesteCodigoAplicacao {
 
         // Definições de constantes para evitar numeros mágicos.
         const string VALOR_VALIDO   = "12345";
-        const string VALOR_INVALIDO = "00001";
+        const string VALOR_INVALIDO = "00000";
 
         // Estado do teste
         int estado;
@@ -272,7 +272,7 @@ class TesteCodigoBanco {
         CodigoBanco *codigoBanco;
 
         // Definições de constantes para evitar numeros mágicos.
-        const string VALOR_VALIDO   = "123";
+        const string VALOR_VALIDO   = "001";
         const string VALOR_INVALIDO = "018";
 
         // Estado do teste

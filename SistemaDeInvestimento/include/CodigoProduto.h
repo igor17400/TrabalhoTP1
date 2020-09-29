@@ -34,7 +34,7 @@ class CodigoProduto
 
     private:
         string codigo;
-        void ValidarCodigoProduto(string) throw (invalid_argument);
+        void ValidarCodigoProduto(char codigo[]) throw (invalid_argument);
 };
 
 

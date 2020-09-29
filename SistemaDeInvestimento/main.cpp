@@ -35,6 +35,7 @@ int main()
     TesteValorMinimo testeValorMinimo;
 
 
+    cout << " --------- TesteNome ----------" << endl;
     switch(testeNome.run()){
         case TesteNome::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -42,6 +43,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteEndereco ----------" << endl;
     switch(testeEndereco.run()){
         case TesteEndereco::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -50,13 +52,15 @@ int main()
     }
 
 
+    cout << " --------- TesteCEP ----------" << endl;
     switch(testeCEP.run()){
-        case TesteSenha::SUCESSO: cout << "SUCESSO\n";
+        case TesteCEP::SUCESSO: cout << "SUCESSO\n";
                                 break;
-        case TesteSenha::FALHA  : cout << "FALHA\n";
+        case TesteCEP::FALHA  : cout << "FALHA\n";
                                 break;
     }
 
+    cout << " --------- TesteCPF ----------" << endl;
      switch(testeCPF.run()){
         case TesteCPF::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -64,6 +68,8 @@ int main()
                                 break;
     }
 
+
+    cout << " --------- TesteSenha ----------" << endl;
     switch(testeSenha.run()){
         case TesteSenha::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -71,6 +77,9 @@ int main()
                                 break;
     }
 
+
+
+    cout << " --------- TesteCodigoAplicacao ----------" << endl;
      switch(testeCodigoAplicacao.run()){
         case TesteCodigoAplicacao::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -78,6 +87,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteValorAplicacao ----------" << endl;
     switch(testeValorAplicacao.run()){
         case TesteValorAplicacao::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -85,6 +95,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteData ----------" << endl;
     switch(testeData.run()){
         case TesteData::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -92,6 +103,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteCodigoBanco ----------" << endl;
     switch(testeCodigoBanco.run()){
         case TesteCodigoBanco::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -99,6 +111,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteCodigoAgencia ----------" << endl;
     switch(testeCodigoAgencia.run()){
         case TesteCodigoAgencia::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -106,6 +119,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteNumero ----------" << endl;
     switch(testeNumero.run()){
         case TesteNumero::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -113,6 +127,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteCodigoProduto ----------" << endl;
     switch(testeCodigoProduto.run()){
         case TesteCodigoProduto::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -120,6 +135,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteClasse ----------" << endl;
     switch(testeClasse.run()){
         case TesteClasse::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -127,6 +143,8 @@ int main()
                                 break;
     }
 
+
+    cout << " --------- TesteEmissor ----------" << endl;
     switch(testeEmissor.run()){
         case TesteEmissor::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -134,6 +152,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TestePrazo ----------" << endl;
     switch(testePrazo.run()){
         case TestePrazo::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -141,6 +160,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteTaxa ----------" << endl;
     switch(testeTaxa.run()){
         case TesteTaxa::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -148,6 +168,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- TesteHorario ----------" << endl;
     switch(testeHorario.run()){
         case TesteHorario::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -155,6 +176,7 @@ int main()
                                 break;
     }
 
+    cout << " --------- testeValorMinimo ----------" << endl;
     switch(testeValorMinimo.run()){
         case TesteValorMinimo::SUCESSO: cout << "SUCESSO\n";
                                 break;

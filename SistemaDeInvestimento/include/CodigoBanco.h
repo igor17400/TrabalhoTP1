@@ -36,7 +36,7 @@ class CodigoBanco
 
     private:
         string codigo;
-        void ValidarCodigoBanco(string) throw (invalid_argument);
+        void ValidarCodigoBanco(char codigo[]) throw (invalid_argument);
 };
 
 #endif // CODIGOBANCO_H

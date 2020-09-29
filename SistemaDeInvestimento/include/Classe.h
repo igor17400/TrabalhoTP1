@@ -34,7 +34,7 @@ class Classe
 
     private:
         string texto;
-        void ValidarClasse(string) throw (invalid_argument);
+        void ValidarClasse(char text[]) throw (invalid_argument);
 };
 
 

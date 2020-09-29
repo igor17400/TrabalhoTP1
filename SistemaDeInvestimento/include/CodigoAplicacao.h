@@ -37,7 +37,7 @@ class CodigoAplicacao
 
     private:
         string codigo;
-        void ValidarCodigoAplicacao(string) throw (invalid_argument);
+        void ValidarCodigoAplicacao(char codigo[]) throw (invalid_argument);
 };
 
 #endif // CODIGOAPLICACAO_H

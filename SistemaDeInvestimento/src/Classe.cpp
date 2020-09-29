@@ -14,14 +14,20 @@ Classe::Classe(string texto) {
     SetClasse(texto);
 }
 
-void Classe::ValidarClasse(string texto) throw (invalid_argument) {
-    if (texto != "CDB") {
-        throw invalid_argument("Texto Inválido.");
-    }
+void Classe::ValidarClasse(char text[]) throw (invalid_argument) {
+    int result;
+    result = strcmp(text, "CDB")*strcmp(text, "LCA")*strcmp(text, "LCI")*strcmp(text, "LF")*strcmp(text, "LC");
+    if (result != 0)
+        throw invalid_argument("Classe inválida.");
 }
 
 void Classe::SetClasse(string texto) throw (invalid_argument) {
-    ValidarClasse(texto);
+
+    int n = texto.length();
+    char char_array[n + 1];
+    strcpy(char_array, texto.c_str());
+
+    ValidarClasse(char_array);
     this->texto = texto;
 }
 

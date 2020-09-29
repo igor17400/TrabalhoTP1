@@ -35,7 +35,7 @@ class CodigoAgencia
 
     private:
         string codigo;
-        void ValidarCodigoAgencia(string) throw (invalid_argument);
+        void ValidarCodigoAgencia(char codigo[]) throw (invalid_argument);
 };
 
 #endif // CODIGOAGENCIA_H
