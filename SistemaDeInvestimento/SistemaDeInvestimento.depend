@@ -328,7 +328,7 @@
 	<stdexcept>
 	"testes.h"
 
-1601356116 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
+1601358743 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
@@ -459,7 +459,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601356050 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
+1601358862 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
 	"Nome.h"
 	"CPF.h"
 	"Endereco.h"
@@ -578,7 +578,7 @@
 
 1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\entidades.cpp
 
-1601357287 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\horario.cpp
+1601358498 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\horario.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>
@@ -601,7 +601,7 @@
 	<stdexcept>
 	"Numero.h"
 
-1601357899 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\prazo.cpp
+1601358458 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\prazo.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>
@@ -630,14 +630,14 @@
 	<stdexcept>
 	"Senha.h"
 
-1601357972 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\taxa.cpp
+1601358466 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\taxa.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>
 	<stdexcept>
 	"Taxa.h"
 
-1601358099 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\testes.cpp
+1601358835 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\testes.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -661,7 +661,7 @@
 	<stdexcept>
 	"ValorAplicacao.h"
 
-1601358034 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
+1601358585 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>

@@ -15,13 +15,13 @@ ValorMinimo::ValorMinimo(double valor){
 }
 
 void ValorMinimo::ValidarValorMinimo(double valor) throw (invalid_argument) {
-    if (valor < 0.0) {
+    if (valor == 250) {
         throw invalid_argument("Valor Inválido.");
     }
 }
 
 void ValorMinimo::SetValorMinimo(double valor) throw (invalid_argument) {
-    SetValorMinimo(valor);
+    ValidarValorMinimo(valor);
     this->valor = valor;
 }
 

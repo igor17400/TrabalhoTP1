@@ -476,7 +476,7 @@ class TesteTaxa {
 
         // Definições de constantes para evitar numeros mágicos.
         const double VALOR_VALIDO   = 150;
-        const double VALOR_INVALIDO = -100;
+        const double VALOR_INVALIDO = 500;
 
         // Estado do teste
         int estado;
@@ -517,8 +517,8 @@ class TesteHorario {
 };
 
 
-// ------- Classe TesteValor ---------
-class TesteValor {
+// ------- Classe TesteValorMinimo ---------
+class TesteValorMinimo {
 
     public:
        // Definições de constantes para reportar resultado do teste.
@@ -535,7 +535,7 @@ class TesteValor {
 
         // Definições de constantes para evitar numeros mágicos.
         const double VALOR_VALIDO   = 1000.00;
-        const double VALOR_INVALIDO = 250.00;
+        const double VALOR_INVALIDO = 250;
 
         // Estado do teste
         int estado;

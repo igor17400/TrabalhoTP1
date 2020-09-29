@@ -32,7 +32,7 @@ int main()
     TestePrazo testePrazo;
     TesteTaxa testeTaxa;
     TesteHorario testeHorario;
-    TesteValor testeValor;
+    TesteValorMinimo testeValorMinimo;
 
 
     switch(testeNome.run()){
@@ -155,10 +155,10 @@ int main()
                                 break;
     }
 
-    switch(testeValor.run()){
-        case TesteValor::SUCESSO: cout << "SUCESSO\n";
+    switch(testeValorMinimo.run()){
+        case TesteValorMinimo::SUCESSO: cout << "SUCESSO\n";
                                 break;
-        case TesteValor::FALHA  : cout << "FALHA\n";
+        case TesteValorMinimo::FALHA  : cout << "FALHA\n";
                                 break;
     }
 

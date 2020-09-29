@@ -677,19 +677,19 @@ int TesteHorario::run(){
 
 
 // ------- Teste Valor -------
-void TesteValor::setUp(){
+void TesteValorMinimo::setUp(){
     valorMinimo = new ValorMinimo();
     estado = SUCESSO;
 }
 
-void TesteValor::tearDown(){
+void TesteValorMinimo::tearDown(){
     delete valorMinimo;
 }
 
-void TesteValor::testarCenarioSucesso(){
+void TesteValorMinimo::testarCenarioSucesso(){
     try{
-        valorMinimo->SetValorMinimo(TesteValor::VALOR_VALIDO);
-        if (valorMinimo->GetValorMinimo() != TesteValor::VALOR_VALIDO)
+        valorMinimo->SetValorMinimo(TesteValorMinimo::VALOR_VALIDO);
+        if (valorMinimo->GetValorMinimo() != TesteValorMinimo::VALOR_VALIDO)
             estado = FALHA;
     }
     catch(invalid_argument excecao){
@@ -697,9 +697,9 @@ void TesteValor::testarCenarioSucesso(){
     }
 }
 
-void TesteValor::testarCenarioFalha(){
+void TesteValorMinimo::testarCenarioFalha(){
     try{
-        valorMinimo->SetValorMinimo(TesteValor::VALOR_INVALIDO);
+        valorMinimo->SetValorMinimo(TesteValorMinimo::VALOR_INVALIDO);
         estado = FALHA;
     }
     catch(invalid_argument excecao){
@@ -707,7 +707,7 @@ void TesteValor::testarCenarioFalha(){
     }
 }
 
-int TesteValor::run(){
+int TesteValorMinimo::run(){
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();

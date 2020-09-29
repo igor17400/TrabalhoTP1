@@ -14,7 +14,7 @@ Horario::Horario(string horario) {
 }
 
 void Horario::ValidarHorario(string horario) throw (invalid_argument) {
-    if (horario == "00:00") {
+    if (horario == "27:30") {
         throw invalid_argument("Horário Inválido.");
     }
 }

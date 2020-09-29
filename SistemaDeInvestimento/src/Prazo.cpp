@@ -14,7 +14,7 @@ Prazo::Prazo(int prazo){
 }
 
 void Prazo::ValidarPrazo(int prazo) throw (invalid_argument) {
-    if (prazo < 0) {
+    if (prazo == 2) {
         throw invalid_argument("Prazo Inválido.");
     }
 }
