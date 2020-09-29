@@ -6,8 +6,9 @@
 
 #include "Senha.h"
 
-Senha::Senha(string senha)
-{
+Senha::Senha() {}
+
+Senha::Senha(string senha) {
     SetSenha(senha);
 }
 

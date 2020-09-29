@@ -8,6 +8,8 @@
 
 using namespace std;
 
+CodigoAplicacao::CodigoAplicacao() {}
+
 CodigoAplicacao::CodigoAplicacao(string codigo) {
     SetCodigoAplicacao(codigo);
 }

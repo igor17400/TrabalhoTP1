@@ -11,8 +11,11 @@ using namespace std;
 class CodigoAplicacao
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o 000000, caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        CodigoAplicacao(string codigo="000000");
+        /// Construtor default
+        CodigoAplicacao();
+
+        /// Construtor com param&ecirc;tro
+        CodigoAplicacao(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo c&oacute;digo de aplica&ccedil;&atilde;o.

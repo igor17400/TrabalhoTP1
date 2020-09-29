@@ -11,6 +11,8 @@
 
 using namespace std;
 
+Data::Data() {}
+
 Data::Data(string data) {
     SetData(data);
 }

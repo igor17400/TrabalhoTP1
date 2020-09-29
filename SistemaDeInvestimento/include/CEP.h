@@ -11,8 +11,11 @@ using namespace std;
 class CEP
 {
     public:
-        ///Construtor toma como valor padr&atilde;o 1000000, caso n&atilde;o seja fornecido uma entrada.
-        CEP(string cep="1000000");
+        /// Construtor default
+        CEP();
+
+        /// Construtor com param&ecirc;tro
+        CEP(string);
 
         /// M&eacute;todo criado com o objetivo de atribuir o valor fornecido de CEP ao atributo cep do objeto.
         ///@param string que representa o cep inserido.

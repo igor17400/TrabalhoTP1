@@ -11,9 +11,11 @@ using namespace std;
 class Taxa
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o 0.0,
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Taxa(double taxa=0.0);
+        /// Construtor default
+        Taxa();
+
+        /// Construtor com param&ecirc;tro
+        Taxa(double);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo taxa.

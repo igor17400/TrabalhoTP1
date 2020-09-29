@@ -10,9 +10,11 @@ using namespace std;
 class ValorMinimo
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o 0.0,
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        ValorMinimo(double valor=0.0);
+        /// Construtor default
+        ValorMinimo();
+
+        /// Construtor com param&ecirc;tro
+        ValorMinimo(double);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo valor m&iacute;nimo.

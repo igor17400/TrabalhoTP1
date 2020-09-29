@@ -12,9 +12,11 @@ class Horario
 {
     public:
 
-        /// Construtor, o qual toma como valor padr&atilde;o "00:00",
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Horario(string horario="00:00");
+        /// Construtor default
+        Horario();
+
+        /// Construtor com param&ecirc;tro
+        Horario(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo hor&aacute;rio.

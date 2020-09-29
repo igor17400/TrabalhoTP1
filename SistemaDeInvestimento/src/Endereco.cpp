@@ -8,6 +8,9 @@
 
 using namespace std;
 
+
+Endereco::Endereco(){}
+
 Endereco::Endereco(string endereco){
     SetEndereco(endereco);
 }

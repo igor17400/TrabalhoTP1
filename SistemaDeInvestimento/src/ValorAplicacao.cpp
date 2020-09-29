@@ -8,6 +8,8 @@
 
 using namespace std;
 
+ValorAplicacao::ValorAplicacao() {}
+
 ValorAplicacao::ValorAplicacao(double valor) {
     SetValorAplicacao(valor);
 }

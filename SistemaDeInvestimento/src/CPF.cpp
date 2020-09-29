@@ -8,6 +8,8 @@
 
 using namespace std;
 
+CPF::CPF() {}
+
 CPF::CPF(string cpf) {
     SetCpf(cpf);
 }

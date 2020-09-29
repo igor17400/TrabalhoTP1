@@ -11,9 +11,11 @@ using namespace std;
 class Nome
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o "default",
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Nome(string nome="default");
+        /// Construtor default
+        Nome();
+
+        /// Construtor com param&ecirc;tro
+        Nome(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo Nome.

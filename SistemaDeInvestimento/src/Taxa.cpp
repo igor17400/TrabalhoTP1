@@ -7,8 +7,9 @@
 
 using namespace std;
 
-Taxa::Taxa(double taxa)
-{
+Taxa::Taxa() {}
+
+Taxa::Taxa(double taxa) {
     SetTaxa(taxa);
 }
 

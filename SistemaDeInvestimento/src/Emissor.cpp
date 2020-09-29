@@ -8,8 +8,9 @@
 
 using namespace std;
 
-Emissor::Emissor(string emissor)
-{
+Emissor::Emissor(){}
+
+Emissor::Emissor(string emissor) {
     SetEmissor(emissor);
 }
 

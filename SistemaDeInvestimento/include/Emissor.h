@@ -11,9 +11,12 @@ using namespace std;
 class Emissor
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o "default",
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Emissor(string emissor="default");
+
+        /// Construtor default
+        Emissor();
+
+        /// Construtor com param&ecirc;tro
+        Emissor(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o ao
         /// atributo emissor.

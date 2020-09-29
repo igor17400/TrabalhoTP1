@@ -7,6 +7,8 @@
 
 using namespace std;
 
+Horario::Horario() {}
+
 Horario::Horario(string horario) {
     SetHorario(horario);
 }

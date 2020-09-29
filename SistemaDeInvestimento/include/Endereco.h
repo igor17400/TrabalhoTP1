@@ -11,9 +11,11 @@ using namespace std;
 class Endereco
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o "Default",
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Endereco(string endereco="Default");
+        /// Construtor default
+        Endereco();
+
+        /// Construtor com param&ecirc;tro
+        Endereco(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o ao
         /// atributo endere&ccedil;o.

@@ -11,8 +11,11 @@ using namespace std;
 class CodigoBanco
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o "Banco Default", caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        CodigoBanco(string codigo = "Banco Default");
+        /// Construtor default
+        CodigoBanco();
+
+        /// Construtor com param&ecirc;tro
+        CodigoBanco(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo c&oacute;digo de banco.

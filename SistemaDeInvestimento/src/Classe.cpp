@@ -8,8 +8,9 @@
 
 using namespace std;
 
-Classe::Classe(string texto)
-{
+Classe::Classe() {}
+
+Classe::Classe(string texto) {
     SetClasse(texto);
 }
 

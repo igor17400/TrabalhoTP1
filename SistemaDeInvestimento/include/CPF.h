@@ -12,9 +12,11 @@ class CPF
 {
 public:
 
-    /// Construtor, o qual toma como valor padr&atilde;o "000.000.000-00",
-    /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-    CPF(string cpf="000.000.000-00");
+    /// Construtor default
+    CPF();
+
+    /// Construtor com param&ecirc;tro
+    CPF(string);
 
     /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o ao
     /// atributo cpf.

@@ -11,8 +11,11 @@ using namespace std;
 class CodigoAgencia
 {
     public:
-        ///Construtor toma como valor padr&atilde;o 00000, caso n&atilde;o seja fornecido uma entrada.
-        CodigoAgencia(string codigo="00000");
+        /// Construtor default
+        CodigoAgencia();
+
+        /// Construtor com param&ecirc;tro
+        CodigoAgencia(string);
 
         ///@param string que representa o c&oacute;digo de ag&ecirc;ncia inserido como par&acirc;metro.
         ///@throw CodigoAgencia. lan&ccedil;a excess&atilde;o para c&oacute;digo de ag&ecirc;ncia inv&aacute;lido \n

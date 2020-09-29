@@ -12,8 +12,11 @@ using namespace std;
 class Classe
 {
     public:
-        ///Construtor toma como valor padr&atilde;o 000000, caso n&atilde;o seja fornecido uma entrada.
-        Classe(string texto="CDB");
+        /// Construtor default
+        Classe();
+
+        /// Construtor com param&ecirc;tro
+        Classe(string);
 
         ///@param string que representa o classe inserida como par&acirc;metro.
         ///@throw invalid_argument. Retorna classe inv&aacute;lida.\n

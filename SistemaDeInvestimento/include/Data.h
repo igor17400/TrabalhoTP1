@@ -12,9 +12,11 @@ using namespace std;
 class Data
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o "01/01/0001",
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Data(string data="01/01/0001");
+        /// Construtor default
+        Data();
+
+        /// Construtor com param&ecirc;tro
+        Data(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o ao
         /// atributo data.

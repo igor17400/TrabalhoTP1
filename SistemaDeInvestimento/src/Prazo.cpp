@@ -7,8 +7,9 @@
 
 using namespace std;
 
-Prazo::Prazo(int prazo)
-{
+Prazo::Prazo(){}
+
+Prazo::Prazo(int prazo){
     SetPrazo(prazo);
 }
 

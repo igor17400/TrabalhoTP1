@@ -10,6 +10,8 @@ using namespace std;
 
 // ------- Métodos de atribuição de variáveis -------
 
+CEP::CEP() {}
+
 CEP::CEP(string cep) {
     SetCep(cep);
 }

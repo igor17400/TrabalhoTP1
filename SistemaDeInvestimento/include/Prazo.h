@@ -10,9 +10,11 @@ using namespace std;
 class Prazo
 {
     public:
-        /// Construtor, o qual toma como valor padr&atilde;o 0,
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Prazo(int prazo=0);
+        /// Construtor default
+        Prazo();
+
+        /// Construtor com param&ecirc;tro
+        Prazo(int);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo prazo.

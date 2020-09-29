@@ -12,9 +12,11 @@ class Numero
 {
     public:
 
-        /// Construtor, o qual toma como valor padr&atilde;o "00000",
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        Numero(string numero="000000-1");
+        /// Construtor default
+        Numero();
+
+        /// Construtor com param&ecirc;tro
+        Numero(string);
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo n&uacute;mero.

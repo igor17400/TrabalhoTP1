@@ -8,8 +8,9 @@
 
 using namespace std;
 
-CodigoAgencia::CodigoAgencia(string codigo)
-{
+CodigoAgencia::CodigoAgencia() {}
+
+CodigoAgencia::CodigoAgencia(string codigo) {
     SetCodigoAgencia(codigo);
 }
 

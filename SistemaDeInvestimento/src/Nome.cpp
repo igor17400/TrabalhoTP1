@@ -8,6 +8,8 @@
 
 using namespace std;
 
+Nome::Nome() {}
+
 Nome::Nome(string nome) {
     SetNome(nome);
 }

@@ -8,6 +8,8 @@
 
 using namespace std;
 
+Numero::Numero() {}
+
 Numero::Numero(string numero) {
     SetNumero(numero);
 }

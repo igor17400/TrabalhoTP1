@@ -168,7 +168,7 @@ int TesteCPF::run(){
 void TesteSenha::setUp(){
     // Foi definido valor de senha no construtor, pois se não for definido
     //      o código lançará uma excessão.
-    senha = new Senha(TesteSenha::VALOR_VALIDO);
+    senha = new Senha();
     estado = SUCESSO;
 }
 

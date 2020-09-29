@@ -7,6 +7,9 @@
 
 using namespace std;
 
+ValorMinimo::ValorMinimo(){}
+
+
 ValorMinimo::ValorMinimo(double valor){
     SetValorMinimo(valor);
 }

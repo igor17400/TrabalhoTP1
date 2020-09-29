@@ -13,9 +13,11 @@ class ValorAplicacao
 {
     public:
 
-        /// Construtor, o qual toma como valor padr&atilde;o 0.0,
-        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        ValorAplicacao(double valor=0.0);
+        /// Construtor default
+        ValorAplicacao();
+
+        /// Construtor com param&ecirc;tro
+        ValorAplicacao(double);
 
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
