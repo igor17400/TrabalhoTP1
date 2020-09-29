@@ -24,7 +24,7 @@ class TesteNome {
 
         // Definições de constantes para evitar numeros mágicos.
         const string VALOR_VALIDO   = "Igor Lima";
-        const string VALOR_INVALIDO = "Igor Lima Roch Azevedo João Pedro Zanatta";
+        const string VALOR_INVALIDO = "Igor Lima Rocha Azevedo João Pedro Zanatta";
 
         // Estado do teste
         int estado;

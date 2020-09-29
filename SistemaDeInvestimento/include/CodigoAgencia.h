@@ -11,17 +11,14 @@ class CodigoAgencia
 {
     public:
         CodigoAgencia(string codigo="00000");
-
-        void ValidarCodigoAgencia(string) throw (invalid_argument);
         void SetCodigoAgencia(string) throw (invalid_argument);
         string GetCodigoAgencia();
-
         void Print() const;
-
-    protected:
 
     private:
         string codigo;
+
+        void ValidarCodigoAgencia(string) throw (invalid_argument);
 };
 
 #endif // CODIGOAGENCIA_H

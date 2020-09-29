@@ -16,8 +16,6 @@ class Aplicacao
     public:
         Aplicacao(const Conta &conta, const CodigoAplicacao &, const ValorAplicacao &, const Data &);
 
-    protected:
-
     private:
         const Conta conta;
         const CodigoAplicacao codigoAplicacao;

@@ -328,3 +328,330 @@
 	<stdexcept>
 	"testes.h"
 
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"Usuario.h"
+	"Conta.h"
+	"Aplicacao.h"
+	"Produto.h"
+	"Testes.h"
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\usuario.h
+	<string>
+	<stdexcept>
+	"Nome.h"
+	"CPF.h"
+	"Senha.h"
+	"Endereco.h"
+	"CEP.h"
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\nome.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\senha.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\endereco.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601337680 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cep.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\conta.h
+	<iostream>
+	<string>
+	"Usuario.h"
+	"CodigoBanco.h"
+	"CodigoAgencia.h"
+	"Numero.h"
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601337733 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601337700 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\aplicacao.h
+	<iostream>
+	<string>
+	"CodigoAplicacao.h"
+	"ValorAplicacao.h"
+	"Data.h"
+	"Conta.h"
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valoraplicacao.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\produto.h
+	"CodigoProduto.h"
+	"Classe.h"
+	"Emissor.h"
+	"Data.h"
+	"Taxa.h"
+	"Horario.h"
+	"ValorMinimo.h"
+	"Prazo.h"
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
+	<stdio.h>
+	<string.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\taxa.h
+	<stdio.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\horario.h
+	<stdio.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valorminimo.h
+	<stdio.h>
+	<stdexcept>
+
+1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\prazo.h
+	<stdio.h>
+	<stdexcept>
+
+1601337407 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
+	"Nome.h"
+	"CPF.h"
+	"Endereco.h"
+	"CEP.h"
+	"Senha.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\aplicacao.cpp
+	"Aplicacao.h"
+	"CodigoAplicacao.h"
+	"CodigoAgencia.h"
+	"CodigoAplicacao.h"
+	"ValorAplicacao.h"
+	"Data.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\cep.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CEP.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\classe.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Classe.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoagencia.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CodigoAgencia.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoaplicacao.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CodigoAplicacao.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CodigoBanco.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoproduto.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CodigoProduto.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\conta.cpp
+	<iostream>
+	<string>
+	"Conta.h"
+	"Usuario.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\cpf.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"CPF.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	<ctime>
+	<iostream>
+	<string>
+	"Data.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\emissor.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Emissor.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\endereco.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Endereco.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\entidades.cpp
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\horario.cpp
+	<iostream>
+	<stdio.h>
+	<sstream>
+	<stdexcept>
+	"Horario.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\nome.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Nome.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\numero.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Numero.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\prazo.cpp
+	<iostream>
+	<stdio.h>
+	<sstream>
+	<stdexcept>
+	"Prazo.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\produto.cpp
+	<ctime>
+	<iostream>
+	<string>
+	"Produto.h"
+	"CodigoProduto.h"
+	"Classe.h"
+	"Emissor.h"
+	"Prazo.h"
+	"Data.h"
+	"Taxa.h"
+	"Horario.h"
+	"ValorMinimo.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\senha.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"Senha.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\taxa.cpp
+	<iostream>
+	<stdio.h>
+	<sstream>
+	<stdexcept>
+	"Taxa.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\testes.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"testes.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\usuario.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	"Usuario.h"
+	"CPF.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valoraplicacao.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<stdexcept>
+	"ValorAplicacao.h"
+
+1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
+	<iostream>
+	<stdio.h>
+	<sstream>
+	<stdexcept>
+	"ValorMinimo.h"
+
