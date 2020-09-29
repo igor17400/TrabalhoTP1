@@ -13,7 +13,7 @@ Numero::Numero(string numero) {
 }
 
 void Numero::ValidarNumero(string numero) throw (invalid_argument) {
-    if (numero == "000000") {
+    if (numero == "000000-0") {
         throw invalid_argument("Número inválido.");
     }
 }

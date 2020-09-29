@@ -47,46 +47,6 @@ int TesteNome::run(){
     return estado;
 }
 
-
-// ------- Teste de CPF -------
-void TesteCPF::setUp(){
-    cpf = new CPF();
-    estado = SUCESSO;
-}
-
-void TesteCPF::tearDown(){
-    delete cpf;
-}
-
-void TesteCPF::testarCenarioSucesso(){
-    try{
-        cpf->SetCpf(TesteCPF::VALOR_VALIDO);
-        if (cpf->GetCpf() != TesteCPF::VALOR_VALIDO)
-            estado = FALHA;
-    }
-    catch(invalid_argument excecao){
-        estado = FALHA;
-    }
-}
-
-void TesteCPF::testarCenarioFalha(){
-    try{
-        cpf->SetCpf(TesteCPF::VALOR_INVALIDO);
-        estado = FALHA;
-    }
-    catch(invalid_argument excecao){
-        return;
-    }
-}
-
-int TesteCPF::run(){
-    setUp();
-    testarCenarioSucesso();
-    testarCenarioFalha();
-    tearDown();
-    return estado;
-}
-
 // ------- Teste de Endereco -------
 void TesteEndereco::setUp(){
     endereco = new Endereco();
@@ -165,6 +125,44 @@ int TesteCEP::run(){
     return estado;
 }
 
+// ------- Teste de CPF -------
+void TesteCPF::setUp(){
+    cpf = new CPF();
+    estado = SUCESSO;
+}
+
+void TesteCPF::tearDown(){
+    delete cpf;
+}
+
+void TesteCPF::testarCenarioSucesso(){
+    try{
+        cpf->SetCpf(TesteCPF::VALOR_VALIDO);
+        if (cpf->GetCpf() != TesteCPF::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteCPF::testarCenarioFalha(){
+    try{
+        cpf->SetCpf(TesteCPF::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteCPF::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
 
 // ------- Teste de Senha -------
 void TesteSenha::setUp(){
@@ -207,3 +205,512 @@ int TesteSenha::run(){
     return estado;
 }
 
+// ------- Teste de CodigoAplicacao -------
+void TesteCodigoAplicacao::setUp(){
+    codigoAplicacao = new CodigoAplicacao();
+    estado = SUCESSO;
+}
+
+void TesteCodigoAplicacao::tearDown(){
+    delete codigoAplicacao;
+}
+
+void TesteCodigoAplicacao::testarCenarioSucesso(){
+    try{
+        codigoAplicacao->SetCodigoAplicacao(TesteCodigoAplicacao::VALOR_VALIDO);
+        if (codigoAplicacao->GetCodigoAplicacao() != TesteCodigoAplicacao::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteCodigoAplicacao::testarCenarioFalha(){
+    try{
+        codigoAplicacao->SetCodigoAplicacao(TesteCodigoAplicacao::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteCodigoAplicacao::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste de ValorAplicacao -------
+void TesteValorAplicacao::setUp(){
+    valorAplicacao = new ValorAplicacao();
+    estado = SUCESSO;
+}
+
+void TesteValorAplicacao::tearDown(){
+    delete valorAplicacao;
+}
+
+void TesteValorAplicacao::testarCenarioSucesso(){
+    try{
+        valorAplicacao->SetValorAplicacao(TesteValorAplicacao::VALOR_VALIDO);
+        if (valorAplicacao->GetValorAplicacao() != TesteValorAplicacao::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteValorAplicacao::testarCenarioFalha(){
+    try{
+        valorAplicacao->SetValorAplicacao(TesteValorAplicacao::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteValorAplicacao::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste Data -------
+void TesteData::setUp(){
+    data = new Data();
+    estado = SUCESSO;
+}
+
+void TesteData::tearDown(){
+    delete data;
+}
+
+void TesteData::testarCenarioSucesso(){
+    try{
+        data->SetData(TesteData::VALOR_VALIDO);
+        if (data->GetData() != TesteData::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteData::testarCenarioFalha(){
+    try{
+        data->SetData(TesteData::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteData::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste CodigoBanco -------
+void TesteCodigoBanco::setUp(){
+    codigoBanco = new CodigoBanco();
+    estado = SUCESSO;
+}
+
+void TesteCodigoBanco::tearDown(){
+    delete codigoBanco;
+}
+
+void TesteCodigoBanco::testarCenarioSucesso(){
+    try{
+        codigoBanco->SetCodigoBanco(TesteCodigoBanco::VALOR_VALIDO);
+        if (codigoBanco->GetCodigoBanco() != TesteCodigoBanco::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteCodigoBanco::testarCenarioFalha(){
+    try{
+        codigoBanco->SetCodigoBanco(TesteCodigoBanco::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteCodigoBanco::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste CodigoAgencia -------
+void TesteCodigoAgencia::setUp(){
+    codigoAgencia = new CodigoAgencia();
+    estado = SUCESSO;
+}
+
+void TesteCodigoAgencia::tearDown(){
+    delete codigoAgencia;
+}
+
+void TesteCodigoAgencia::testarCenarioSucesso(){
+    try{
+        codigoAgencia->SetCodigoAgencia(TesteCodigoAgencia::VALOR_VALIDO);
+        if (codigoAgencia->GetCodigoAgencia() != TesteCodigoAgencia::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteCodigoAgencia::testarCenarioFalha(){
+    try{
+        codigoAgencia->SetCodigoAgencia(TesteCodigoAgencia::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteCodigoAgencia::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste Numero -------
+void TesteNumero::setUp(){
+    numero = new Numero();
+    estado = SUCESSO;
+}
+
+void TesteNumero::tearDown(){
+    delete numero;
+}
+
+void TesteNumero::testarCenarioSucesso(){
+    try{
+        numero->SetNumero(TesteNumero::VALOR_VALIDO);
+        if (numero->GetNumero() != TesteNumero::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteNumero::testarCenarioFalha(){
+    try{
+        numero->SetNumero(TesteNumero::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteNumero::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste COdigoProduto -------
+void TesteCodigoProduto::setUp(){
+    codigoProduto = new CodigoProduto();
+    estado = SUCESSO;
+}
+
+void TesteCodigoProduto::tearDown(){
+    delete codigoProduto;
+}
+
+void TesteCodigoProduto::testarCenarioSucesso(){
+    try{
+        codigoProduto->SetCodigoProduto(TesteCodigoProduto::VALOR_VALIDO);
+        if (codigoProduto->GetCodigoProduto() != TesteCodigoProduto::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteCodigoProduto::testarCenarioFalha(){
+    try{
+        codigoProduto->SetCodigoProduto(TesteCodigoProduto::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteCodigoProduto::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste Classe -------
+void TesteClasse::setUp(){
+    classe = new Classe();
+    estado = SUCESSO;
+}
+
+void TesteClasse::tearDown(){
+    delete classe;
+}
+
+void TesteClasse::testarCenarioSucesso(){
+    try{
+        classe->SetClasse(TesteClasse::VALOR_VALIDO);
+        if (classe->GetClasse() != TesteClasse::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteClasse::testarCenarioFalha(){
+    try{
+        classe->SetClasse(TesteClasse::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteClasse::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+
+// ------- Teste Emissor -------
+void TesteEmissor::setUp(){
+    emissor = new Emissor();
+    estado = SUCESSO;
+}
+
+void TesteEmissor::tearDown(){
+    delete emissor;
+}
+
+void TesteEmissor::testarCenarioSucesso(){
+    try{
+        emissor->SetEmissor(TesteEmissor::VALOR_VALIDO);
+        if (emissor->GetEmissor() != TesteEmissor::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteEmissor::testarCenarioFalha(){
+    try{
+        emissor->SetEmissor(TesteEmissor::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteEmissor::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste Prazo -------
+void TestePrazo::setUp(){
+    prazo = new Prazo();
+    estado = SUCESSO;
+}
+
+void TestePrazo::tearDown(){
+    delete prazo;
+}
+
+void TestePrazo::testarCenarioSucesso(){
+    try{
+        prazo->SetPrazo(TestePrazo::VALOR_VALIDO);
+        if (prazo->GetPrazo() != TestePrazo::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TestePrazo::testarCenarioFalha(){
+    try{
+        prazo->SetPrazo(TestePrazo::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TestePrazo::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+
+// ------- Teste Taxa -------
+void TesteTaxa::setUp(){
+    taxa = new Taxa();
+    estado = SUCESSO;
+}
+
+void TesteTaxa::tearDown(){
+    delete taxa;
+}
+
+void TesteTaxa::testarCenarioSucesso(){
+    try{
+        taxa->SetTaxa(TesteTaxa::VALOR_VALIDO);
+        if (taxa->GetTaxa() != TesteTaxa::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteTaxa::testarCenarioFalha(){
+    try{
+        taxa->SetTaxa(TesteTaxa::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteTaxa::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+// ------- Teste Horario -------
+void TesteHorario::setUp(){
+    horario = new Horario();
+    estado = SUCESSO;
+}
+
+void TesteHorario::tearDown(){
+    delete horario;
+}
+
+void TesteHorario::testarCenarioSucesso(){
+    try{
+        horario->SetHorario(TesteHorario::VALOR_VALIDO);
+        if (horario->GetHorario() != TesteHorario::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteHorario::testarCenarioFalha(){
+    try{
+        horario->SetHorario(TesteHorario::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteHorario::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+
+// ------- Teste Valor -------
+void TesteValor::setUp(){
+    valorMinimo = new ValorMinimo();
+    estado = SUCESSO;
+}
+
+void TesteValor::tearDown(){
+    delete valorMinimo;
+}
+
+void TesteValor::testarCenarioSucesso(){
+    try{
+        valorMinimo->SetValorMinimo(TesteValor::VALOR_VALIDO);
+        if (valorMinimo->GetValorMinimo() != TesteValor::VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void TesteValor::testarCenarioFalha(){
+    try{
+        valorMinimo->SetValorMinimo(TesteValor::VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument excecao){
+        return;
+    }
+}
+
+int TesteValor::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}

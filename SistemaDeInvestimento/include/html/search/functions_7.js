@@ -16,5 +16,7 @@ var searchData=
   ['setnumero_137',['SetNumero',['../class_numero.html#a112132d6034a3e76e6794ffd253f70eb',1,'Numero']]],
   ['setprazo_138',['SetPrazo',['../class_prazo.html#aa377f0e65a16330551cccea9e4c2e9c3',1,'Prazo']]],
   ['setsenha_139',['SetSenha',['../class_senha.html#a9de94c73c043f6bd071e17e211b18c5d',1,'Senha']]],
-  ['setvaloraplicacao_140',['SetValorAplicacao',['../class_valor_aplicacao.html#a400dea2a070def3690fc3da9f911966d',1,'ValorAplicacao']]]
+  ['settaxa_140',['SetTaxa',['../class_taxa.html#a71661adb89b7fb2c429e055690763e7e',1,'Taxa']]],
+  ['setvaloraplicacao_141',['SetValorAplicacao',['../class_valor_aplicacao.html#a400dea2a070def3690fc3da9f911966d',1,'ValorAplicacao']]],
+  ['setvalorminimo_142',['SetValorMinimo',['../class_valor_minimo.html#a5c7d05a905b6ee95efd7587e688e9551',1,'ValorMinimo']]]
 ];

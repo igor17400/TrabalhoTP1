@@ -14,7 +14,7 @@ Classe::Classe(string texto)
 }
 
 void Classe::ValidarClasse(string texto) throw (invalid_argument) {
-    if (texto == "000000") {
+    if (texto != "CDB") {
         throw invalid_argument("Texto Inválido.");
     }
 }

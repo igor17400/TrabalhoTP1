@@ -13,7 +13,7 @@ class CodigoProduto
     public:
         /// Construtor, o qual toma como valor padr&atilde;o "000000",
         /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
-        CodigoProduto(string codigo="000000");
+        CodigoProduto(string codigo="123");
 
         /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o para o
         /// atributo c&oacute;digo de produto escolhido.

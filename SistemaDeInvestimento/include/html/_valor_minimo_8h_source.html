@@ -73,24 +73,28 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_valor_minimo.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_valor_minimo.html">ValorMinimo</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="class_valor_minimo.html">ValorMinimo</a>(<span class="keywordtype">double</span> valor=0.0);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">void</span> ValidarValorMinimo(<span class="keywordtype">double</span>) <span class="keywordflow">throw</span> (invalid_argument);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> SetValorMinimo(<span class="keywordtype">double</span>) <span class="keywordflow">throw</span> (invalid_argument);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">double</span> GetValorMinimo();</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_valor_minimo.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_valor_minimo.html">ValorMinimo</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_valor_minimo.html#abff4b42dc89216e124d6baaff038e583">   15</a></span>&#160;        <a class="code" href="class_valor_minimo.html#abff4b42dc89216e124d6baaff038e583">ValorMinimo</a>(<span class="keywordtype">double</span> valor=0.0);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> Print() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">double</span> valor;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // VALORMINIMO_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_valor_minimo.html#a5c7d05a905b6ee95efd7587e688e9551">   24</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_valor_minimo.html#a5c7d05a905b6ee95efd7587e688e9551">SetValorMinimo</a>(<span class="keywordtype">double</span>) <span class="keywordflow">throw</span> (invalid_argument);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_valor_minimo.html#ae03ad1ea45fc1d1f9bb04a102a49392d">   27</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_valor_minimo.html#ae03ad1ea45fc1d1f9bb04a102a49392d">GetValorMinimo</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_valor_minimo.html#a832a7598856332474fefb6176659ce71">   31</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_valor_minimo.html#a832a7598856332474fefb6176659ce71">Print</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">double</span> valor;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> ValidarValorMinimo(<span class="keywordtype">double</span>) <span class="keywordflow">throw</span> (invalid_argument);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // VALORMINIMO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_valor_minimo_html"><div class="ttname"><a href="class_valor_minimo.html">ValorMinimo</a></div><div class="ttdef"><b>Definition:</b> ValorMinimo.h:10</div></div>
+<div class="ttc" id="aclass_valor_minimo_html_abff4b42dc89216e124d6baaff038e583"><div class="ttname"><a href="class_valor_minimo.html#abff4b42dc89216e124d6baaff038e583">ValorMinimo::ValorMinimo</a></div><div class="ttdeci">ValorMinimo(double valor=0.0)</div></div>
+<div class="ttc" id="aclass_valor_minimo_html_a832a7598856332474fefb6176659ce71"><div class="ttname"><a href="class_valor_minimo.html#a832a7598856332474fefb6176659ce71">ValorMinimo::Print</a></div><div class="ttdeci">void Print() const</div></div>
+<div class="ttc" id="aclass_valor_minimo_html_a5c7d05a905b6ee95efd7587e688e9551"><div class="ttname"><a href="class_valor_minimo.html#a5c7d05a905b6ee95efd7587e688e9551">ValorMinimo::SetValorMinimo</a></div><div class="ttdeci">void SetValorMinimo(double)</div></div>
+<div class="ttc" id="aclass_valor_minimo_html_ae03ad1ea45fc1d1f9bb04a102a49392d"><div class="ttname"><a href="class_valor_minimo.html#ae03ad1ea45fc1d1f9bb04a102a49392d">ValorMinimo::GetValorMinimo</a></div><div class="ttdeci">double GetValorMinimo()</div></div>
+<div class="ttc" id="aclass_valor_minimo_html"><div class="ttname"><a href="class_valor_minimo.html">ValorMinimo</a></div><div class="ttdoc">Classe criada para representar valor mínimo aceito para aplicação no produto de investimento.</div><div class="ttdef"><b>Definition:</b> ValorMinimo.h:11</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

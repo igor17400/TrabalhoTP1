@@ -14,7 +14,7 @@ CodigoAgencia::CodigoAgencia(string codigo)
 }
 
 void CodigoAgencia::ValidarCodigoAgencia(string codigo) throw (invalid_argument) {
-    if (codigo == "000000") {
+    if (codigo == "0000") {
         throw invalid_argument("Código de Agência inválido.");
     }
 }

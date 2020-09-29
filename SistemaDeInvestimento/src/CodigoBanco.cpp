@@ -14,7 +14,7 @@ CodigoBanco::CodigoBanco(string codigo)
 }
 
 void CodigoBanco::ValidarCodigoBanco(string codigo) throw (invalid_argument) {
-    if (codigo == "000000") {
+    if (codigo == "018") {
         throw invalid_argument("Código de Banco inválido.");
     }
 }

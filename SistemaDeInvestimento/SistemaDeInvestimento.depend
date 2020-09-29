@@ -328,7 +328,7 @@
 	<stdexcept>
 	"testes.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
+1601356116 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
@@ -390,7 +390,7 @@
 	<string.h>
 	<stdexcept>
 
-1601349454 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
+1601356303 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -408,7 +408,7 @@
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valoraplicacao.h
+1601350907 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valoraplicacao.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -428,22 +428,22 @@
 	"ValorMinimo.h"
 	"Prazo.h"
 
-1601343713 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
+1601356367 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601349347 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
+1601356435 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601345155 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
+1601356478 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\taxa.h
+1601351445 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\taxa.h
 	<stdio.h>
 	<stdexcept>
 
@@ -451,7 +451,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valorminimo.h
+1601351747 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valorminimo.h
 	<stdio.h>
 	<stdexcept>
 
@@ -459,12 +459,25 @@
 	<stdio.h>
 	<stdexcept>
 
-1601337407 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
+1601356050 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
 	"Nome.h"
 	"CPF.h"
 	"Endereco.h"
 	"CEP.h"
 	"Senha.h"
+	"CodigoAplicacao.h"
+	"ValorAplicacao.h"
+	"Data.h"
+	"CodigoBanco.h"
+	"CodigoAgencia.h"
+	"Numero.h"
+	"CodigoProduto.h"
+	"Classe.h"
+	"Emissor.h"
+	"Prazo.h"
+	"Taxa.h"
+	"Horario.h"
+	"ValorMinimo.h"
 
 1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\aplicacao.cpp
 	"Aplicacao.h"
@@ -482,7 +495,7 @@
 	<stdexcept>
 	"CEP.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\classe.cpp
+1601356414 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\classe.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -490,7 +503,7 @@
 	<stdexcept>
 	"Classe.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoagencia.cpp
+1601356235 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoagencia.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -498,7 +511,7 @@
 	<stdexcept>
 	"CodigoAgencia.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoaplicacao.cpp
+1601356051 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoaplicacao.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -506,7 +519,7 @@
 	<stdexcept>
 	"CodigoAplicacao.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
+1601356214 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -514,7 +527,7 @@
 	<stdexcept>
 	"CodigoBanco.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoproduto.cpp
+1601356364 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoproduto.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -536,7 +549,7 @@
 	<stdexcept>
 	"CPF.h"
 
-1601344447 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
+1601356172 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -580,7 +593,7 @@
 	<stdexcept>
 	"Nome.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\numero.cpp
+1601356309 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\numero.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -624,7 +637,7 @@
 	<stdexcept>
 	"Taxa.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\testes.cpp
+1601355159 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\testes.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>

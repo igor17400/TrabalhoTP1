@@ -13,7 +13,7 @@ CodigoAplicacao::CodigoAplicacao(string codigo) {
 }
 
 void CodigoAplicacao::ValidarCodigoAplicacao(string codigo) throw (invalid_argument) {
-    if (codigo == "000000") {
+    if (codigo == "00001") {
         throw invalid_argument("Código de aplicação inválido.");
     }
 }

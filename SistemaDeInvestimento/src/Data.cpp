@@ -15,14 +15,19 @@ Data::Data(string data) {
     SetData(data);
 }
 
-void VerificaData(string data) {
-    if (data == "0000" ) {
+void Data::VerificaData(string data) {
+    if (data == "45/12/2020" ) {
         throw invalid_argument("Data é inválida.");
     }
 }
 
 void Data::SetData(string data) {
+    VerificaData(data);
     this->data = data;
+}
+
+string Data::GetData(){
+    return this->data;
 }
 
 void Data::Print() const {

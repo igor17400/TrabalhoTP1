@@ -14,7 +14,7 @@ Emissor::Emissor(string emissor)
 }
 
 void Emissor::ValidarEmissor(string emissor) throw (invalid_argument) {
-    if (emissor == "000000") {
+    if (emissor == "bank") {
         throw invalid_argument("Emissor Inválido.");
     }
 }

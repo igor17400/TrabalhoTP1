@@ -14,7 +14,7 @@ CodigoProduto::CodigoProduto(string codigo)
 }
 
 void CodigoProduto::ValidarCodigoProduto(string codigo) throw (invalid_argument) {
-    if (codigo == "000000") {
+    if (codigo == "000") {
         throw invalid_argument("Codigo Inválido.");
     }
 }

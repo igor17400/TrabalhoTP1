@@ -13,7 +13,7 @@ class Classe
 {
     public:
         ///Construtor toma como valor padr&atilde;o 000000, caso n&atilde;o seja fornecido uma entrada.
-        Classe(string texto="000000");
+        Classe(string texto="CDB");
 
         ///@param string que representa o classe inserida como par&acirc;metro.
         ///@throw invalid_argument. Retorna classe inv&aacute;lida.\n
