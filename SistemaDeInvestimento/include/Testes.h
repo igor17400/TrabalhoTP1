@@ -128,7 +128,7 @@ class TesteCPF {
 
         // Definições de constantes para evitar numeros mágicos.
         const string VALOR_VALIDO   = "065.891.841-94";
-        const string VALOR_INVALIDO = "123.456.789.03";
+        const string VALOR_INVALIDO = "065.891.841-93";
 
         // Estado do teste
         int estado;
@@ -533,7 +533,7 @@ class TesteValorMinimo {
         // Referência para o objeto a ser testado.
         ValorMinimo *valorMinimo;
 
-        // Definições de constantes para evitar numeros mágicos.
+        // Definições de constantes para evitar numeros mágicos
         const double VALOR_VALIDO   = 1000;
         const double VALOR_INVALIDO = 250;
 

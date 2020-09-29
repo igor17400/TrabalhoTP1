@@ -328,7 +328,7 @@
 	<stdexcept>
 	"testes.h"
 
-1601387311 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
+1601400026 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
@@ -459,7 +459,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601399999 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
+1601401762 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
 	"Nome.h"
 	"CPF.h"
 	"Endereco.h"
@@ -664,7 +664,7 @@
 	<stdexcept>
 	"ValorAplicacao.h"
 
-1601358933 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
+1601400065 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valorminimo.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>
