@@ -16,7 +16,7 @@ class Classe
         Classe(string texto="000000");
 
         ///@param string que representa o classe inserida como par&acirc;metro.
-        ///@throw retorna classe inv&aacute;lida.\n
+        ///@throw invalid_argument. Retorna classe inv&aacute;lida.\n
         ///M&eacute;todo criado para atribuir valor ao atributo classe. Antes de tal atribui&ccedil;&atilde;o
         ///&eacute; feito uma verifica&ccedil;&atilde;o da vari&aacute;vel a ser inserida, para
         /// que seja determinado se a mesma segue os crit&eacute;rios de valida&ccedil;&atilde;o.

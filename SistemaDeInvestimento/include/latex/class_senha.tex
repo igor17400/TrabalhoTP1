@@ -1,23 +1,63 @@
 \hypertarget{class_senha}{}\doxysection{Senha Class Reference}
 \label{class_senha}\index{Senha@{Senha}}
+
+
+\mbox{\hyperlink{class_classe}{Classe}} criada para representar senha inserida pelo usu\'{a}rio.  
+
+
+
+
+{\ttfamily \#include $<$Senha.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_senha_af6bca5a89ef7367a06dc6c32620113fd}\label{class_senha_af6bca5a89ef7367a06dc6c32620113fd}} 
-{\bfseries Senha} (string senha=\char`\"{}123456\char`\"{})
+\mbox{\hyperlink{class_senha_ad676501e24cd3363f78029fd6e82e887}{Senha}} (string senha=\char`\"{}111111\char`\"{})
 \item 
-\mbox{\Hypertarget{class_senha_a5a8dd7f22708d02f5c13535240e3d0df}\label{class_senha_a5a8dd7f22708d02f5c13535240e3d0df}} 
-void {\bfseries Validar\+Senha} (string)  throw (invalid\+\_\+argument)
+void \mbox{\hyperlink{class_senha_a9de94c73c043f6bd071e17e211b18c5d}{Set\+Senha}} (string)  throw (invalid\+\_\+argument)
 \item 
-\mbox{\Hypertarget{class_senha_a9de94c73c043f6bd071e17e211b18c5d}\label{class_senha_a9de94c73c043f6bd071e17e211b18c5d}} 
-void {\bfseries Set\+Senha} (string)  throw (invalid\+\_\+argument)
-\item 
-\mbox{\Hypertarget{class_senha_ae6322e8ae69f925b6adcd2858544c875}\label{class_senha_ae6322e8ae69f925b6adcd2858544c875}} 
-string {\bfseries Get\+Senha} ()
-\item 
-\mbox{\Hypertarget{class_senha_a3a977b50b322eb4b3f0593f426bbd8e7}\label{class_senha_a3a977b50b322eb4b3f0593f426bbd8e7}} 
-void {\bfseries Print} () const
+string \mbox{\hyperlink{class_senha_ae6322e8ae69f925b6adcd2858544c875}{Get\+Senha}} ()
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_classe}{Classe}} criada para representar senha inserida pelo usu\'{a}rio. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_senha_ad676501e24cd3363f78029fd6e82e887}\label{class_senha_ad676501e24cd3363f78029fd6e82e887}} 
+\index{Senha@{Senha}!Senha@{Senha}}
+\index{Senha@{Senha}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{Senha()}{Senha()}}
+{\footnotesize\ttfamily Senha\+::\+Senha (\begin{DoxyParamCaption}\item[{string}]{senha = {\ttfamily \char`\"{}111111\char`\"{}} }\end{DoxyParamCaption})}
+
+Construtor, o qual toma como valor padr\~{a}o \char`\"{}111111\char`\"{}, caso n\~{a}o seja fornecido param\^{e}tro de entrada. implementa\c{c}\~{a}o mudar\'{a} com o incremento do projeto. O valor default atribu\'{\i}do \'{e} inv\'{a}lido para as regras de veifica\c{c}ao. Consequentemente, se n\~{a}o for atribu\'{\i}do nenhuma senha o c\'{o}digo lan\c{c}ar\'{a} uma exce\c{c}\~{a}o. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_senha_ae6322e8ae69f925b6adcd2858544c875}\label{class_senha_ae6322e8ae69f925b6adcd2858544c875}} 
+\index{Senha@{Senha}!GetSenha@{GetSenha}}
+\index{GetSenha@{GetSenha}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{GetSenha()}{GetSenha()}}
+{\footnotesize\ttfamily string Senha\+::\+Get\+Senha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+senha 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_senha_a9de94c73c043f6bd071e17e211b18c5d}\label{class_senha_a9de94c73c043f6bd071e17e211b18c5d}} 
+\index{Senha@{Senha}!SetSenha@{SetSenha}}
+\index{SetSenha@{SetSenha}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{SetSenha()}{SetSenha()}}
+{\footnotesize\ttfamily void Senha\+::\+Set\+Senha (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption}) throw ( invalid\+\_\+argument) }
+
+M\'{e}todo respons\'{a}vel pela atribui\c{c}\~{a}o para o atributo senha. 
+\begin{DoxyParams}{Parameters}
+{\em senha.} & Param\^{e}tro de entrada c\'{o}digo, representa senha inserida pelo usu\'{a}rio. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument.} & \'{E} implementado um m\'{e}todo de verifica\c{c}\~{a}o para avaliar se a vari\'{a}vel fornecida atende os requisitos definidos para senha. Caso n\~{a}o seja atendido, \'{e} lan\c{c}ado uma exce\c{c}\~{a}o. \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

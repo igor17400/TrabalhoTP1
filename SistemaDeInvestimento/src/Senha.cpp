@@ -42,6 +42,3 @@ string Senha::GetSenha() {
     return this->senha;
 }
 
-void Senha::Print() const {
-    cout << "Senha: " << this->senha<< endl;
-}

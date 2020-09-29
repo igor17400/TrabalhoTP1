@@ -347,22 +347,22 @@
 	"Endereco.h"
 	"CEP.h"
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\nome.h
+1601349352 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\nome.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601344333 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
+1601345175 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\senha.h
+1601350304 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\senha.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\endereco.h
+1601345150 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\endereco.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -385,12 +385,12 @@
 	<string.h>
 	<stdexcept>
 
-1601343284 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
+1601345163 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
+1601349454 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -403,7 +403,7 @@
 	"Data.h"
 	"Conta.h"
 
-1601344264 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
+1601345190 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -413,7 +413,7 @@
 	<string.h>
 	<stdexcept>
 
-1601344451 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
+1601344596 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -433,12 +433,12 @@
 	<string.h>
 	<stdexcept>
 
-1601343296 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
+1601349347 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
+1601345155 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -447,7 +447,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\horario.h
+1601349333 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\horario.h
 	<stdio.h>
 	<stdexcept>
 
@@ -455,7 +455,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\prazo.h
+1601349658 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\prazo.h
 	<stdio.h>
 	<stdexcept>
 
@@ -536,7 +536,7 @@
 	<stdexcept>
 	"CPF.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
+1601344447 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -609,7 +609,7 @@
 	"Horario.h"
 	"ValorMinimo.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\senha.cpp
+1601350303 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\senha.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -632,7 +632,7 @@
 	<stdexcept>
 	"testes.h"
 
-1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\usuario.cpp
+1601350330 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\usuario.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>

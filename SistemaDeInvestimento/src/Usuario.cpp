@@ -22,7 +22,6 @@ void Usuario::VerInfoUsuario()
     cout << "Informações do Usuário: \n";
     nome.Print();
     cpf.Print();
-    senha.Print();
     endereco.Print();
     cep.Print();
 }

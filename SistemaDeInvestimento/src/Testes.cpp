@@ -168,7 +168,9 @@ int TesteCEP::run(){
 
 // ------- Teste de Senha -------
 void TesteSenha::setUp(){
-    senha = new Senha();
+    // Foi definido valor de senha no construtor, pois se não for definido
+    //      o código lançará uma excessão.
+    senha = new Senha(TesteSenha::VALOR_VALIDO);
     estado = SUCESSO;
 }
 
