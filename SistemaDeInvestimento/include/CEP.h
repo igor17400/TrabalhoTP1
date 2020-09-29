@@ -7,25 +7,24 @@
 
 using namespace std;
 
-/// Classe criada para armazenar CEP e assim modularizar o nosso código seguindo padrão de OOP.
-
+/// Classe criada para armazenar CEP.
 class CEP
 {
     public:
-        ///
+        ///Construtor toma como valor padr&atilde;o 1000000, caso n&atilde;o seja fornecido uma entrada.
         CEP(string cep="1000000");
 
-        /// Método criado com o objetivo de atribuir o valor fornecido de CEP ao atributo cep do objeto.
+        /// M&eacute;todo criado com o objetivo de atribuir o valor fornecido de CEP ao atributo cep do objeto.
         ///@param string que representa o cep inserido.
-        ///@throw cep inválido
-        /// O método define uma exceção, pois caso o valor de cep fornecido não seja válido é necessário
-        ///     retornar uma exceção que demonstre que a variável inserida deve ser alterada.
+        ///@throw retorna cep inv&aacute;lido.\n
+        /// O m&eacute;todo define uma exce&ccedil;&atilde;o, pois caso o valor de cep fornecido n&atilde;o seja v&aacute;lido &eacute; necess&aacute;rio
+        ///     retornar uma exce&ccedil;&atilde;o que demonstre que a variável inserida deve ser alterada.
         void SetCep(string) throw (invalid_argument);
 
-        ///@return retorna o valor atribuido de cep, sem nenhuma verificação.
+        ///@return cep. retorna o valor atribuido de cep.
         string GetCep();
 
-        ///Tem por objetivo imprimir, caso seja de interesse do usário, o valor atribuido ao atributo cep.
+        ///Tem por objetivo imprimir, caso seja de interesse do us	&aacute;rio, o valor atribu&iacute;do ao atributo cep.
         void Print() const;
 
     private:

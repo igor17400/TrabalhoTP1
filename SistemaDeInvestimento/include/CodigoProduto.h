@@ -7,20 +7,21 @@
 
 using namespace std;
 
+/// Classe criada para representar o c&oacute;digo de produto escolhido.
 class CodigoProduto
 {
     public:
         CodigoProduto(string codigo="000000");
-        void ValidarCodigoProduto(string) throw (invalid_argument);
+
         void SetCodigoProduto(string) throw (invalid_argument);
+
         string GetCodigoProduto();
 
         void Print() const;
 
-    protected:
-
     private:
         string codigo;
+        void ValidarCodigoProduto(string) throw (invalid_argument);
 };
 
 

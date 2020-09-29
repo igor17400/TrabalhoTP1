@@ -8,20 +8,30 @@
 
 using namespace std;
 
+/// Classe criada para representar tipo de classe de investimento.
 class Classe
 {
     public:
+        ///Construtor toma como valor padr&atilde;o 000000, caso n&atilde;o seja fornecido uma entrada.
         Classe(string texto="000000");
-        void ValidarClasse(string) throw (invalid_argument);
+
+        ///@param string que representa o classe inserida como par&acirc;metro.
+        ///@throw retorna classe inv&aacute;lida.\n
+        ///M&eacute;todo criado para atribuir valor ao atributo classe. Antes de tal atribui&ccedil;&atilde;o
+        ///&eacute; feito uma verifica&ccedil;&atilde;o da vari&aacute;vel a ser inserida, para
+        /// que seja determinado se a mesma segue os crit&eacute;rios de valida&ccedil;&atilde;o.
+        /// Caso n&atilde;o siga, &eacute; necess&aacute;rio lan&ccedil;ar uma exce&ccedil;&atilde;o.
         void SetClasse(string) throw (invalid_argument);
+
+        ///@return classe. Retorna o valor atribuido a classe.
         string GetClasse();
 
+        ///Tem por objetivo imprimir, caso seja de interesse do us&aacute;rio, o valor atribu&iacute;do ao atributo classe.
         void Print() const;
-
-    protected:
 
     private:
         string texto;
+        void ValidarClasse(string) throw (invalid_argument);
 };
 
 
