@@ -7,7 +7,14 @@
 
 using namespace std;
 
-/// Classe criada para armazenar CEP.
+//!  Classe criada para armazenar CEP.
+/*!
+  ## Requisitos de atributos dessa classe:
+  cep - Deve possuir o valor nas seguintes faixas: 1000000 a 5999999
+  e 8000000 a 8499999 (S&atilde;o Paulo), 20000000 a 26600999 (Rio de Janeiro),
+  70000000 a 70999999 (Bras&iacute;lia), 40000000 a 41999999 (Salvador) e 60000000 a 60999999 (Fortaleza).
+*/
+
 class CEP
 {
     public:
