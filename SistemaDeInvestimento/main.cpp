@@ -176,7 +176,7 @@ int main()
                                 break;
     }
 
-    cout << " --------- testeValorMinimo ----------" << endl;
+    cout << " --------- TesteValorMinimo ----------" << endl;
     switch(testeValorMinimo.run()){
         case TesteValorMinimo::SUCESSO: cout << "SUCESSO\n";
                                 break;

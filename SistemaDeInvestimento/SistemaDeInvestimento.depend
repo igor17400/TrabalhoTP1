@@ -459,7 +459,7 @@
 	<stdio.h>
 	<stdexcept>
 
-1601387923 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
+1601399999 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\testes.h
 	"Nome.h"
 	"CPF.h"
 	"Endereco.h"
@@ -527,7 +527,7 @@
 	<stdexcept>
 	"CodigoBanco.h"
 
-1601357634 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoproduto.cpp
+1601388210 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\codigoproduto.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -549,7 +549,7 @@
 	<stdexcept>
 	"CPF.h"
 
-1601357718 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
+1601389060 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\data.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -558,9 +558,11 @@
 	<ctime>
 	<iostream>
 	<string>
+	<time.h>
+	<algorithm>
 	"Data.h"
 
-1601357253 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\emissor.cpp
+1601389197 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\emissor.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -568,7 +570,7 @@
 	<stdexcept>
 	"Emissor.h"
 
-1601357767 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\endereco.cpp
+1601389326 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\endereco.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -578,9 +580,10 @@
 
 1601330221 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\entidades.cpp
 
-1601358498 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\horario.cpp
+1601391802 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\horario.cpp
 	<iostream>
 	<stdio.h>
+	<string.h>
 	<sstream>
 	<stdexcept>
 	"Horario.h"
@@ -593,7 +596,7 @@
 	<stdexcept>
 	"Nome.h"
 
-1601357867 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\numero.cpp
+1601394186 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\numero.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -601,7 +604,7 @@
 	<stdexcept>
 	"Numero.h"
 
-1601358458 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\prazo.cpp
+1601399795 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\prazo.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>
@@ -630,7 +633,7 @@
 	<stdexcept>
 	"Senha.h"
 
-1601358466 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\taxa.cpp
+1601399907 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\taxa.cpp
 	<iostream>
 	<stdio.h>
 	<sstream>
@@ -653,7 +656,7 @@
 	"Usuario.h"
 	"CPF.h"
 
-1601358009 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valoraplicacao.cpp
+1601399935 source:c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\src\valoraplicacao.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>

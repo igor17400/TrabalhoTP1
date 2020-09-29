@@ -330,8 +330,8 @@ class TesteNumero {
         Numero *numero;
 
         // Definições de constantes para evitar numeros mágicos.
-        const string VALOR_VALIDO   = "123456-7";
-        const string VALOR_INVALIDO = "000000-0";
+        const string VALOR_VALIDO   = "123456-3";
+        const string VALOR_INVALIDO = "123456-1";
 
         // Estado do teste
         int estado;
@@ -505,7 +505,7 @@ class TesteHorario {
 
         // Definições de constantes para evitar numeros mágicos.
         const string VALOR_VALIDO   = "15:30";
-        const string VALOR_INVALIDO = "27:30";
+        const string VALOR_INVALIDO = "17:30";
 
         // Estado do teste
         int estado;
@@ -534,7 +534,7 @@ class TesteValorMinimo {
         ValorMinimo *valorMinimo;
 
         // Definições de constantes para evitar numeros mágicos.
-        const double VALOR_VALIDO   = 1000.00;
+        const double VALOR_VALIDO   = 1000;
         const double VALOR_INVALIDO = 250;
 
         // Estado do teste

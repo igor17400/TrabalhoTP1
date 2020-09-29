@@ -15,9 +15,8 @@ ValorAplicacao::ValorAplicacao(double valor) {
 }
 
 void ValorAplicacao::ValidarValorAplicacao(double valor) throw (invalid_argument) {
-    if (valor < 0.0 ) {
+    if(valor < 0 || valor > 1000000)
         throw invalid_argument("Valor de aplicação é inválido.");
-    }
 }
 
 void ValorAplicacao::SetValorAplicacao(double valor) throw (invalid_argument) {

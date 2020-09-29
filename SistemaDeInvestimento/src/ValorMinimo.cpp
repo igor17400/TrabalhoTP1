@@ -15,9 +15,8 @@ ValorMinimo::ValorMinimo(double valor){
 }
 
 void ValorMinimo::ValidarValorMinimo(double valor) throw (invalid_argument) {
-    if (valor == 250) {
-        throw invalid_argument("Valor Inválido.");
-    }
+    if(valor != 1000 && valor != 5000 && valor != 10000 && valor != 50000)
+        throw invalid_argument("Valor Mínimo Inválido.");
 }
 
 void ValorMinimo::SetValorMinimo(double valor) throw (invalid_argument) {

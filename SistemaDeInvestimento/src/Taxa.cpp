@@ -14,9 +14,8 @@ Taxa::Taxa(double taxa) {
 }
 
 void Taxa::ValidarTaxa(double taxa) throw (invalid_argument) {
-    if (taxa == 500) {
+    if(taxa < 0 || taxa > 200)
         throw invalid_argument("Taxa Inválida.");
-    }
 }
 
 void Taxa::SetTaxa(double taxa) throw (invalid_argument) {

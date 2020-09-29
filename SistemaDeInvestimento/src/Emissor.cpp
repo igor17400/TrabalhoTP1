@@ -15,9 +15,32 @@ Emissor::Emissor(string emissor) {
 }
 
 void Emissor::ValidarEmissor(string emissor) throw (invalid_argument) {
-    if (emissor == "bank") {
-        throw invalid_argument("Emissor Inválido.");
+    // Conversão de string emissor para char texto[]
+    int n = emissor.length();
+    char texto[n + 1];
+    strcpy(texto, emissor.c_str());
+
+    int erro = 0, i=0;
+    while(texto[i]!='\0')
+    {
+        if (texto[i] == '-' && texto[i+1] == '-')
+            erro++;
+        if (texto[i] == '.' && texto[i+1] == '.')
+            erro++;
+        if (texto[i] == ' ' && texto[i+1] == ' ')
+            erro++;
+        if (i==0 || texto[i-1]==' ')
+        {
+            if (texto[i] >= 97 && texto[i]<= 122)
+                erro++;
+        }
+        if (i>29)
+        erro++;
+        i++;
     }
+
+    if(erro > 0)
+            throw invalid_argument("Emissor Inválido.");
 }
 
 void Emissor::SetEmissor(string emissor) throw (invalid_argument) {

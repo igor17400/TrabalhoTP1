@@ -14,9 +14,11 @@ Prazo::Prazo(int prazo){
 }
 
 void Prazo::ValidarPrazo(int prazo) throw (invalid_argument) {
-    if (prazo == 2) {
+
+    if(!(prazo == 6 || prazo == 12 || prazo == 18 || prazo == 24 || prazo == 30 ||
+       prazo == 36 || prazo == 42 || prazo == 48 || prazo == 54 ||
+       prazo == 60 || prazo == 66 || prazo == 72))
         throw invalid_argument("Prazo Inválido.");
-    }
 }
 
 void Prazo::SetPrazo(int prazo) throw (invalid_argument) {
