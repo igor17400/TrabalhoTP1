@@ -1,23 +1,71 @@
 \hypertarget{class_c_p_f}{}\doxysection{C\+PF Class Reference}
 \label{class_c_p_f}\index{CPF@{CPF}}
+
+
+\mbox{\hyperlink{class_classe}{Classe}} criada para representar \mbox{\hyperlink{class_c_p_f}{C\+PF}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+F.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_c_p_f_a9abe8363986a7c238aa51c12e59ef46e}\label{class_c_p_f_a9abe8363986a7c238aa51c12e59ef46e}} 
-{\bfseries C\+PF} (string cpf=\char`\"{}000.\+000.\+000-\/00\char`\"{})
+\mbox{\hyperlink{class_c_p_f_a9abe8363986a7c238aa51c12e59ef46e}{C\+PF}} (string cpf=\char`\"{}000.\+000.\+000-\/00\char`\"{})
 \item 
-\mbox{\Hypertarget{class_c_p_f_a5585ec6dfc2708b86f4aab8a7627622d}\label{class_c_p_f_a5585ec6dfc2708b86f4aab8a7627622d}} 
-void {\bfseries Validar\+Cpf} (string)  throw (invalid\+\_\+argument)
+void \mbox{\hyperlink{class_c_p_f_abd09bcbb7b532fe114af56d0e0b2ce91}{Set\+Cpf}} (string)  throw (invalid\+\_\+argument)
 \item 
-\mbox{\Hypertarget{class_c_p_f_abd09bcbb7b532fe114af56d0e0b2ce91}\label{class_c_p_f_abd09bcbb7b532fe114af56d0e0b2ce91}} 
-void {\bfseries Set\+Cpf} (string)  throw (invalid\+\_\+argument)
+string \mbox{\hyperlink{class_c_p_f_aaaf16fe761f6d524dcf743cecc3840b7}{Get\+Cpf}} ()
 \item 
-\mbox{\Hypertarget{class_c_p_f_aaaf16fe761f6d524dcf743cecc3840b7}\label{class_c_p_f_aaaf16fe761f6d524dcf743cecc3840b7}} 
-string {\bfseries Get\+Cpf} ()
-\item 
-\mbox{\Hypertarget{class_c_p_f_a98f77f10188e7202d3bc9d8651e6648f}\label{class_c_p_f_a98f77f10188e7202d3bc9d8651e6648f}} 
-void {\bfseries Print} () const
+void \mbox{\hyperlink{class_c_p_f_a98f77f10188e7202d3bc9d8651e6648f}{Print}} () const
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_classe}{Classe}} criada para representar \mbox{\hyperlink{class_c_p_f}{C\+PF}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_p_f_a9abe8363986a7c238aa51c12e59ef46e}\label{class_c_p_f_a9abe8363986a7c238aa51c12e59ef46e}} 
+\index{CPF@{CPF}!CPF@{CPF}}
+\index{CPF@{CPF}!CPF@{CPF}}
+\doxysubsubsection{\texorpdfstring{CPF()}{CPF()}}
+{\footnotesize\ttfamily C\+P\+F\+::\+C\+PF (\begin{DoxyParamCaption}\item[{string}]{cpf = {\ttfamily \char`\"{}000.000.000-\/00\char`\"{}} }\end{DoxyParamCaption})}
+
+Construtor, o qual toma como valor padr\~{a}o \char`\"{}000.\+000.\+000-\/00\char`\"{}, caso n\~{a}o seja fornecido param\^{e}tro de entrada 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_p_f_aaaf16fe761f6d524dcf743cecc3840b7}\label{class_c_p_f_aaaf16fe761f6d524dcf743cecc3840b7}} 
+\index{CPF@{CPF}!GetCpf@{GetCpf}}
+\index{GetCpf@{GetCpf}!CPF@{CPF}}
+\doxysubsubsection{\texorpdfstring{GetCpf()}{GetCpf()}}
+{\footnotesize\ttfamily string C\+P\+F\+::\+Get\+Cpf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Cpf -\/ valor atribu\'{\i}do a cpf 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_p_f_a98f77f10188e7202d3bc9d8651e6648f}\label{class_c_p_f_a98f77f10188e7202d3bc9d8651e6648f}} 
+\index{CPF@{CPF}!Print@{Print}}
+\index{Print@{Print}!CPF@{CPF}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void C\+P\+F\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Tem por objetivo imprimir, caso seja de interesse do us\'{a}rio, o valor atribu\'{\i}do ao atributo cpf. \mbox{\Hypertarget{class_c_p_f_abd09bcbb7b532fe114af56d0e0b2ce91}\label{class_c_p_f_abd09bcbb7b532fe114af56d0e0b2ce91}} 
+\index{CPF@{CPF}!SetCpf@{SetCpf}}
+\index{SetCpf@{SetCpf}!CPF@{CPF}}
+\doxysubsubsection{\texorpdfstring{SetCpf()}{SetCpf()}}
+{\footnotesize\ttfamily void C\+P\+F\+::\+Set\+Cpf (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption}) throw ( invalid\+\_\+argument) }
+
+M\'{e}todo respons\'{a}vel pela atribui\c{c}\~{a}o ao atributo cpf. 
+\begin{DoxyParams}{Parameters}
+{\em string} & cpf. Param\^{e}tro de entrada cpf o qual representa o cpf fornecido pelo us\'{a}rio. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em C\+P\+F\+\_\+\+Invalido.} & \'{E} implementado um m\'{e}todo de verifica\c{c}\~{a}o para avaliar se a vari\'{a}vel fornecida atende os requisitos definidos para cpf. Caso n\~{a}o seja atendido, \'{e} lan\c{c}ado uma exce\c{c}\~{a}o. \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

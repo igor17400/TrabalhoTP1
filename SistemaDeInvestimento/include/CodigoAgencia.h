@@ -26,7 +26,7 @@ class CodigoAgencia
         ///@return CodigoAgencia - valor atribuido a c&oacute;digo de ag&ecirc;ncia.
         string GetCodigoAgencia();
 
-        ///Tem por objetivo imprimir, caso seja de interesse do us&aacute;rio, o valor atribu&iacute;do ao
+        ///Tem por objetivo imprimir, caso seja de interesse do usu&aacute;rio, o valor atribu&iacute;do ao
         /// atributo a c&oacute;digo de ag&ecirc;ncia.
         void Print() const;
 

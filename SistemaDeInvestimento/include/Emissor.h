@@ -7,20 +7,35 @@
 
 using namespace std;
 
+/// Classe criada para representar Emissor
 class Emissor
 {
     public:
+        /// Construtor, o qual toma como valor padr&atilde;o "0000000",
+        /// caso n&atilde;o seja fornecido param&ecirc;tro de entrada
         Emissor(string emissor="000000");
-        void ValidarEmissor(string) throw (invalid_argument);
+
+        /// M&eacute;todo respons&aacute;vel pela atribui&ccedil;&atilde;o ao
+        /// atributo emissor.
+        /// @param string emissor. Param&ecirc;tro de entrada emissor o qual representa o emissor do produto de investimento.
+        /// foi feita ou uma conta foi criada
+        /// @throw Emissor_Invalido. &Eacute; implementado um m&eacute;todo de verifica&ccedil;&atilde;o para avaliar se a
+        /// vari&aacute;vel fornecida atende os requisitos definidos para emissor.
+        /// Caso n&atilde;o seja atendido, &eacute; lan&ccedil;ado uma exce&ccedil;&atilde;o.
         void SetEmissor(string) throw (invalid_argument);
+
+        ///@return emissor - valor atribu&iacute;do a emissor
         string GetEmissor();
 
+        ///Tem por objetivo imprimir, caso seja de interesse do usu&aacute;rio, o valor atribu&iacute;do ao
+        /// atributo emissor.
         void Print() const;
 
     protected:
 
     private:
         string emissor;
+        void ValidarEmissor(string) throw (invalid_argument);
 };
 
 #endif // EMISSOR_H

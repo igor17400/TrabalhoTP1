@@ -11,6 +11,7 @@
 
 using namespace std;
 
+/// Classe criada para representar o conta
 class Conta
 {
     public:

@@ -11,7 +11,7 @@
 
 using namespace std;
 
-Data::Data(string data="01/01/0001") {
+Data::Data(string data) {
     SetData(data);
 }
 

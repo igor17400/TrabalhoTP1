@@ -352,7 +352,7 @@
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
+1601344333 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -367,12 +367,12 @@
 	<string.h>
 	<stdexcept>
 
-1601341753 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cep.h
+1601343300 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cep.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\conta.h
+1601343791 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\conta.h
 	<iostream>
 	<string>
 	"Usuario.h"
@@ -380,12 +380,12 @@
 	"CodigoAgencia.h"
 	"Numero.h"
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
+1601343384 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601342400 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
+1601343284 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -403,7 +403,7 @@
 	"Data.h"
 	"Conta.h"
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
+1601344264 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -413,7 +413,7 @@
 	<string.h>
 	<stdexcept>
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
+1601344451 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -428,12 +428,12 @@
 	"ValorMinimo.h"
 	"Prazo.h"
 
-1601330221 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
+1601343713 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601342428 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
+1601343296 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>

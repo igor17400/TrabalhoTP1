@@ -7,12 +7,15 @@
 
 using namespace std;
 
+/// Classe criada para representar hor&aacute;rio.
 class Horario
 {
     public:
+
         Horario(string horario="00:00");
-        void ValidarHorario(string) throw (invalid_argument);
+
         void SetHorario(string) throw (invalid_argument);
+
         string GetHorario();
 
         void Print() const;
@@ -21,6 +24,7 @@ class Horario
 
     private:
         string horario;
+        void ValidarHorario(string) throw (invalid_argument);
 };
 
 #endif // HORARIO_H

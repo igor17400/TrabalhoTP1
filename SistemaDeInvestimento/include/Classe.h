@@ -26,7 +26,7 @@ class Classe
         ///@return classe. Retorna o valor atribuido a classe.
         string GetClasse();
 
-        ///Tem por objetivo imprimir, caso seja de interesse do us&aacute;rio, o valor atribu&iacute;do ao atributo classe.
+        ///Tem por objetivo imprimir, caso seja de interesse do usu&aacute;rio, o valor atribu&iacute;do ao atributo classe.
         void Print() const;
 
     private:
