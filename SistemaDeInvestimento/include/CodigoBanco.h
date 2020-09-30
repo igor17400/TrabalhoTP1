@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar o c&oacute;digo da banco fornecido.
+//! Classe criada para representar o c&oacute;digo da banco fornecido.
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato XXX onde XXX &eacute; c&oacute;digo v&aacute;lido de banco e os c&oacute;digos aceitos devem corresponder
+aos c&oacute;digos dos 5 maiores bancos brasileiros por ativos totais.
+*/
 class CodigoBanco
 {
     public:
