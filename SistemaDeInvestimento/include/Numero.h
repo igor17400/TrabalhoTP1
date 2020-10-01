@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar n&uacute;mero da conta.
+//! Classe criada para representar n&uacute;mero da conta.
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato XXXXXX-Y onde cada X &eacute; d&iacute;gito (0 &ndash; 9) e Y &eacute; d&iacute;gito verificador calculado por meio de algor&iacute;tmo apropriado.
+*/
+
 class Numero
 {
     public:

@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar taxa de renumera&ccedil;&atilde;o do produto de investimento.
+//! Classe criada para representar taxa de renumera&ccedil;&atilde;o do produto de investimento.
+/*!
+  ## Requisitos de atributos dessa classe:
+Valor na faixa de 0 a 200 (% ao ano).
+*/
+
 class Taxa
 {
     public:

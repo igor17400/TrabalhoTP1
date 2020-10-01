@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar CPF
+//! Classe criada para representar CPF
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato XXX.XXX.XXX-XX onde cada X &eacute; d&iacute;gito (0 &ndash; 9) e cada CPF inclui d&iacute;gitos verificadores calculados por meio de algor&iacute;tmo apropriado.
+*/
+
 class CPF
 {
 public:

@@ -6,7 +6,12 @@
 
 using namespace std;
 
-/// Classe criada para representar valor m&iacute;nimo aceito para aplica&ccedil;&atilde;o no produto de investimento.
+//! Classe criada para representar valor m&iacute;nimo aceito para aplica&ccedil;&atilde;o no produto de investimento.
+/*!
+  ## Requisitos de atributos dessa classe:
+Valor 1.000,00, 5.000,00, 10.000 ou 50.000,00 (reais).
+*/
+
 class ValorMinimo
 {
     public:

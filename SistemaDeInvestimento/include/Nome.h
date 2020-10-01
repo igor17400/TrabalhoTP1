@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar Nome do usu&aacute;rio.
+//! Classe criada para representar Nome do usu&aacute;rio.
+/*!
+  ## Requisitos de atributos dessa classe:
+Texto composto por 5 a 30 caracteres onde cada caracter pode ser letra (A-Z ou a-z) ou espa&ccedil;o, h&aacute; pelo menos 5 letras, n&atilde;o h&aacute; espa&ccedil;os em sequ&ecirc;ncia, primeira letra de cada termo &eacute; letra mai&uacute;scula.
+*/
+
 class Nome
 {
     public:

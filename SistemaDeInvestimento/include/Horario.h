@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar hor&aacute;rio.
+//! Classe criada para representar hor&aacute;rio.
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato XY:ZW para representar hor&aacute;rio entre 13:00 e 17:00 horas.
+*/
+
 class Horario
 {
     public:

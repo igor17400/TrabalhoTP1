@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar Emissor
+//! Classe criada para representar Emissor
+/*!
+  ## Requisitos de atributos dessa classe:
+Texto composto por 5 a 30 caracteres. Cada caracter pode ser letra (A-Z ou a-z), d&iacute;gito (0 &ndash; 9), caracter -, ponto ou espa&ccedil;o. Apenas letras e d&iacute;gitos podem estar em sequ&ecirc;ncia. Em termo cujo primeiro caracter &eacute; letra, a letra &eacute; mai&uacute;scula.
+*/
+
 class Emissor
 {
     public:

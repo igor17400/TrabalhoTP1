@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar o c&oacute;digo de produto escolhido.
+//! Classe criada para representar o c&oacute;digo de produto escolhido.
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato XXX onde cada X &eacute; d&iacute;gito (0 &ndash; 9) e o c&oacute;digo n&atilde;o pode ser 000.
+*/
+
 class CodigoProduto
 {
     public:

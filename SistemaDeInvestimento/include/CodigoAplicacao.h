@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar o c&oacute;digo da aplica&ccedil;&atilde;o escolhida.
+//! Classe criada para representar o c&oacute;digo da aplica&ccedil;&atilde;o escolhida.
+/*!
+## Requisitos de atributos dessa classe:
+Formato XXXXX onde cada X &eacute; d&iacute;gito (0 &ndash; 9) e o c&oacute;digo n&atilde;o pode 00000.
+*/
+
 class CodigoAplicacao
 {
     public:

@@ -8,7 +8,12 @@
 
 using namespace std;
 
-/// Classe criada para representar Data
+//! Classe criada para representar Data
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato DD/MM/AAAA onde DD &eacute; n&uacute;mero de 1 e 31. MM &eacute; n&uacute;mero de 1 e 12. AAAA &eacute; n&uacute;mero de 2020 a 2099. O valor da data deve considerar a ocorr&ecirc;ncia de anos que sejam bissextos.
+*/
+
 class Data
 {
     public:

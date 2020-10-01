@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar c&oacute;digo de ag&ecirc;ncia.
+//! Classe criada para representar c&oacute;digo de ag&ecirc;ncia.
+/*!
+## Requisitos de atributos dessa classe:
+Formato XXXX onde cada X &eacute; d&iacute;gito (0 &ndash; 9) e o c&oacute;digo n&atilde;o pode 0000.
+*/
+
 class CodigoAgencia
 {
     public:

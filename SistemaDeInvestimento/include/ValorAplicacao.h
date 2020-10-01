@@ -8,7 +8,12 @@
 
 using namespace std;
 
-/// Classe criada para representar o valor da aplica&ccedil;&atilde;o escolhida.
+//! Classe criada para representar o valor da aplica&ccedil;&atilde;o escolhida.
+/*!
+  ## Requisitos de atributos dessa classe:
+Valor na faixa de 0 a 1.000.000,00 (reais).
+*/
+
 class ValorAplicacao
 {
     public:

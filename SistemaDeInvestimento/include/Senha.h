@@ -7,7 +7,12 @@
 
 using namespace std;
 
-/// Classe criada para representar senha inserida pelo usu&aacute;rio
+//! Classe criada para representar senha inserida pelo usu&aacute;rio
+/*!
+  ## Requisitos de atributos dessa classe:
+Formato XXXXXX onde cada X &eacute; d&iacute;gito (0 &ndash; 9) e n&atilde;o h&aacute; d&iacute;gito repetido.
+*/
+
 class Senha
 {
     public:

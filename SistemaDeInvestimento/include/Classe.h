@@ -8,7 +8,12 @@
 
 using namespace std;
 
-/// Classe criada para representar tipo de classe de investimento.
+//! Classe criada para representar tipo de classe de investimento.
+/*!
+  ## Requisitos de atributos dessa classe:
+Texto CDB, LCA, LCI, LF ou LC.
+*/
+
 class Classe
 {
     public:

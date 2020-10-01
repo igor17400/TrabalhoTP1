@@ -6,7 +6,12 @@
 
 using namespace std;
 
-/// Classe criada para representar prazo de aplica&ccedil;&atilde;o em meses.
+//! Classe criada para representar prazo de aplica&ccedil;&atilde;o em meses.
+/*!
+  ## Requisitos de atributos dessa classe:
+Valor 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66 ou 72 (meses).
+*/
+
 class Prazo
 {
     public:
