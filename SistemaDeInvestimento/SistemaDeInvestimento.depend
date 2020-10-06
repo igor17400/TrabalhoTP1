@@ -347,27 +347,27 @@
 	"Endereco.h"
 	"CEP.h"
 
-1601357824 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\nome.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\nome.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357665 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
+1601989451 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cpf.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357925 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\senha.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\senha.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357757 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\endereco.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\endereco.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357400 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cep.h
+1601403107 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\cep.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -380,17 +380,17 @@
 	"CodigoAgencia.h"
 	"Numero.h"
 
-1601387884 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigobanco.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601387580 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoagencia.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357855 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\numero.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -403,17 +403,17 @@
 	"Data.h"
 	"Conta.h"
 
-1601387720 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoaplicacao.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601358183 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valoraplicacao.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valoraplicacao.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357705 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\data.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
@@ -428,34 +428,34 @@
 	"ValorMinimo.h"
 	"Prazo.h"
 
-1601388182 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\codigoproduto.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601386931 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\classe.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601357241 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\emissor.h
 	<stdio.h>
 	<string.h>
 	<stdexcept>
 
-1601358172 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\taxa.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\taxa.h
 	<stdio.h>
 	<stdexcept>
 
-1601357796 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\horario.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\horario.h
 	<stdio.h>
 	<stdexcept>
 
-1601358194 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valorminimo.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\valorminimo.h
 	<stdio.h>
 	<stdexcept>
 
-1601358155 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\prazo.h
+1601989452 c:\users\casa\documents\unb\trabalhotp1\sistemadeinvestimento\include\prazo.h
 	<stdio.h>
 	<stdexcept>
 
