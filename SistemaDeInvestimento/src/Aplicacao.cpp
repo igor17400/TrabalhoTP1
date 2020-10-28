@@ -5,12 +5,47 @@
 #include "CodigoAplicacao.h"
 #include "ValorAplicacao.h"
 #include "Data.h"
+#include "Conta.h"
 
 using namespace std;
 
-Aplicacao::Aplicacao(const Conta& conta, const CodigoAplicacao& codigoAplicacao, const ValorAplicacao& valorAplicacao, const Data& dataObj)
-    :   conta(conta),
-        codigoAplicacao(codigoAplicacao),
+Aplicacao::Aplicacao() {}
+
+Aplicacao::Aplicacao(const CodigoAplicacao& codigoAplicacao, const ValorAplicacao& valorAplicacao, const Data& dataObj)
+    :   codigoAplicacao(codigoAplicacao),
         valorAplicacao(valorAplicacao),
         dataObj(dataObj)
         {}
+
+void Aplicacao::setCodigoAplicacao(const string str){
+    CodigoAplicacao codigoAplicacao(str);
+    this->codigoAplicacao = codigoAplicacao;
+}
+
+CodigoAplicacao Aplicacao::getCodigoAplicacao() const{
+    return this->codigoAplicacao;
+}
+
+void Aplicacao::setValorAplicacao(const int valor){
+    ValorAplicacao valorAplicacao(valor);
+    this->valorAplicacao = valorAplicacao;
+}
+
+ValorAplicacao Aplicacao::getValorAplicacao() const{
+    return this->valorAplicacao;
+}
+
+void Aplicacao::setData(const string str){
+    Data data(str);
+    this->dataObj = data;
+}
+
+Data Aplicacao::getData() const{
+    return this->dataObj;
+}
+
+
+
+
+
+

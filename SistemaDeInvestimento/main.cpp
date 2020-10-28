@@ -189,8 +189,8 @@ int main()
 
 
     cout << " ########### TESTES DE ENTIDADES ###########" << endl;
-    cout << " --------- Usuario ----------" << endl;
 
+    cout << " --------- Usuario ----------" << endl;
     Usuario usuario;
     usuario.setNome("Igor Lima");
     usuario.setSenha("123456");
@@ -203,7 +203,43 @@ int main()
     cout << usuario.getCEP().GetCep() << endl;
     cout << usuario.getEndereco().GetEndereco() << endl;
 
+    cout << " --------- Aplicação ----------" << endl;
+    Aplicacao aplicacao;
+    aplicacao.setCodigoAplicacao("12345");
+    aplicacao.setValorAplicacao(500000);
+    aplicacao.setData("01/10/2020");
+    cout << aplicacao.getCodigoAplicacao().GetCodigoAplicacao() << endl;
+    cout << aplicacao.getValorAplicacao().GetValorAplicacao() << endl;
+    cout << aplicacao.getData().GetData() << endl;
+
+
     cout << " --------- Conta ----------" << endl;
+    Conta conta;
+    conta.setCodigoBanco("001");
+    conta.setCodigoAgencia("1234");
+    conta.setNumero("123456-3");
+    cout << conta.getCodigoBanco().GetCodigoBanco() << endl;
+    cout << conta.getCodigoAgencia().GetCodigoAgencia() << endl;
+    cout << conta.getNumero().GetNumero() << endl;
+
+    cout << " --------- Produto ----------" << endl;
+    Produto produto;
+    produto.setCodigoProduto("123");
+    produto.setClasse("CDB");
+    produto.setEmissor("Itau Personalite");
+    produto.setPrazo(12);
+    produto.setVencimento("01/10/2020");
+    produto.setTaxa(150);
+    produto.setHorario("15:30");
+    produto.setValorMinimo(1000);
+    cout << produto.getCodigoProduto().GetCodigoProduto() << endl;
+    cout << produto.getClasse().GetClasse() << endl;
+    cout << produto.getEmissor().GetEmissor() << endl;
+    cout << produto.getPrazo().GetPrazo() << endl;
+    cout << produto.getVencimento().GetData() << endl;
+    cout << produto.getTaxa().GetTaxa() << endl;
+    cout << produto.getHorario().GetHorario() << endl;
+    cout << produto.getValorMinimo().GetValorMinimo() << endl;
 
     return 0;
 }

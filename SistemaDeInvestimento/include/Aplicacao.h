@@ -14,13 +14,26 @@ using namespace std;
 class Aplicacao
 {
     public:
-        Aplicacao(const Conta &, const CodigoAplicacao &, const ValorAplicacao &, const Data &);
+        Aplicacao();
+        Aplicacao(const CodigoAplicacao &, const ValorAplicacao &, const Data &);
+
+        void setCodigoAplicacao(const string);
+        CodigoAplicacao getCodigoAplicacao() const;
+
+        void setValorAplicacao(const int);
+        ValorAplicacao getValorAplicacao() const;
+
+        void setData(const string);
+        Data getData() const;
 
     private:
-        const Conta conta;
-        const CodigoAplicacao codigoAplicacao;
-        const ValorAplicacao valorAplicacao;
-        const Data dataObj;
+        CodigoAplicacao codigoAplicacao;
+        ValorAplicacao valorAplicacao;
+        Data dataObj;
 };
 
 #endif // APLICACAO_H
+
+
+
+

@@ -15,16 +15,26 @@ using namespace std;
 class Conta
 {
     public:
-        Conta(const Usuario &, const CodigoBanco &, const CodigoAgencia&, const Numero&);
+        Conta();
+        Conta(const CodigoBanco &, const CodigoAgencia&, const Numero&);
+
+        void setCodigoBanco(const string);
+        CodigoBanco getCodigoBanco() const;
+
+        void setCodigoAgencia(const string);
+        CodigoAgencia getCodigoAgencia() const;
+
+        void setNumero(const string);
+        Numero getNumero() const;
+
         void Display();
 
     protected:
 
     private:
-        const Usuario usuario;
-        const CodigoBanco codigoBanco;
-        const CodigoAgencia codigoAgencia;
-        const Numero numero;
+        CodigoBanco codigoBanco;
+        CodigoAgencia codigoAgencia;
+        Numero numero;
 };
 
 #endif // CONTA_H

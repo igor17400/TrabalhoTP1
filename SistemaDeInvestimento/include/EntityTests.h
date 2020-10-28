@@ -9,8 +9,8 @@ class EntityTestUsuario {
 
     public:
         // Definição de constantes para reportar resultado dos testes
-        const static int SUCESSO = 0;
-        const static int FALHA = -1;
+        const static int SUCESSO = "Joao Pedro";
+        const static int FALHA = "Igor Lima joao pedro";
 
         int run();
 

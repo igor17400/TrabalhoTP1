@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1603843058 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
+1603853747 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
@@ -27,13 +27,13 @@
 	"CPF.h"
 	"Nome.h"
 
-1603813445 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
+1603850431 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
 	<iostream>
 	<string>
 	"Conta.h"
 	"Usuario.h"
 
-1603813445 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
+1603850416 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
 	<iostream>
 	<string>
 	"Usuario.h"
@@ -41,15 +41,16 @@
 	"CodigoAgencia.h"
 	"Numero.h"
 
-1603813445 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\aplicacao.cpp
+1603849845 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\aplicacao.cpp
 	"Aplicacao.h"
 	"CodigoAplicacao.h"
 	"CodigoAgencia.h"
 	"CodigoAplicacao.h"
 	"ValorAplicacao.h"
 	"Data.h"
+	"Conta.h"
 
-1603819522 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\aplicacao.h
+1603849423 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\aplicacao.h
 	<iostream>
 	<string>
 	"CodigoAplicacao.h"
@@ -71,7 +72,7 @@
 	"Horario.h"
 	"ValorMinimo.h"
 
-1603813445 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\produto.h
+1603853731 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\produto.h
 	"CodigoProduto.h"
 	"Classe.h"
 	"Emissor.h"

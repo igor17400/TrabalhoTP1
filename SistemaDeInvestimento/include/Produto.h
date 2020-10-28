@@ -13,20 +13,45 @@
 class Produto
 {
     public:
+        Produto();
         Produto(const CodigoProduto&, const Classe&, const Emissor&,
                 const Prazo&, const Data&, const Taxa&,
                 const Horario&, const ValorMinimo&);
 
-    protected:
+        void setCodigoProduto(const string);
+        CodigoProduto getCodigoProduto() const;
+
+        void setClasse(const string);
+        Classe getClasse() const;
+
+        void setEmissor(const string);
+        Emissor getEmissor() const;
+
+        void setPrazo(const int);
+        Prazo getPrazo() const;
+
+        void setVencimento(const string);
+        Data getVencimento() const;
+
+        void setTaxa(const int);
+        Taxa getTaxa() const;
+
+        void setHorario(const string);
+        Horario getHorario() const;
+
+        void setValorMinimo(const int);
+        ValorMinimo getValorMinimo() const;
+
 
     private:
-        const CodigoProduto codigoProduto;
-        const Classe classe;
-        const Prazo prazo;
-        const Data vencimento;
-        const Taxa taxa;
-        const Horario horario;
-        const ValorMinimo valorMinimo;
+        CodigoProduto codigoProduto;
+        Classe classe;
+        Emissor emissor;
+        Prazo prazo;
+        Data vencimento;
+        Taxa taxa;
+        Horario horario;
+        ValorMinimo valorMinimo;
 };
 
 #endif // PRODUTO_H

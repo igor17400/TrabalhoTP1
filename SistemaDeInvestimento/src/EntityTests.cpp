@@ -13,11 +13,5 @@ void EntityTestUsuario::tearDown(){
 }
 
 void EntityTestUsuario::testarCenario(){
-    Nome nome();
-    Senha senha();
-    CPF cpf();
-    Endereco endereco();
-    CEP cep();
-
 
 }
