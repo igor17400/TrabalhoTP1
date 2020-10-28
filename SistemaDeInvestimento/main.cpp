@@ -36,6 +36,7 @@ int main()
     TesteValorMinimo testeValorMinimo;
 
 
+    cout << " \n########### ########### ########### ###########" << endl;
     cout << " ########### TESTES DE DOMÍNIOS ###########" << endl;
     cout << " --------- TesteNome ----------" << endl;
     switch(testeNome.run()){
@@ -186,7 +187,7 @@ int main()
                                 break;
     }
 
-    cout << " ########### ########### ########### ###########" << endl;
+    cout << " \n########### ########### ########### ###########" << endl;
 
 
     cout << " ########### TESTES DE ENTIDADES ###########" << endl;
@@ -194,6 +195,8 @@ int main()
     // -------- TESTES -------
     EntityTestUsuario entityTestUsuario;
     EntityTestConta entityTestConta;
+    EntityTestAplicacao entityTestAplicacao;
+    EntityTestProduto entityTestProduto;
 
 
     cout << " --------- TestUsuario ----------" << endl;
@@ -214,34 +217,24 @@ int main()
                                 break;
     }
 
-    cout << " --------- Aplicação ----------" << endl;
-    Aplicacao aplicacao;
-    aplicacao.setCodigoAplicacao("12345");
-    aplicacao.setValorAplicacao(500000);
-    aplicacao.setData("01/10/2020");
-    cout << aplicacao.getCodigoAplicacao().GetCodigoAplicacao() << endl;
-    cout << aplicacao.getValorAplicacao().GetValorAplicacao() << endl;
-    cout << aplicacao.getData().GetData() << endl;
 
+    cout << " --------- TestAplicacao ----------" << endl;
+    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    switch(entityTestAplicacao.run()){
+        case EntityTestAplicacao::SUCESSO: cout << "SUCESSO\n";
+                                break;
+        case EntityTestAplicacao::FALHA  : cout << "FALHA\n";
+                                break;
+    }
 
-    cout << " --------- Produto ----------" << endl;
-    Produto produto;
-    produto.setCodigoProduto("123");
-    produto.setClasse("CDB");
-    produto.setEmissor("Itau Personalite");
-    produto.setPrazo(12);
-    produto.setVencimento("01/10/2020");
-    produto.setTaxa(150);
-    produto.setHorario("15:30");
-    produto.setValorMinimo(1000);
-    cout << produto.getCodigoProduto().GetCodigoProduto() << endl;
-    cout << produto.getClasse().GetClasse() << endl;
-    cout << produto.getEmissor().GetEmissor() << endl;
-    cout << produto.getPrazo().GetPrazo() << endl;
-    cout << produto.getVencimento().GetData() << endl;
-    cout << produto.getTaxa().GetTaxa() << endl;
-    cout << produto.getHorario().GetHorario() << endl;
-    cout << produto.getValorMinimo().GetValorMinimo() << endl;
+    cout << " --------- TestProduto ----------" << endl;
+    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    switch(entityTestProduto.run()){
+        case EntityTestProduto::SUCESSO: cout << "SUCESSO\n";
+                                break;
+        case EntityTestProduto::FALHA  : cout << "FALHA\n";
+                                break;
+    }
 
     return 0;
 }

@@ -690,10 +690,12 @@
 	<stdexcept>
 	"ValorMinimo.h"
 
-1603836953 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\entitytests.cpp
+1603902150 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\entitytests.cpp
 	"EntityTests.h"
 
-1603895789 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\entitytests.h
+1603902003 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\entitytests.h
 	"Usuario.h"
 	"Conta.h"
+	"Aplicacao.h"
+	"Produto.h"
 

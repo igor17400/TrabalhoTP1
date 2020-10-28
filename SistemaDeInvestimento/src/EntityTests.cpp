@@ -130,3 +130,172 @@ int EntityTestConta::run(){
     tearDown();
     return estado;
 }
+
+
+
+// ------- Teste de Aplicação -------
+void EntityTestAplicacao::setUp(){
+    entidade = new Aplicacao();
+    estado = SUCESSO;
+}
+
+void EntityTestAplicacao::tearDown(){
+    delete entidade;
+}
+
+void EntityTestAplicacao::testarCenarioCodigoAplicacao(){
+    try{
+        entidade->setCodigoAplicacao(EntityTestAplicacao::VALOR_CODIGO_APLICACAO);
+        if(entidade->getCodigoAplicacao().GetCodigoAplicacao() != EntityTestAplicacao::VALOR_CODIGO_APLICACAO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestAplicacao::testarCenarioValorAplicacao(){
+    try{
+        entidade->setValorAplicacao(EntityTestAplicacao::VALOR_APLICACAO);
+        if(entidade->getValorAplicacao().GetValorAplicacao() != EntityTestAplicacao::VALOR_APLICACAO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestAplicacao::testarCenarioData(){
+    try{
+        entidade->setData(EntityTestAplicacao::VALOR_DATA);
+        if(entidade->getData().GetData() != EntityTestAplicacao::VALOR_DATA){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+int EntityTestAplicacao::run(){
+    setUp();
+    testarCenarioCodigoAplicacao();
+    testarCenarioValorAplicacao();
+    testarCenarioData();
+    tearDown();
+    return estado;
+}
+
+
+
+
+// ------- Teste de Produto -------
+void EntityTestProduto::setUp(){
+    entidade = new Produto();
+    estado = SUCESSO;
+}
+
+void EntityTestProduto::tearDown(){
+    delete entidade;
+}
+
+void EntityTestProduto::testarCenarioCodigoProduto(){
+    try{
+        entidade->setCodigoProduto(EntityTestProduto::VALOR_CODIGO_PRODUTO);
+        if(entidade->getCodigoProduto().GetCodigoProduto() != EntityTestProduto::VALOR_CODIGO_PRODUTO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioClasse(){
+    try{
+        entidade->setClasse(EntityTestProduto::VALOR_CLASSE);
+        if(entidade->getClasse().GetClasse() != EntityTestProduto::VALOR_CLASSE){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioEmissor(){
+    try{
+        entidade->setEmissor(EntityTestProduto::VALOR_EMISSOR);
+        if(entidade->getEmissor().GetEmissor() != EntityTestProduto::VALOR_EMISSOR){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioPrazo(){
+    try{
+        entidade->setPrazo(EntityTestProduto::VALOR_PRAZO);
+        if(entidade->getPrazo().GetPrazo() != EntityTestProduto::VALOR_PRAZO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioVencimento(){
+    try{
+        entidade->setVencimento(EntityTestProduto::VALOR_VENCIMENTO);
+        if(entidade->getVencimento().GetData() != EntityTestProduto::VALOR_VENCIMENTO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioTaxa(){
+    try{
+        entidade->setTaxa(EntityTestProduto::VALOR_TAXA);
+        if(entidade->getTaxa().GetTaxa() != EntityTestProduto::VALOR_TAXA){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioHorario(){
+    try{
+        entidade->setHorario(EntityTestProduto::VALOR_HORARIO);
+        if(entidade->getHorario().GetHorario() != EntityTestProduto::VALOR_HORARIO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+void EntityTestProduto::testarCenarioValorMinimo(){
+    try{
+        entidade->setValorMinimo(EntityTestProduto::VALOR_MINIMO);
+        if(entidade->getValorMinimo().GetValorMinimo() != EntityTestProduto::VALOR_MINIMO){
+            estado = FALHA;
+        }
+    } catch(invalid_argument excecao){
+        estado = FALHA;
+    }
+}
+
+int EntityTestProduto::run(){
+    setUp();
+    testarCenarioCodigoProduto();
+    testarCenarioClasse();
+    testarCenarioEmissor();
+    testarCenarioPrazo();
+    testarCenarioVencimento();
+    testarCenarioTaxa();
+    testarCenarioHorario();
+    testarCenarioValorMinimo();
+    tearDown();
+    return estado;
+}
