@@ -1,11 +1,53 @@
 \hypertarget{class_usuario}{}\doxysection{Usuario Class Reference}
 \label{class_usuario}\index{Usuario@{Usuario}}
+
+
+\mbox{\hyperlink{class_classe}{Classe}} criada para representar a entidade Usu\'{a}rio.  
+
+
+
+
+{\ttfamily \#include $<$Usuario.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_usuario_a5a7cab12658787c0e1c980cf8185a9c0}\label{class_usuario_a5a7cab12658787c0e1c980cf8185a9c0}} 
-{\bfseries Usuario} (const \mbox{\hyperlink{class_nome}{Nome}} \&nome, const \mbox{\hyperlink{class_c_p_f}{C\+PF}} \&cpf, const \mbox{\hyperlink{class_senha}{Senha}} \&senha, const \mbox{\hyperlink{class_endereco}{Endereco}} \&endereco, const \mbox{\hyperlink{class_c_e_p}{C\+EP}} \&cep)
-\item 
+\mbox{\Hypertarget{class_usuario_aa85a5371a098dfba5449140d9b8a472f}\label{class_usuario_aa85a5371a098dfba5449140d9b8a472f}} 
+\mbox{\hyperlink{class_usuario_aa85a5371a098dfba5449140d9b8a472f}{Usuario}} ()
+\begin{DoxyCompactList}\small\item\em Construtor Default. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a20742a590f497fd9d1b78043b841c65e}\label{class_usuario_a20742a590f497fd9d1b78043b841c65e}} 
+\mbox{\hyperlink{class_usuario_a20742a590f497fd9d1b78043b841c65e}{Usuario}} (const \mbox{\hyperlink{class_nome}{Nome}} \&, const \mbox{\hyperlink{class_c_p_f}{C\+PF}} \&, const \mbox{\hyperlink{class_senha}{Senha}} \&, const \mbox{\hyperlink{class_endereco}{Endereco}} \&, const \mbox{\hyperlink{class_c_e_p}{C\+EP}} \&)
+\begin{DoxyCompactList}\small\item\em Contrutor com param\^{e}tros listados na especifica\c{c}\~{a}o disponibilizada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a0f2bfb4c668962526b5dc981195fc104}\label{class_usuario_a0f2bfb4c668962526b5dc981195fc104}} 
+void \mbox{\hyperlink{class_usuario_a0f2bfb4c668962526b5dc981195fc104}{set\+Nome}} (const string nome)
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para atribuit valor ao atributo do tipo classe dom\'{\i}nio \mbox{\hyperlink{_nome_8h_source}{Nome.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a712640c003aa66605846627f2c90db60}\label{class_usuario_a712640c003aa66605846627f2c90db60}} 
+\mbox{\hyperlink{class_nome}{Nome}} \mbox{\hyperlink{class_usuario_a712640c003aa66605846627f2c90db60}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para obter valor atribu\'{\i}do do tipo classe dom\'{\i}nio \mbox{\hyperlink{_nome_8h_source}{Nome.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a10f76d48971ba7609299619561e0b8ef}\label{class_usuario_a10f76d48971ba7609299619561e0b8ef}} 
+void \mbox{\hyperlink{class_usuario_a10f76d48971ba7609299619561e0b8ef}{set\+Senha}} (const string senha)
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para atribuit valor ao atributo do tipo classe dom\'{\i}nio \mbox{\hyperlink{_senha_8h_source}{Senha.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a8f78d3949b3a9492d0aa0a197860a972}\label{class_usuario_a8f78d3949b3a9492d0aa0a197860a972}} 
+\mbox{\hyperlink{class_senha}{Senha}} \mbox{\hyperlink{class_usuario_a8f78d3949b3a9492d0aa0a197860a972}{get\+Senha}} () const
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para obter valor atribu\'{\i}do do tipo classe dom\'{\i}nio \mbox{\hyperlink{_senha_8h_source}{Senha.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a19313e6e5e37f4e98cae06e50317c61e}\label{class_usuario_a19313e6e5e37f4e98cae06e50317c61e}} 
+void \mbox{\hyperlink{class_usuario_a19313e6e5e37f4e98cae06e50317c61e}{set\+C\+PF}} (const string cpf)
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para atribuit valor ao atributo do tipo classe dom\'{\i}nio \mbox{\hyperlink{_c_p_f_8h_source}{C\+P\+F.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a178af2b9efa13ffa9ad7f0773e841005}\label{class_usuario_a178af2b9efa13ffa9ad7f0773e841005}} 
+\mbox{\hyperlink{class_c_p_f}{C\+PF}} \mbox{\hyperlink{class_usuario_a178af2b9efa13ffa9ad7f0773e841005}{get\+C\+PF}} () const
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para obter valor atribu\'{\i}do do tipo classe dom\'{\i}nio \mbox{\hyperlink{_c_p_f_8h_source}{C\+P\+F.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_af4094ff24617dd1cfb0ba62111486982}\label{class_usuario_af4094ff24617dd1cfb0ba62111486982}} 
+void \mbox{\hyperlink{class_usuario_af4094ff24617dd1cfb0ba62111486982}{set\+Endereco}} (const string endereco)
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para atribuit valor ao atributo do tipo classe dom\'{\i}nio \mbox{\hyperlink{_endereco_8h_source}{Endereco.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_a8ab465c7dcaaa3b21f4220fe2fd58e7b}\label{class_usuario_a8ab465c7dcaaa3b21f4220fe2fd58e7b}} 
+\mbox{\hyperlink{class_endereco}{Endereco}} \mbox{\hyperlink{class_usuario_a8ab465c7dcaaa3b21f4220fe2fd58e7b}{get\+Endereco}} () const
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para obter valor atribu\'{\i}do do tipo classe dom\'{\i}nio \mbox{\hyperlink{_endereco_8h_source}{Endereco.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_abda0f0d3772a87c0ff26103acfc2b7f3}\label{class_usuario_abda0f0d3772a87c0ff26103acfc2b7f3}} 
+void \mbox{\hyperlink{class_usuario_abda0f0d3772a87c0ff26103acfc2b7f3}{set\+C\+EP}} (const string \mbox{\hyperlink{class_c_e_p}{C\+EP}})
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para atribuit valor ao atributo do tipo classe dom\'{\i}nio \mbox{\hyperlink{_c_e_p_8h_source}{C\+E\+P.\+h}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_usuario_abafcd9a3d62c3ec6461454dcd4059701}\label{class_usuario_abafcd9a3d62c3ec6461454dcd4059701}} 
+\mbox{\hyperlink{class_c_e_p}{C\+EP}} \mbox{\hyperlink{class_usuario_abafcd9a3d62c3ec6461454dcd4059701}{get\+C\+EP}} () const
+\begin{DoxyCompactList}\small\item\em M\'{e}todo utilizado para obter valor atribu\'{\i}do do tipo classe dom\'{\i}nio \mbox{\hyperlink{_c_e_p_8h_source}{C\+E\+P.\+h}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_usuario_a1f6061076e45d2353d57a67acbf1697c}\label{class_usuario_a1f6061076e45d2353d57a67acbf1697c}} 
 void {\bfseries Ver\+Info\+Usuario} ()
 \end{DoxyCompactItemize}
@@ -16,6 +58,18 @@ void {\bfseries Ver\+Info\+Usuario} ()
 static void {\bfseries Request\+Login} ()
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_classe}{Classe}} criada para representar a entidade Usu\'{a}rio. 
+
+\hypertarget{class_usuario_autotoc_md36}{}\doxysubsubsection{Descrição}\label{class_usuario_autotoc_md36}
+Essa classe entidade \'{e} composta por outras classes Dom\'{\i}nios. Por isso ser\'{a} expressado aqui todas as regras de cada dom\'{\i}nio. \hypertarget{class_usuario_autotoc_md37}{}\doxysubsubsection{Requisitos de atributos dessa classe\+:}\label{class_usuario_autotoc_md37}
+\hypertarget{class_usuario_autotoc_md38}{}\doxyparagraph{Classe Nome}\label{class_usuario_autotoc_md38}
+Texto composto por 5 a 30 caracteres onde cada caracter pode ser letra (A-\/Z ou a-\/z) ou espa\c{c}o, h\'{a} pelo menos 5 letras, n\~{a}o h\'{a} espa\c{c}os em sequ\^{e}ncia, primeira letra de cada termo \'{e} letra mai\'{u}scula.\hypertarget{class_usuario_autotoc_md39}{}\doxyparagraph{Classe C\+PF}\label{class_usuario_autotoc_md39}
+Formato X\+X\+X.\+X\+X\+X.\+X\+XX-\/XX onde cada X \'{e} d\'{\i}gito (0 -- 9) e cada \mbox{\hyperlink{class_c_p_f}{C\+PF}} inclui d\'{\i}gitos verificadores calculados por meio de algor\'{\i}tmo apropriado.\hypertarget{class_usuario_autotoc_md40}{}\doxyparagraph{Classe Senha}\label{class_usuario_autotoc_md40}
+Formato X\+X\+X\+X\+XX onde cada X \'{e} d\'{\i}gito (0 -- 9) e n\~{a}o h\'{a} d\'{\i}gito repetido.\hypertarget{class_usuario_autotoc_md41}{}\doxyparagraph{Classe Endereço}\label{class_usuario_autotoc_md41}
+Texto composto por 5 a 20 caracteres onde cada caracter pode ser letra (A-\/Z ou a-\/z), d\'{\i}gito (0 -- 9), ponto ou espa\c{c}o. Apenas letras e d\'{\i}gitos podem estar em sequ\^{e}ncia. Em termo cujo primeiro caracter \'{e} letra, a mesma \'{e} mai\'{u}scula.\hypertarget{class_usuario_autotoc_md42}{}\doxyparagraph{Classe C\+EP}\label{class_usuario_autotoc_md42}
+cep -\/ Deve possuir o valor nas seguintes faixas\+: 1000000 a 5999999 e 8000000 a 8499999 (S\~{a}o Paulo), 20000000 a 26600999 (Rio de Janeiro), 70000000 a 70999999 (Bras\'{\i}lia), 40000000 a 41999999 (Salvador) e 60000000 a 60999999 (Fortaleza). 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

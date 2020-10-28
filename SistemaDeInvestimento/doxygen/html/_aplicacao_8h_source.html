@@ -78,25 +78,49 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_aplicacao.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_aplicacao.html">Aplicacao</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_aplicacao.html">Aplicacao</a>(<span class="keyword">const</span> <a class="code" href="class_conta.html">Conta</a> &amp;conta, <span class="keyword">const</span> <a class="code" href="class_codigo_aplicacao.html">CodigoAplicacao</a> &amp;, <span class="keyword">const</span> <a class="code" href="class_valor_aplicacao.html">ValorAplicacao</a> &amp;, <span class="keyword">const</span> <a class="code" href="class_data.html">Data</a> &amp;);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_conta.html">Conta</a> conta;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_codigo_aplicacao.html">CodigoAplicacao</a> codigoAplicacao;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_valor_aplicacao.html">ValorAplicacao</a> valorAplicacao;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_data.html">Data</a> dataObj;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // APLICACAO_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_aplicacao.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_aplicacao.html">Aplicacao</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a2ea64d8a50c77fadf723205ea4104305">   37</a></span>&#160;        <a class="code" href="class_aplicacao.html#a2ea64d8a50c77fadf723205ea4104305">Aplicacao</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_aplicacao.html#af09c4ed4c839a31cee37a92e160f015f">   40</a></span>&#160;        <a class="code" href="class_aplicacao.html#af09c4ed4c839a31cee37a92e160f015f">Aplicacao</a>(<span class="keyword">const</span> <a class="code" href="class_codigo_aplicacao.html">CodigoAplicacao</a> &amp;, <span class="keyword">const</span> <a class="code" href="class_valor_aplicacao.html">ValorAplicacao</a> &amp;, <span class="keyword">const</span> <a class="code" href="class_data.html">Data</a> &amp;);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a56024cb4d405b132101d9878b8e3f979">   43</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#a56024cb4d405b132101d9878b8e3f979">setCodigoAplicacao</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_aplicacao.html#aeb80ca894665262a7ef9e2b20b4b1fd4">   45</a></span>&#160;        <a class="code" href="class_codigo_aplicacao.html">CodigoAplicacao</a> <a class="code" href="class_aplicacao.html#aeb80ca894665262a7ef9e2b20b4b1fd4">getCodigoAplicacao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_aplicacao.html#ab1bb71607d739bab4a89e0381fd44aea">   48</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#ab1bb71607d739bab4a89e0381fd44aea">setValorAplicacao</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a386c9f3360141256dcf7026e71fa31e7">   50</a></span>&#160;        <a class="code" href="class_valor_aplicacao.html">ValorAplicacao</a> <a class="code" href="class_aplicacao.html#a386c9f3360141256dcf7026e71fa31e7">getValorAplicacao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a47144eb9958a949f133fb0085f0e97ff">   53</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#a47144eb9958a949f133fb0085f0e97ff">setData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a9cd765e55b41825b3d15c45ba199a680">   55</a></span>&#160;        <a class="code" href="class_data.html">Data</a> <a class="code" href="class_aplicacao.html#a9cd765e55b41825b3d15c45ba199a680">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_codigo_aplicacao.html">CodigoAplicacao</a> codigoAplicacao;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_valor_aplicacao.html">ValorAplicacao</a> valorAplicacao;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_data.html">Data</a> dataObj;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // APLICACAO_H</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_conta_html"><div class="ttname"><a href="class_conta.html">Conta</a></div><div class="ttdoc">Classe criada para representar o conta.</div><div class="ttdef"><b>Definition:</b> Conta.h:16</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a386c9f3360141256dcf7026e71fa31e7"><div class="ttname"><a href="class_aplicacao.html#a386c9f3360141256dcf7026e71fa31e7">Aplicacao::getValorAplicacao</a></div><div class="ttdeci">ValorAplicacao getValorAplicacao() const</div><div class="ttdoc">Método utilizado para obter valor atribuído do tipo classe domínio ValorAplicacao....</div></div>
+<div class="ttc" id="aclass_aplicacao_html_aeb80ca894665262a7ef9e2b20b4b1fd4"><div class="ttname"><a href="class_aplicacao.html#aeb80ca894665262a7ef9e2b20b4b1fd4">Aplicacao::getCodigoAplicacao</a></div><div class="ttdeci">CodigoAplicacao getCodigoAplicacao() const</div><div class="ttdoc">Método utilizado para obter valor atribuído do tipo classe domínio CodigoAplicacao....</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a2ea64d8a50c77fadf723205ea4104305"><div class="ttname"><a href="class_aplicacao.html#a2ea64d8a50c77fadf723205ea4104305">Aplicacao::Aplicacao</a></div><div class="ttdeci">Aplicacao()</div><div class="ttdoc">Construtor Default.</div></div>
 <div class="ttc" id="aclass_data_html"><div class="ttname"><a href="class_data.html">Data</a></div><div class="ttdoc">Classe criada para representar Data.</div><div class="ttdef"><b>Definition:</b> Data.h:18</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a47144eb9958a949f133fb0085f0e97ff"><div class="ttname"><a href="class_aplicacao.html#a47144eb9958a949f133fb0085f0e97ff">Aplicacao::setData</a></div><div class="ttdeci">void setData(const string)</div><div class="ttdoc">Método utilizado para atribuit valor ao atributo do tipo classe domínio Data.h.</div></div>
 <div class="ttc" id="aclass_codigo_aplicacao_html"><div class="ttname"><a href="class_codigo_aplicacao.html">CodigoAplicacao</a></div><div class="ttdoc">Classe criada para representar o código da aplicação escolhida.</div><div class="ttdef"><b>Definition:</b> CodigoAplicacao.h:17</div></div>
 <div class="ttc" id="aclass_valor_aplicacao_html"><div class="ttname"><a href="class_valor_aplicacao.html">ValorAplicacao</a></div><div class="ttdoc">Classe criada para representar o valor da aplicação escolhida.</div><div class="ttdef"><b>Definition:</b> ValorAplicacao.h:18</div></div>
-<div class="ttc" id="aclass_aplicacao_html"><div class="ttname"><a href="class_aplicacao.html">Aplicacao</a></div><div class="ttdef"><b>Definition:</b> Aplicacao.h:15</div></div>
+<div class="ttc" id="aclass_aplicacao_html"><div class="ttname"><a href="class_aplicacao.html">Aplicacao</a></div><div class="ttdoc">Classe criada para representar a entidade Aplicação.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:33</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a56024cb4d405b132101d9878b8e3f979"><div class="ttname"><a href="class_aplicacao.html#a56024cb4d405b132101d9878b8e3f979">Aplicacao::setCodigoAplicacao</a></div><div class="ttdeci">void setCodigoAplicacao(const string)</div><div class="ttdoc">Método utilizado para atribuit valor ao atributo do tipo classe domínio CodigoAplicacao....</div></div>
+<div class="ttc" id="aclass_aplicacao_html_ab1bb71607d739bab4a89e0381fd44aea"><div class="ttname"><a href="class_aplicacao.html#ab1bb71607d739bab4a89e0381fd44aea">Aplicacao::setValorAplicacao</a></div><div class="ttdeci">void setValorAplicacao(const int)</div><div class="ttdoc">Método utilizado para atribuit valor ao atributo do tipo classe domínio ValorAplicacao....</div></div>
+<div class="ttc" id="aclass_aplicacao_html_af09c4ed4c839a31cee37a92e160f015f"><div class="ttname"><a href="class_aplicacao.html#af09c4ed4c839a31cee37a92e160f015f">Aplicacao::Aplicacao</a></div><div class="ttdeci">Aplicacao(const CodigoAplicacao &amp;, const ValorAplicacao &amp;, const Data &amp;)</div><div class="ttdoc">Contrutor com paramêtros listados na especificação disponibilizada.</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a9cd765e55b41825b3d15c45ba199a680"><div class="ttname"><a href="class_aplicacao.html#a9cd765e55b41825b3d15c45ba199a680">Aplicacao::getData</a></div><div class="ttdeci">Data getData() const</div><div class="ttdoc">Método utilizado para obter valor atribuído do tipo classe domínio Data.h.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
