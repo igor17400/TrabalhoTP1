@@ -11,7 +11,7 @@
 
 using namespace std;
 
-//! Classe criada para representar a entidade Conta
+//! Classe criada para representar a <b>ENTIDADE</b> Conta
 /*!
   ## Descri&ccedil;&atilde;o
   Essa classe entidade &eacute; composta por outras classes Dom&iacute;nios.

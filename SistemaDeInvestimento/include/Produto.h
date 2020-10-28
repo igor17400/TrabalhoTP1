@@ -11,7 +11,7 @@
 #include "Prazo.h"
 
 
-//! Classe criada para representar a entidade Produto
+//! Classe criada para representar a <b>ENTIDADE</b> Produto
 /*!
   ## Descri&ccedil;&atilde;o
   Essa classe entidade &eacute; composta por outras classes Dom&iacute;nios.

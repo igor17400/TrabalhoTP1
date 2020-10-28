@@ -12,7 +12,7 @@
 using namespace std;
 
 
-//! Classe criada para representar a entidade Aplica&ccedil;&atilde;o
+//! Classe criada para representar a <b>ENTIDADE</b> Aplica&ccedil;&atilde;o
 /*!
   ## Descri&ccedil;&atilde;o
   Essa classe entidade &eacute; composta por outras classes Dom&iacute;nios.

@@ -7,6 +7,7 @@
 #include "Produto.h"
 
 // ------- Classe TesteUsuario ---------
+//! Classe criada para teste da Entidade Usuario.h
 class EntityTestUsuario {
 
     public:
@@ -46,6 +47,7 @@ class EntityTestUsuario {
 
 
 // ------- Classe TesteConta ---------
+//! Classe criada para teste da Entidade Conta.h
 class EntityTestConta {
 
     public:
@@ -81,6 +83,7 @@ class EntityTestConta {
 
 
 // ------- Classe TesteAplicacao ---------
+//! Classe criada para teste da Entidade Aplicacao.h
 class EntityTestAplicacao {
 
     public:
@@ -116,6 +119,7 @@ class EntityTestAplicacao {
 
 
 // ------- Classe TesteProduto ---------
+//! Classe criada para teste da Entidade Produto.h
 class EntityTestProduto {
 
     public:

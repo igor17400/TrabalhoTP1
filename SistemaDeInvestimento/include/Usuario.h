@@ -13,7 +13,7 @@
 using namespace std;
 
 
-//! Classe criada para representar a entidade Usu&aacute;rio
+//! Classe criada para representar a <b>ENTIDADE</b> Usu&aacute;rio
 /*!
   ## Descri&ccedil;&atilde;o
   Essa classe entidade &eacute; composta por outras classes Dom&iacute;nios.

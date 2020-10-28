@@ -21,6 +21,7 @@
 #include "ValorMinimo.h"
 
 // ------- Classe TesteNome ---------
+//! Classe criada para teste do Dom&iacute;nio Nome.h
 class TesteNome {
 
     public:
@@ -51,6 +52,7 @@ class TesteNome {
 
 
 // ------- Classe TesteEndereco ---------
+//! Classe criada para teste do Dom&iacute;nio Endereco.h
 class TesteEndereco {
 
     public:
@@ -81,6 +83,7 @@ class TesteEndereco {
 
 
 // ------- Classe TesteCEP ---------
+//! Classe criada para teste do Dom&iacute;nio CEP.h
 class TesteCEP {
 
     public:
@@ -111,6 +114,7 @@ class TesteCEP {
 
 
 // ------- Classe TesteCPF ---------
+//! Classe criada para teste do Dom&iacute;nio CPF.h
 class TesteCPF {
 
     public:
@@ -140,6 +144,7 @@ class TesteCPF {
 };
 
 // ------- Classe TesteSenha ---------
+//! Classe criada para teste do Dom&iacute;nio Senha.h
 class TesteSenha {
 
     public:
@@ -169,6 +174,7 @@ class TesteSenha {
 };
 
 // ------- Classe TesteCodigoAplicacao ---------
+//! Classe criada para teste do Dom&iacute;nio CodigoAplicacao.h
 class TesteCodigoAplicacao {
 
     public:
@@ -198,6 +204,7 @@ class TesteCodigoAplicacao {
 };
 
 // ------- Classe TesteValorAplicacao ---------
+//! Classe criada para teste do Dom&iacute;nio ValorAplicacao.h
 class TesteValorAplicacao {
 
     public:
@@ -227,6 +234,7 @@ class TesteValorAplicacao {
 };
 
 // ------- Classe TesteData---------
+//! Classe criada para teste do Dom&iacute;nio Data.h
 class TesteData {
 
     public:
@@ -256,6 +264,7 @@ class TesteData {
 };
 
 // ------- Classe TesteCodigoBanco---------
+//! Classe criada para teste do Dom&iacute;nio CodigoBanco.h
 class TesteCodigoBanco {
 
     public:
@@ -285,6 +294,7 @@ class TesteCodigoBanco {
 };
 
 // ------- Classe TesteCodigoAgencia---------
+//! Classe criada para teste do Dom&iacute;nio CodigoAgencia.h
 class TesteCodigoAgencia {
 
     public:
@@ -314,6 +324,7 @@ class TesteCodigoAgencia {
 };
 
 // ------- Classe TesteNumero---------
+//! Classe criada para teste do Dom&iacute;nio Numero.h
 class TesteNumero {
 
     public:
@@ -343,6 +354,7 @@ class TesteNumero {
 };
 
 // ------- Classe TesteCodigoProduto ---------
+//! Classe criada para teste do Dom&iacute;nio CodigoProduto.h
 class TesteCodigoProduto {
 
     public:
@@ -372,6 +384,7 @@ class TesteCodigoProduto {
 };
 
 // ------- Classe TesteClasse ---------
+//! Classe criada para teste do Dom&iacute;nio Classe.h
 class TesteClasse {
 
     public:
@@ -401,6 +414,7 @@ class TesteClasse {
 };
 
 // ------- Classe TesteEmissor ---------
+//! Classe criada para teste do Dom&iacute;nio Emissor.h
 class TesteEmissor {
 
     public:
@@ -430,6 +444,7 @@ class TesteEmissor {
 };
 
 // ------- Classe TestePrazo ---------
+//! Classe criada para teste do Dom&iacute;nio Prazo.h
 class TestePrazo {
 
     public:
@@ -459,6 +474,7 @@ class TestePrazo {
 };
 
 // ------- Classe TesteTaxa ---------
+//! Classe criada para teste do Dom&iacute;nio Taxa.h
 class TesteTaxa {
 
     public:
@@ -488,6 +504,7 @@ class TesteTaxa {
 };
 
 // ------- Classe TesteHorario ---------
+//! Classe criada para teste do Dom&iacute;nio Horario.h
 class TesteHorario {
 
     public:
@@ -518,6 +535,7 @@ class TesteHorario {
 
 
 // ------- Classe TesteValorMinimo ---------
+//! Classe criada para teste do Dom&iacute;nio ValorMinimo.h
 class TesteValorMinimo {
 
     public:
