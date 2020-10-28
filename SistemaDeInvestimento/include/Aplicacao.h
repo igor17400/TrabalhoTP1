@@ -14,7 +14,7 @@ using namespace std;
 class Aplicacao
 {
     public:
-        Aplicacao(const Conta &conta, const CodigoAplicacao &, const ValorAplicacao &, const Data &);
+        Aplicacao(const Conta &, const CodigoAplicacao &, const ValorAplicacao &, const Data &);
 
     private:
         const Conta conta;

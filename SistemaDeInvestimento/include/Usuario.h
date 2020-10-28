@@ -16,7 +16,23 @@ using namespace std;
 class Usuario
 {
 public:
-    Usuario(const Nome& nome, const CPF& cpf, const Senha& senha, const Endereco& endereco, const CEP& cep);
+    Usuario();
+    Usuario(const Nome &, const CPF &, const Senha &, const Endereco &, const CEP &);
+
+    void setNome(const string nome);
+    Nome getNome() const;
+
+    void setSenha(const string senha);
+    Senha getSenha() const;
+
+    void setCPF(const string cpf);
+    CPF getCPF() const;
+
+    void setEndereco(const string endereco);
+    Endereco getEndereco() const;
+
+    void setCEP(const string CEP);
+    CEP getCEP() const;
 
     void VerInfoUsuario();
     static void RequestLogin();
@@ -24,11 +40,11 @@ public:
 protected:
 
 private:
-    const CPF cpf;
-    const Nome nome;
-    const Endereco endereco;
-    const CEP cep;
-    const Senha senha;
+    Nome nome;
+    CPF cpf;
+    Endereco endereco;
+    CEP cep;
+    Senha senha;
 };
 
 #endif // USUARIO_H

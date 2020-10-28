@@ -35,6 +35,7 @@ int main()
     TesteValorMinimo testeValorMinimo;
 
 
+    cout << " ########### TESTES DE DOMÍNIOS ###########" << endl;
     cout << " --------- TesteNome ----------" << endl;
     switch(testeNome.run()){
         case TesteNome::SUCESSO: cout << "SUCESSO\n";
@@ -184,5 +185,32 @@ int main()
                                 break;
     }
 
+    cout << " ########### ########### ########### ###########" << endl;
+
+
+    cout << " ########### TESTES DE ENTIDADES ###########" << endl;
+    cout << " --------- Usuario ----------" << endl;
+
+    Usuario usuario;
+    usuario.setNome("Igor Lima");
+    usuario.setSenha("123456");
+    usuario.setCPF("065.891.841-94");
+    usuario.setEndereco("Condominio Estancia");
+    usuario.setCEP("70350760");
+    cout << usuario.getNome().GetNome() << endl;
+    cout << usuario.getSenha().GetSenha() << endl;
+    cout << usuario.getCPF().GetCpf() << endl;
+    cout << usuario.getCEP().GetCep() << endl;
+    cout << usuario.getEndereco().GetEndereco() << endl;
+
+    cout << " --------- Conta ----------" << endl;
+
     return 0;
 }
+
+
+
+
+
+
+
