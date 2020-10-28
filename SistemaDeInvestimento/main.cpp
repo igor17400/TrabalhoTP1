@@ -7,6 +7,7 @@
 #include "Aplicacao.h"
 #include "Produto.h"
 #include "Testes.h"
+#include "EntityTests.h"
 
 using namespace std;
 
@@ -190,18 +191,28 @@ int main()
 
     cout << " ########### TESTES DE ENTIDADES ###########" << endl;
 
-    cout << " --------- Usuario ----------" << endl;
-    Usuario usuario;
-    usuario.setNome("Igor Lima");
-    usuario.setSenha("123456");
-    usuario.setCPF("065.891.841-94");
-    usuario.setEndereco("Condominio Estancia");
-    usuario.setCEP("70350760");
-    cout << usuario.getNome().GetNome() << endl;
-    cout << usuario.getSenha().GetSenha() << endl;
-    cout << usuario.getCPF().GetCpf() << endl;
-    cout << usuario.getCEP().GetCep() << endl;
-    cout << usuario.getEndereco().GetEndereco() << endl;
+    // -------- TESTES -------
+    EntityTestUsuario entityTestUsuario;
+    EntityTestConta entityTestConta;
+
+
+    cout << " --------- TestUsuario ----------" << endl;
+    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    switch(entityTestUsuario.run()){
+        case EntityTestUsuario::SUCESSO: cout << "SUCESSO\n";
+                                break;
+        case EntityTestUsuario::FALHA  : cout << "FALHA\n";
+                                break;
+    }
+
+    cout << " --------- TestConta ----------" << endl;
+    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    switch(entityTestConta.run()){
+        case EntityTestConta::SUCESSO: cout << "SUCESSO\n";
+                                break;
+        case EntityTestConta::FALHA  : cout << "FALHA\n";
+                                break;
+    }
 
     cout << " --------- Aplicação ----------" << endl;
     Aplicacao aplicacao;
@@ -212,15 +223,6 @@ int main()
     cout << aplicacao.getValorAplicacao().GetValorAplicacao() << endl;
     cout << aplicacao.getData().GetData() << endl;
 
-
-    cout << " --------- Conta ----------" << endl;
-    Conta conta;
-    conta.setCodigoBanco("001");
-    conta.setCodigoAgencia("1234");
-    conta.setNumero("123456-3");
-    cout << conta.getCodigoBanco().GetCodigoBanco() << endl;
-    cout << conta.getCodigoAgencia().GetCodigoAgencia() << endl;
-    cout << conta.getNumero().GetNumero() << endl;
 
     cout << " --------- Produto ----------" << endl;
     Produto produto;
