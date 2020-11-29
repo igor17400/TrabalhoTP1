@@ -8,6 +8,8 @@
 #include "Produto.h"
 #include "Testes.h"
 #include "EntityTests.h"
+#include "CntrApresentacaoControle.h"
+#include "stubs.h"
 
 using namespace std;
 
@@ -235,6 +237,54 @@ int main()
         case EntityTestProduto::FALHA  : cout << "FALHA\n";
                                 break;
     }
+
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << " -------- Fim de testes --------- " << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+
+    cout << "#################################### " << endl;
+    cout << "############  Inicio da interação com o Usuário ############# " << endl;
+
+    // Instancia as controladoras de apresentacao
+    CntrApresentacaoControle *cntrApresentacaoControle;
+    IApresentacaoAutenticacao *cntrApresentacaoAutenticacao;
+    IApresentacaoPessoal *cntrApresentacaoPessoal;
+    IApresentacaoProdutosFinanceiros *cntrApresentacaoProdutosFinanceiros;
+
+    cntrApresentacaoControle = new CntrApresentacaoControle();
+    cntrApresentacaoAutenticacao = new CntrApresentacaoAutenticacao();
+    cntrApresentacaoPessoal = new CntrApresentacaoPessoal();
+    cntrApresentacaoProdutosFinanceiros = new CntrApresentacaoProdutosFinanceiros();
+
+    // Instancia os stubs de servico.
+
+    IServicoAutenticacao *stubServicoAutenticacao;
+    IServicoPessoal *stubServicoPessoal;
+    IServicoProdutosFinanceiros *stubServicoProdutosFinanceiros;
+
+    stubServicoAutenticacao = new StubServicoAutenticacao();
+    stubServicoPessoal = new StubServicoPessoal();
+    //stubServicoProdutosFinanceiros = new StubServicoProdutosFinanceiros();
+
+    // Interliga as controladoras aos stubs.
+
+    cntrApresentacaoControle->setCntrApresentacaoAutenticacao(cntrApresentacaoAutenticacao);
+    cntrApresentacaoControle->setCntrApresentacaoPessoal(cntrApresentacaoPessoal);
+    cntrApresentacaoControle->setCntrApresentacaoProdutosFinanceiros(cntrApresentacaoProdutosFinanceiros);
+
+    cntrApresentacaoAutenticacao->setCntrServicoAutenticacao(stubServicoAutenticacao);
+
+    cntrApresentacaoPessoal->setCntrServicoPessoal(stubServicoPessoal);
+    cntrApresentacaoPessoal->setCntrServicoProdutosFinanceiros(stubServicoProdutosFinanceiros);
+
+    cntrApresentacaoProdutosFinanceiros->setCntrServicoProdutosFinanceiros(stubServicoProdutosFinanceiros);
+
+    cntrApresentacaoControle->executar();                                           // Solicita servic apresentacao.
 
     return 0;
 }
