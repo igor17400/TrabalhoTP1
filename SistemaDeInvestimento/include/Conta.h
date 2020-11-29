@@ -8,6 +8,7 @@
 #include "CodigoBanco.h"
 #include "CodigoAgencia.h"
 #include "Numero.h"
+#include "CPF.h"
 
 using namespace std;
 
@@ -53,6 +54,9 @@ class Conta
         /// M&eacute;todo utilizado para obter valor atribu&iacute;do do tipo classe dom&iacute;nio Numero.h
         Numero getNumero() const;
 
+        void setUsuario(const Usuario&);
+        CPF getUsuarioCPF() const;
+
         void Display();
 
     protected:
@@ -61,6 +65,7 @@ class Conta
         CodigoBanco codigoBanco;
         CodigoAgencia codigoAgencia;
         Numero numero;
+        Usuario usuario;
 };
 
 #endif // CONTA_H

@@ -8,6 +8,8 @@
 #include "ValorAplicacao.h"
 #include "Data.h"
 #include "Conta.h"
+#include "CodigoProduto.h"
+#include "Produto.h"
 
 using namespace std;
 
@@ -54,10 +56,14 @@ class Aplicacao
         /// M&eacute;todo utilizado para obter valor atribu&iacute;do do tipo classe dom&iacute;nio Data.h
         Data getData() const;
 
+        void setProduto(const Produto&);
+        CodigoProduto getProdutoCodigo() const;
+
     private:
         CodigoAplicacao codigoAplicacao;
         ValorAplicacao valorAplicacao;
         Data dataObj;
+        Produto produto;
 };
 
 #endif // APLICACAO_H

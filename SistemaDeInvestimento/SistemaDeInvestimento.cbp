@@ -47,6 +47,7 @@
 		<Unit filename="include/Emissor.h" />
 		<Unit filename="include/Endereco.h" />
 		<Unit filename="include/Entidades.h" />
+		<Unit filename="include/EntityTests.h" />
 		<Unit filename="include/Horario.h" />
 		<Unit filename="include/Nome.h" />
 		<Unit filename="include/Numero.h" />
@@ -72,6 +73,7 @@
 		<Unit filename="src/Emissor.cpp" />
 		<Unit filename="src/Endereco.cpp" />
 		<Unit filename="src/Entidades.cpp" />
+		<Unit filename="src/EntityTests.cpp" />
 		<Unit filename="src/Horario.cpp" />
 		<Unit filename="src/Nome.cpp" />
 		<Unit filename="src/Numero.cpp" />

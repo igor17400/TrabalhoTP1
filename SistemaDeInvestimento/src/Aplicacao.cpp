@@ -44,6 +44,14 @@ Data Aplicacao::getData() const{
     return this->dataObj;
 }
 
+void Aplicacao::setProduto(const Produto& produto){
+    this->produto = produto;
+}
+
+CodigoProduto Aplicacao::getProdutoCodigo() const{
+    return this->produto.getCodigoProduto();
+}
+
 
 
 

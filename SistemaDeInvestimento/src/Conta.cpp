@@ -3,6 +3,7 @@
 
 #include "Conta.h"
 #include "Usuario.h"
+#include "CPF.h"
 
 
 using namespace std;
@@ -43,8 +44,18 @@ Numero Conta::getNumero() const{
     return this->numero;
 }
 
+void Conta::setUsuario(const Usuario& usuario){
+    this->usuario = usuario;
+}
+
+CPF Conta::getUsuarioCPF() const{
+    return this->usuario.getCPF();
+}
+
 void Conta::Display(){
     codigoBanco.Print();
     codigoAgencia.Print();
     numero.Print();
 }
+
+
