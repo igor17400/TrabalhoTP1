@@ -54,7 +54,7 @@ class Conta
         /// M&eacute;todo utilizado para obter valor atribu&iacute;do do tipo classe dom&iacute;nio Numero.h
         Numero getNumero() const;
 
-        void setUsuario(const Usuario&);
+        void setUsuarioCPF(const CPF&);
         CPF getUsuarioCPF() const;
 
         void Display();
@@ -65,7 +65,7 @@ class Conta
         CodigoBanco codigoBanco;
         CodigoAgencia codigoAgencia;
         Numero numero;
-        Usuario usuario;
+        CPF cpf;
 };
 
 #endif // CONTA_H

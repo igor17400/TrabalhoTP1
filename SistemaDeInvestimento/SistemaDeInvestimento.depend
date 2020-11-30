@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1603902266 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
+1606690930 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\main.cpp
 	<iostream>
 	<locale.h>
 	<windows.h>
@@ -9,6 +9,8 @@
 	"Produto.h"
 	"Testes.h"
 	"EntityTests.h"
+	"CntrApresentacaoControle.h"
+	"stubs.h"
 
 1603927504 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\usuario.h
 	<string>
@@ -28,14 +30,14 @@
 	"CPF.h"
 	"Nome.h"
 
-1606689462 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
+1606706587 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\conta.cpp
 	<iostream>
 	<string>
 	"Conta.h"
 	"Usuario.h"
 	"CPF.h"
 
-1606689432 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
+1606706576 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\conta.h
 	<iostream>
 	<string>
 	"Usuario.h"
@@ -159,7 +161,7 @@
 	<string.h>
 	<stdexcept>
 
-1603813445 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
+1606703143 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\codigobanco.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -703,8 +705,9 @@
 	"Aplicacao.h"
 	"Produto.h"
 
-1606690217 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\cntrapresentacaocontrole.cpp
+1606705814 source:c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\src\cntrapresentacaocontrole.cpp
 	"CntrApresentacaoControle.h"
+	<windows.h>
 
 1606688505 c:\users\55619\documents\unb\tp1\trabalhotp1\sistemadeinvestimento\include\cntrapresentacaocontrole.h
 	<conio.h>

@@ -44,12 +44,12 @@ Numero Conta::getNumero() const{
     return this->numero;
 }
 
-void Conta::setUsuario(const Usuario& usuario){
-    this->usuario = usuario;
+void Conta::setUsuarioCPF(const CPF& cpf){
+    this->cpf = cpf;
 }
 
-CPF Conta::getUsuarioCPF() const{
-    return this->usuario.getCPF();
+CPF Conta::getUsuarioCPF() const {
+    return this->cpf;
 }
 
 void Conta::Display(){
@@ -57,5 +57,10 @@ void Conta::Display(){
     codigoAgencia.Print();
     numero.Print();
 }
+
+
+
+
+
 
 
