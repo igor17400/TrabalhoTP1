@@ -41,7 +41,7 @@ void CntrApresentacaoControle::executar(){
                         bool apresentar = true;                                                 // Controle de laço.
                         while(apresentar){
 
-                            // Apresenta tela de sele��o de servi�o.
+                            // Apresenta tela de selecao de servico.
 
                             CLR_SCR;                                                            // Limpa janela.
 
