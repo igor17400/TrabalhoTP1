@@ -10,6 +10,7 @@ const string StubServicoProdutosFinanceiros::INVALIDO = "12345";
 // Implementa��es dos m�todos dos stubs.
 
 bool StubServicoAutenticacao::autenticar(CPF cpf, Senha senha){
+    cout << "ESTOU AQUI " << endl;
     if(cpf.GetCpf().compare(INVALIDO) == 0)
         return false;
     return true;
@@ -59,7 +60,7 @@ bool StubServicoProdutosFinanceiros::realizarAplicacao(Aplicacao aplicacao){
 }
 
 bool StubServicoProdutosFinanceiros::recuperarAplicacao(Aplicacao *aplicacao){
-    if(aplicacao->getProdutoCodigo().GetCodigoProduto().compare(INVALIDO) == 0)
+    if(aplicacao->getCodigoAplicacao().GetCodigoAplicacao().compare(INVALIDO) == 0)
         return false;
 
     //--------------------------------------------------------------------------------------------

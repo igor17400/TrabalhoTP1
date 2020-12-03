@@ -10,6 +10,9 @@
 #include "EntityTests.h"
 #include "CntrApresentacaoControle.h"
 #include "stubs.h"
+#include "ControladoraServico.h"
+#include "Containers.h"
+#include "Builders.h"
 
 using namespace std;
 
@@ -39,7 +42,7 @@ int main()
 
 
     cout << " \n########### ########### ########### ###########" << endl;
-    cout << " ########### TESTES DE DOMÍNIOS ###########" << endl;
+    cout << " ########### TESTES DE DOMÃNIOS ###########" << endl;
     cout << " --------- TesteNome ----------" << endl;
     switch(testeNome.run()){
         case TesteNome::SUCESSO: cout << "SUCESSO\n";
@@ -202,7 +205,7 @@ int main()
 
 
     cout << " --------- TestUsuario ----------" << endl;
-    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    // Dentro desse teste serÃ¡ executado um teste para cada dominio presente na entidade
     switch(entityTestUsuario.run()){
         case EntityTestUsuario::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -211,7 +214,7 @@ int main()
     }
 
     cout << " --------- TestConta ----------" << endl;
-    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    // Dentro desse teste serÃ¡ executado um teste para cada dominio presente na entidade
     switch(entityTestConta.run()){
         case EntityTestConta::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -221,7 +224,7 @@ int main()
 
 
     cout << " --------- TestAplicacao ----------" << endl;
-    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    // Dentro desse teste serÃ¡ executado um teste para cada dominio presente na entidade
     switch(entityTestAplicacao.run()){
         case EntityTestAplicacao::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -230,7 +233,7 @@ int main()
     }
 
     cout << " --------- TestProduto ----------" << endl;
-    // Dentro desse teste será executado um teste para cada dominio presente na entidade
+    // Dentro desse teste serÃ¡ executado um teste para cada dominio presente na entidade
     switch(entityTestProduto.run()){
         case EntityTestProduto::SUCESSO: cout << "SUCESSO\n";
                                 break;
@@ -248,43 +251,25 @@ int main()
     cout << endl;
 
     cout << "#################################### " << endl;
-    cout << "############  Inicio da interação com o Usuário ############# " << endl;
+    cout << "############  Inicio da interaÃ§Ã£o com o UsuÃ¡rio ############# " << endl;
 
-    // Instancia as controladoras de apresentacao
+    // Instancia Builder.
+
+    BuilderSistema *builder;
+    builder = new BuilderSistema();
+
+    // Constroi sistema.
+
     CntrApresentacaoControle *cntrApresentacaoControle;
-    IApresentacaoAutenticacao *cntrApresentacaoAutenticacao;
-    IApresentacaoPessoal *cntrApresentacaoPessoal;
-    IApresentacaoProdutosFinanceiros *cntrApresentacaoProdutosFinanceiros;
+    cntrApresentacaoControle = builder->construir();
 
-    cntrApresentacaoControle = new CntrApresentacaoControle();
-    cntrApresentacaoAutenticacao = new CntrApresentacaoAutenticacao();
-    cntrApresentacaoPessoal = new CntrApresentacaoPessoal();
-    cntrApresentacaoProdutosFinanceiros = new CntrApresentacaoProdutosFinanceiros();
+    // Solicita serviï¿½o de apresentacao.
 
-    // Instancia os stubs de servico.
+    cntrApresentacaoControle->executar();
 
-    IServicoAutenticacao *stubServicoAutenticacao;
-    IServicoPessoal *stubServicoPessoal;
-    IServicoProdutosFinanceiros *stubServicoProdutosFinanceiros;
+    // Destroi builder.
 
-    stubServicoAutenticacao = new StubServicoAutenticacao();
-    stubServicoPessoal = new StubServicoPessoal();
-    //stubServicoProdutosFinanceiros = new StubServicoProdutosFinanceiros();
-
-    // Interliga as controladoras aos stubs.
-
-    cntrApresentacaoControle->setCntrApresentacaoAutenticacao(cntrApresentacaoAutenticacao);
-    cntrApresentacaoControle->setCntrApresentacaoPessoal(cntrApresentacaoPessoal);
-    cntrApresentacaoControle->setCntrApresentacaoProdutosFinanceiros(cntrApresentacaoProdutosFinanceiros);
-
-    cntrApresentacaoAutenticacao->setCntrServicoAutenticacao(stubServicoAutenticacao);
-
-    cntrApresentacaoPessoal->setCntrServicoPessoal(stubServicoPessoal);
-    cntrApresentacaoPessoal->setCntrServicoProdutosFinanceiros(stubServicoProdutosFinanceiros);
-
-    cntrApresentacaoProdutosFinanceiros->setCntrServicoProdutosFinanceiros(stubServicoProdutosFinanceiros);
-
-    cntrApresentacaoControle->executar();                                           // Solicita servic apresentacao.
+    delete builder;
 
     return 0;
 }

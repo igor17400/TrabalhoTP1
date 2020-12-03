@@ -37,7 +37,7 @@ class StubServicoAutenticacao:public IServicoAutenticacao {
 };
 
 //--------------------------------------------------------------------------------------------
-// Classe stub do servico pessoal.
+// Classe stub do servi�o pessoal.
 
 class StubServicoPessoal:public IServicoPessoal {
     private:
@@ -47,7 +47,7 @@ class StubServicoPessoal:public IServicoPessoal {
 };
 
 //--------------------------------------------------------------------------------------------
-// Classe stub do servico produtos financeiros.
+// Classe stub do servi�o produtos financeiros.
 
 class StubServicoProdutosFinanceiros:public IServicoProdutosFinanceiros {
     private:

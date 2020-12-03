@@ -1,8 +1,9 @@
-#ifndef INTERFACES_H_INCLUDED
-#define INTERFACES_H_INCLUDED
+#ifndef INTERFACES_H
+#define INTERFACES_H
 
 
-#include "Usuario.h"
+#include "entidades.h"
+#include "Dominios.h"
 #include "Nome.h"
 #include "CPF.h"
 #include "Endereco.h"
@@ -21,12 +22,11 @@
 #include "Taxa.h"
 #include "Horario.h"
 #include "ValorMinimo.h"
-#include "Conta.h"
-#include "Produto.h"
+#include "Aplicacao.h"
 
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-// Adequar as declarações das interfaces de acordo com as necessidades.
+// Adequar as declaraï¿½ï¿½es das interfaces de acordo com as necessidades.
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ class IServicoPessoal;
 class IServicoProdutosFinanceiros;
 
 //--------------------------------------------------------------------------------------------
-// Declarações das interfaces da camada de apresentação.
+// Declaraï¿½ï¿½es das interfaces da camada de apresentaï¿½ï¿½o.
 
 class IApresentacaoAutenticacao {
     public:
@@ -64,7 +64,8 @@ class IApresentacaoProdutosFinanceiros{
 };
 
 //--------------------------------------------------------------------------------------------
-// Declaracoes das interfaces da camada de servico.
+// Declaraï¿½ï¿½es das interfaces da camada de serviï¿½o.
+
 class IServicoAutenticacao {
     public:
         virtual bool autenticar(CPF, Senha) = 0;
@@ -74,6 +75,7 @@ class IServicoAutenticacao {
 class IServicoPessoal{
 public:
         virtual bool cadastrarUsuario(Usuario) = 0;
+        virtual Usuario consultarUsuario(CPF) = 0;
         virtual ~IServicoPessoal(){}
 };
 
@@ -83,9 +85,9 @@ public:
         virtual bool consultarConta(Conta*) = 0;
         virtual bool cadastrarProdutoInvestimento(Produto) = 0;
         virtual bool descadastrarProdutoInvestimento(CodigoProduto) = 0;
-        virtual bool realizarAplicacao(CodigoAplicacao) = 0;
-        virtual bool recuperarAplicacao(CodigoAplicacao*) = 0;                        // Adaptar aos requisitos.
+        virtual bool realizarAplicacao(Aplicacao) = 0;
+        virtual bool recuperarAplicacao(Aplicacao*) = 0;                        // Adaptar aos requisitos.
         virtual ~IServicoProdutosFinanceiros(){}
 };
 
-#endif // INTERFACES_H_INCLUDED
+#endif // INTERFACES_H

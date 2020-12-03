@@ -15,7 +15,7 @@ void CntrApresentacaoControle::executar(){
     char texto6[] = "Selecione um dos servicos : ";
     char texto7[] = "1 - Selecionar servicos de pessoal.";
     char texto8[] = "2 - Selecionar servicos relacionados a produtos financeiros.";
-    char texto9[] = "3 - Encerrar sessão.";
+    char texto9[] = "3 - Encerrar sessao.";
 
     char texto10[]="Falha na autenticacao. Digite algo para continuar.";                        // Mensagem a ser apresentada.
 
@@ -43,7 +43,7 @@ void CntrApresentacaoControle::executar(){
 
                             // Apresenta tela de selecao de servico.
 
-                            CLR_SCR;                                                            // Limpa janela.
+                            //CLR_SCR;                                                            // Limpa janela.
 
                             cout << texto6 << endl;                                             // Imprime nome do campo.
                             cout << texto7 << endl;                                             // Imprime nome do campo.
@@ -63,7 +63,7 @@ void CntrApresentacaoControle::executar(){
                         }
                     }
                     else {
-                        CLR_SCR;                                                                // Limpa janela.
+                         CLR_SCR;                                                                // Limpa janela.
                         cout << texto10 << endl;                                                // Imprime mensagem.
                         getch();                                                                // Leitura de caracter digitado.
                     }
@@ -120,6 +120,7 @@ bool CntrApresentacaoAutenticacao::autenticar(CPF *cpf){
             getch();                                                                            // L� caracter digitado.
         }
     }
+
     return (cntr->autenticar(*cpf, senha));                                                     // Solicita servi�o de autentica��o.
 }
 
@@ -152,7 +153,7 @@ void CntrApresentacaoPessoal::executar(CPF cpf){
         campo = getch() - 48;                                                                   // Leitura do campo de entrada e conversao de ASCII.
 
         switch(campo){
-            case 1: consultarDadosPessoais();
+            case 1: consultarDadosPessoais(cpf);
                     break;
             case 2: apresentar = false;
                     break;
@@ -177,8 +178,8 @@ void CntrApresentacaoPessoal::cadastrar(){
     char texto_sucesso[]   = "Sucesso no cadastramento. Digite algo.";
     char texto_falha[]     = "Falha no cadastramento. Digite algo.";
 
-    char campo1[80], campo2[80], campo3[80], campo4[80], campo5[80];                            // Cria campos para entrada dos dados.
-    char campo6[80], campo7[80], campo8[80];                                                    // Cria campos para entrada dos dados.
+    string campo1, campo2, campo3, campo4, campo5;                            // Cria campos para entrada dos dados.
+    string campo6, campo7, campo8;                                                    // Cria campos para entrada dos dados.
     // Instancia os dominios.
 
     Nome nome;
@@ -248,17 +249,16 @@ void CntrApresentacaoPessoal::cadastrar(){
 
 
 //--------------------------------------------------------------------------------------------
-void CntrApresentacaoPessoal::consultarDadosPessoais(){
+void CntrApresentacaoPessoal::consultarDadosPessoais(CPF cpf) {
+    CLR_SCR;
+    cout << "Informacoes pessoais: " << endl;
+    Usuario usuario = cntrServicoPessoal->consultarUsuario(cpf);
+    cout << "Nome: " << usuario.getNome().GetNome() << endl;
+    cout << "CPF: " << usuario.getCPF().GetCpf() << endl;
+    cout << "Endereco: " << usuario.getEndereco().GetEndereco() << endl;
+    cout << "CEP: " << usuario.getCEP().GetCep() << endl;
 
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
-    // Substituir cpdigo seguinte pela implementacao do metodo.
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
-
-    // Mensagens a serem apresentadas na tela de apresentacao de dados pessoais.
-    char texto[]="Servico consultar dados pessoais nao implementado. Digite algo.";             // Mensagem a ser apresentada.
-    CLR_SCR;                                                                                    // Limpa janela.
+    char texto[]="Digite algo.";             // Mensagem a ser apresentada.
     cout << texto << endl;                                                                      // Imprime nome do campo.
     getch();
 
@@ -270,9 +270,9 @@ void CntrApresentacaoPessoal::consultarDadosPessoais(){
 void CntrApresentacaoProdutosFinanceiros::executar(){
 
     // Mensagens a serem apresentadas na tela simplificada de produtos financeiros.
-    char texto1[]="Selecione um dos servicos : ";
-    char texto2[]="1 - Consultar produto de investimento.";
-    char texto3[]="2 - Retornar.";
+    char texto1[] = "Selecione um dos servicos : ";
+    char texto2[] = "1 - Consultar produto de investimento.";
+    char texto3[] = "2 - Retornar.";
 
     int campo;                                                                                  // Campo de entrada.
 

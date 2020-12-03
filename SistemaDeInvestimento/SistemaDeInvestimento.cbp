@@ -35,20 +35,26 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Aplicacao.h" />
+		<Unit filename="include/Builders.h" />
 		<Unit filename="include/CEP.h" />
 		<Unit filename="include/CPF.h" />
 		<Unit filename="include/Classe.h" />
+		<Unit filename="include/CntrApresentacaoControle.h" />
 		<Unit filename="include/CodigoAgencia.h" />
 		<Unit filename="include/CodigoAplicacao.h" />
 		<Unit filename="include/CodigoBanco.h" />
 		<Unit filename="include/CodigoProduto.h" />
 		<Unit filename="include/Conta.h" />
+		<Unit filename="include/Containers.h" />
+		<Unit filename="include/ControladoraServico.h" />
 		<Unit filename="include/Data.h" />
+		<Unit filename="include/Dominios.h" />
 		<Unit filename="include/Emissor.h" />
 		<Unit filename="include/Endereco.h" />
 		<Unit filename="include/Entidades.h" />
 		<Unit filename="include/EntityTests.h" />
 		<Unit filename="include/Horario.h" />
+		<Unit filename="include/Interfaces.h" />
 		<Unit filename="include/Nome.h" />
 		<Unit filename="include/Numero.h" />
 		<Unit filename="include/Prazo.h" />
@@ -59,22 +65,29 @@
 		<Unit filename="include/Usuario.h" />
 		<Unit filename="include/ValorAplicacao.h" />
 		<Unit filename="include/ValorMinimo.h" />
+		<Unit filename="include/stubs.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Aplicacao.cpp" />
+		<Unit filename="src/Builders.cpp" />
 		<Unit filename="src/CEP.cpp" />
 		<Unit filename="src/CPF.cpp" />
 		<Unit filename="src/Classe.cpp" />
+		<Unit filename="src/CntrApresentacaoControle.cpp" />
 		<Unit filename="src/CodigoAgencia.cpp" />
 		<Unit filename="src/CodigoAplicacao.cpp" />
 		<Unit filename="src/CodigoBanco.cpp" />
 		<Unit filename="src/CodigoProduto.cpp" />
 		<Unit filename="src/Conta.cpp" />
+		<Unit filename="src/Containers.cpp" />
+		<Unit filename="src/ControladoraServico.cpp" />
 		<Unit filename="src/Data.cpp" />
+		<Unit filename="src/Dominios.cpp" />
 		<Unit filename="src/Emissor.cpp" />
 		<Unit filename="src/Endereco.cpp" />
 		<Unit filename="src/Entidades.cpp" />
 		<Unit filename="src/EntityTests.cpp" />
 		<Unit filename="src/Horario.cpp" />
+		<Unit filename="src/Interfaces.cpp" />
 		<Unit filename="src/Nome.cpp" />
 		<Unit filename="src/Numero.cpp" />
 		<Unit filename="src/Prazo.cpp" />
@@ -85,6 +98,7 @@
 		<Unit filename="src/Usuario.cpp" />
 		<Unit filename="src/ValorAplicacao.cpp" />
 		<Unit filename="src/ValorMinimo.cpp" />
+		<Unit filename="src/stubs.cpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="2" line="2" />
