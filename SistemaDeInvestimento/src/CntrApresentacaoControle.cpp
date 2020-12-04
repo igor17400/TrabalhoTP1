@@ -178,8 +178,8 @@ void CntrApresentacaoPessoal::cadastrar(){
     char texto_sucesso[]   = "Sucesso no cadastramento. Digite algo.";
     char texto_falha[]     = "Falha no cadastramento. Digite algo.";
 
-    string campo1, campo2, campo3, campo4, campo5;                            // Cria campos para entrada dos dados.
-    string campo6, campo7, campo8;                                                    // Cria campos para entrada dos dados.
+    char campo1[80], campo2[80], campo3[80], campo4[80], campo5[80];                            // Cria campos para entrada dos dados.
+    char campo6[80], campo7[80], campo8[80];                                                    // Cria campos para entrada dos dados.
     // Instancia os dominios.
 
     Nome nome;
@@ -196,31 +196,42 @@ void CntrApresentacaoPessoal::cadastrar(){
 
     cout << texto_intro << endl;                                                               // Imprime solicitacao ao usuario.
     cout << texto_nome << " ";                                                                 // Imprime nome do campo.
-    cin >> campo1;                                                                             // Le valor do campo.
+    cin.getline(campo1, 80);
     cout << texto_endereco << " ";                                                             // Imprime nome do campo.
-    cin >> campo2;
+    cin.getline(campo2, 80);
     cout << texto_cep << " ";                                                                  // Imprime nome do campo.
-    cin >> campo3;                                                                             // Le valor do campo.
+    cin.getline(campo3, 80);
     cout << texto_cpf << " ";                                                                  // Imprime nome do campo.
-    cin >> campo4;                                                                             // Le valor do campo.
+    cin.getline(campo4, 80);
     cout << texto_senha << " ";                                                                // Imprime nome do campo.
-    cin >> campo5;                                                                             // Le valor do campo.
+    cin.getline(campo5, 80);
     cout << texto_conta << " ";                                                                // Imprime nome do campo.
-    cin >> campo6;                                                                             // Le valor do campo.
+    cin.getline(campo6, 80);
     cout << texto_agencia << " ";                                                              // Imprime nome do campo.
-    cin >> campo7;                                                                             // Le valor do campo.
+    cin.getline(campo7, 80);
     cout << texto_banco << " ";                                                                // Imprime nome do campo.
-    cin >> campo8;
+    cin.getline(campo8, 80);
+
+    // -- Valores definidos para que testes sejam realizados
+    string campo_1, campo_2, campo_3, campo_4, campo_5, campo_6, campo_7, campo_8;
+    campo_1 = "Igor";
+    campo_2 = "Jardim Botanico";
+    campo_3 = "70350760";
+    campo_4 = "06589184194";
+    campo_5 = "123456";
+    campo_6 = "234690-0";
+    campo_7 = "1234";
+    campo_8 = "341";
 
     try{
-        nome.SetNome(string(campo1));
-        endereco.SetEndereco(string(campo2));
-        cep.SetCep(string(campo3));
-        cpf.SetCpf(string(campo4));
-        senha.SetSenha(string(campo5));
-        numero.SetNumero(string(campo6));
-        agencia.SetCodigoAgencia(string(campo7));
-        banco.SetCodigoBanco(string(campo8));
+        nome.SetNome(string(campo_1));
+        endereco.SetEndereco(string(campo_2));
+        cep.SetCep(string(campo_3));
+        cpf.SetCpf(string(campo_4));
+        senha.SetSenha(string(campo_5));
+        numero.SetNumero(string(campo_6));
+        agencia.SetCodigoAgencia(string(campo_7));
+        banco.SetCodigoBanco(string(campo_8));
     }
     catch(invalid_argument &exp){
         cout << texto_incorreto << endl;                                                                // Informa formato incorreto.
@@ -300,7 +311,7 @@ void CntrApresentacaoProdutosFinanceiros::executar(){
 
 //--------------------------------------------------------------------------------------------
 
-void CntrApresentacaoProdutosFinanceiros::executar(CPF){
+void CntrApresentacaoProdutosFinanceiros::executar(CPF cpf){
 
     // Mensagens a serem apresentadas tela completa de produtos financeiros.
     char texto1[] ="Selecione um dos servicos : ";
@@ -333,7 +344,7 @@ void CntrApresentacaoProdutosFinanceiros::executar(CPF){
         campo = getch() - 48;                                                                   // Leitura do campo de entrada e conversao de ASCII.
 
         switch(campo){
-            case 1: consultarConta();
+            case 1: consultarConta(cpf);
                     break;
             case 2: cadastrarProdutoInvestimento();
                     break;
@@ -353,18 +364,14 @@ void CntrApresentacaoProdutosFinanceiros::executar(CPF){
 
 //--------------------------------------------------------------------------------------------
 
-void CntrApresentacaoProdutosFinanceiros::consultarConta(){
+void CntrApresentacaoProdutosFinanceiros::consultarConta(CPF cpf){
 
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
-    // Substituir codigo seguinte pela implementacao do metodo.
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
+    CLR_SCR;
 
-    // Mensagens a serem apresentadas.
-    char texto[]="Servico consultar conta nao implementado. Digite algo.";                      // Mensagem a ser apresentada.
+    Conta conta = cntr->consultarConta(cpf);
+    cout << "Numero da conta: " << conta.getNumero().GetNumero() << endl;
 
-    CLR_SCR;                                                                                    // Limpa janela.
+    char texto[]="Digite algo.";             // Mensagem a ser apresentada.
     cout << texto << endl;                                                                      // Imprime nome do campo.
     getch();
 }

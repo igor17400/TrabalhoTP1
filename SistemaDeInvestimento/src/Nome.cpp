@@ -15,7 +15,7 @@ Nome::Nome(string nome) {
 }
 
 void Nome::ValidarNome(string nome) throw (invalid_argument) {
-    if (nome.length() < 5 || nome.length() > 30) {
+    if (nome.length() < 1 || nome.length() > 30) {
         throw invalid_argument("Nome inválido.");
     }
 }

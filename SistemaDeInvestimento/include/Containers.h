@@ -29,4 +29,18 @@ class ContainerUsuario{
         bool atualizar(Usuario);
 };
 
+class ContainerConta {
+    private:
+        list<Conta> containerConta;
+        static ContainerConta *instanciaConta;
+        ContainerConta(){};
+    public:
+        static  ContainerConta* getInstanciaConta();
+        bool incluir(Conta);
+        Conta consultar(CPF);
+        bool remover(Numero);
+        bool pesquisar(Conta*);
+        bool atualizar(Conta);
+};
+
 #endif // CONTAINERS_H

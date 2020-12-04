@@ -54,5 +54,25 @@ Usuario CntrServicoPessoal::consultarUsuario(CPF cpf){
 //--------------------------------------------------------------------------------------------
 // Implementa��es dos m�todos da classe controladora servi�o produtos financeiros.
 
+bool CntrServicoProdutosFinanceiros::cadastrarConta(Conta conta){
+
+    ContainerConta *container;
+    container = ContainerConta::getInstanciaConta();
+
+
+    // Solicita cadastramento de usuario e retornar resultado da solicitacao de servico.
+    return container->incluir(conta);
+}
+
+Conta CntrServicoProdutosFinanceiros::consultarConta(CPF cpf){
+
+    ContainerConta *container;
+    container = ContainerConta::getInstanciaConta();
+
+
+    // Solicita cadastramento de usuario e retornar resultado da solicitacao de servico.
+    return container->consultar(cpf);
+}
+
 
 

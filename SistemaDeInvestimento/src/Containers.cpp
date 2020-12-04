@@ -1,5 +1,8 @@
 #include "Containers.h"
 
+
+
+////// Usuario
 ContainerUsuario* ContainerUsuario::instancia = nullptr;
 
 ContainerUsuario* ContainerUsuario::getInstancia() {
@@ -78,6 +81,54 @@ bool ContainerUsuario::atualizar(Usuario usuario){
         }
     }
     return false;
+}
+
+
+
+////// Conta
+ContainerConta* ContainerConta::instanciaConta = nullptr;
+
+ContainerConta* ContainerConta::getInstanciaConta() {
+    if (instanciaConta == nullptr)
+        instanciaConta = new ContainerConta();
+    return instanciaConta;
+}
+
+bool ContainerConta::incluir(Conta conta){
+    for(list<Conta>::iterator elemento = containerConta.begin(); elemento != containerConta.end(); elemento++){
+        if (elemento->getNumero().GetNumero() == conta.getNumero().GetNumero()){
+            return false;
+        }
+    }
+    // Inclui objeto.
+    containerConta.push_back(conta);
+    return true;
+}
+
+
+bool ContainerConta::remover(Numero numero){
+    for(list<Conta>::iterator elemento = containerConta.begin(); elemento != containerConta.end(); elemento++){
+        if (elemento->getNumero().GetNumero() == numero.GetNumero()){
+            // Remove objeto localizado.
+            containerConta.erase(elemento);
+            return true;
+        }
+    }
+    return false;
+}
+
+
+Conta ContainerConta::consultar(CPF cpf){
+    for(list<Conta>::iterator elemento = containerConta.begin(); elemento != containerConta.end(); elemento++){
+        if (elemento->getUsuarioCPF().GetCpf() == cpf.GetCpf()){
+            cout << "Consultando..." << endl;
+            Conta conta(elemento->getCodigoBanco(),
+                         elemento->getCodigoAgencia(),
+                         elemento->getNumero());
+
+            return conta;
+        }
+    }
 }
 
 

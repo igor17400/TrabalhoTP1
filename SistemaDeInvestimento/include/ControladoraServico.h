@@ -39,6 +39,10 @@ class CntrServicoPessoal:public IServicoPessoal{
 // Classe controladora de servi�o produtos financeiros.
 
 class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
+    public:
+        bool cadastrarConta(Conta);
+        Conta consultarConta(CPF cpf);
+
 };
 
 #endif // CONTROLADORASERVICO_H

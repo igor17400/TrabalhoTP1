@@ -12,18 +12,8 @@ CntrApresentacaoControle* BuilderSistema::construir(){
     // Instancia controladoras da camada de servi�o.
 
     cntrServicoPessoal = new CntrServicoPessoal();
-
-    // --------------------------------------------------------------------------------------------
-    // Substituir instancia de stub de CntrServicoAutenticacao por inst�ncia da controladora.
-    // --------------------------------------------------------------------------------------------
-
     cntrServicoAutenticacao = new CntrServicoAutenticacao();
-
-    // ---------------------------------------------------------------------------------------------
-    // Substituir instancia de stub de CntrServicoProdutosFinanceiros por inst�ncia da controladora.
-    // ---------------------------------------------------------------------------------------------
-
-    cntrServicoProdutosFinanceiros = new StubServicoProdutosFinanceiros();
+    cntrServicoProdutosFinanceiros = new CntrServicoProdutosFinanceiros();
 
     // Interliga as controladoras.
 
