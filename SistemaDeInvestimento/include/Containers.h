@@ -43,4 +43,17 @@ class ContainerConta {
         bool atualizar(Conta);
 };
 
+class ContainerProdutoInvestimento {
+    private:
+        list<Produto> containerProdutoInvestimento;
+        static ContainerProdutoInvestimento *instanciaProdutoInvestimento;
+        ContainerProdutoInvestimento(){};
+    public:
+        static  ContainerProdutoInvestimento* getInstancia();
+        bool incluir(Produto);
+        bool remover(CodigoProduto);
+        bool pesquisar(Produto*);
+        bool atualizar(Produto);
+};
+
 #endif // CONTAINERS_H

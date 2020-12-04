@@ -74,5 +74,23 @@ Conta CntrServicoProdutosFinanceiros::consultarConta(CPF cpf){
     return container->consultar(cpf);
 }
 
+bool CntrServicoProdutosFinanceiros::cadastrarProdutoInvestimento(Produto produto){
 
+    ContainerProdutoInvestimento *container;
+    container = ContainerProdutoInvestimento::getInstancia();
+
+
+    // Solicita cadastramento de usuario e retornar resultado da solicitacao de servico.
+    return container->incluir(produto);
+}
+
+bool CntrServicoProdutosFinanceiros::descadastrarProdutoInvestimento(CodigoProduto codigoProduto){
+
+    ContainerProdutoInvestimento *container;
+    container = ContainerProdutoInvestimento::getInstancia();
+
+
+    // Solicita cadastramento de usuario e retornar resultado da solicitacao de servico.
+    return container->remover(codigoProduto);
+}
 

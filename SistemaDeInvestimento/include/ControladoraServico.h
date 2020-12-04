@@ -42,6 +42,8 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
     public:
         bool cadastrarConta(Conta);
         Conta consultarConta(CPF cpf);
+        bool cadastrarProdutoInvestimento(Produto);
+        bool descadastrarProdutoInvestimento(CodigoProduto);
 
 };
 

@@ -2,7 +2,7 @@
 
 
 
-////// Usuario
+////// ------------------------- Usuario
 ContainerUsuario* ContainerUsuario::instancia = nullptr;
 
 ContainerUsuario* ContainerUsuario::getInstancia() {
@@ -85,7 +85,7 @@ bool ContainerUsuario::atualizar(Usuario usuario){
 
 
 
-////// Conta
+////// ------------------------- Conta
 ContainerConta* ContainerConta::instanciaConta = nullptr;
 
 ContainerConta* ContainerConta::getInstanciaConta() {
@@ -130,5 +130,39 @@ Conta ContainerConta::consultar(CPF cpf){
         }
     }
 }
+
+
+////// ------------------------- Produto de Investimento
+ContainerProdutoInvestimento* ContainerProdutoInvestimento::instanciaProdutoInvestimento = nullptr;
+
+ContainerProdutoInvestimento* ContainerProdutoInvestimento::getInstancia() {
+    if (instanciaProdutoInvestimento == nullptr)
+        instanciaProdutoInvestimento = new ContainerProdutoInvestimento();
+    return instanciaProdutoInvestimento;
+}
+
+bool ContainerProdutoInvestimento::incluir(Produto produto){
+    for(list<Produto>::iterator elemento = containerProdutoInvestimento.begin(); elemento != containerProdutoInvestimento.end(); elemento++){
+        if (elemento->getCodigoProduto().GetCodigoProduto() == produto.getCodigoProduto().GetCodigoProduto()){
+            return false;
+        }
+    }
+    // Inclui objeto.
+    containerProdutoInvestimento.push_back(produto);
+    return true;
+}
+
+
+bool ContainerProdutoInvestimento::remover(CodigoProduto codigoProduto){
+    for(list<Produto>::iterator elemento = containerProdutoInvestimento.begin(); elemento != containerProdutoInvestimento.end(); elemento++){
+        if (elemento->getCodigoProduto().GetCodigoProduto() == codigoProduto.GetCodigoProduto()){
+            // Remove objeto localizado.
+            containerProdutoInvestimento.erase(elemento);
+            return true;
+        }
+    }
+    return false;
+}
+
 
 

@@ -9,6 +9,7 @@
 #include "Horario.h"
 #include "ValorMinimo.h"
 #include "Prazo.h"
+#include "Numero.h"
 
 
 //! Classe criada para representar a <b>ENTIDADE</b> Produto
@@ -94,6 +95,9 @@ class Produto
         /// M&eacute;todo utilizado para obter valor atribu&iacute;do do tipo classe dom&iacute;nio ValorMinimo.h
         ValorMinimo getValorMinimo() const;
 
+        void setContaNumero(const Numero&);
+        Numero getContaNumero() const;
+
 
     private:
         CodigoProduto codigoProduto;
@@ -104,6 +108,7 @@ class Produto
         Taxa taxa;
         Horario horario;
         ValorMinimo valorMinimo;
+        Numero contaNumero;
 };
 
 #endif // PRODUTO_H

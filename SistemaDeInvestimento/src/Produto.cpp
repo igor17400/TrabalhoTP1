@@ -100,3 +100,11 @@ ValorMinimo Produto::getValorMinimo() const{
     return this->valorMinimo;
 }
 
+void Produto::setContaNumero(const Numero& contaNumero){
+    this->contaNumero = contaNumero;
+}
+
+Numero Produto::getContaNumero() const {
+    return this->contaNumero;
+}
+

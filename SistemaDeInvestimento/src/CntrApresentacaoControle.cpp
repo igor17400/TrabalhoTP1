@@ -224,14 +224,14 @@ void CntrApresentacaoPessoal::cadastrar(){
     campo_8 = "341";
 
     try{
-        nome.SetNome(string(campo_1));
-        endereco.SetEndereco(string(campo_2));
-        cep.SetCep(string(campo_3));
-        cpf.SetCpf(string(campo_4));
-        senha.SetSenha(string(campo_5));
-        numero.SetNumero(string(campo_6));
-        agencia.SetCodigoAgencia(string(campo_7));
-        banco.SetCodigoBanco(string(campo_8));
+        nome.SetNome(string(campo1));
+        endereco.SetEndereco(string(campo2));
+        cep.SetCep(string(campo3));
+        cpf.SetCpf(string(campo4));
+        senha.SetSenha(string(campo5));
+        numero.SetNumero(string(campo6));
+        agencia.SetCodigoAgencia(string(campo7));
+        banco.SetCodigoBanco(string(campo8));
     }
     catch(invalid_argument &exp){
         cout << texto_incorreto << endl;                                                                // Informa formato incorreto.
@@ -379,37 +379,121 @@ void CntrApresentacaoProdutosFinanceiros::consultarConta(CPF cpf){
 //--------------------------------------------------------------------------------------------
 
 void CntrApresentacaoProdutosFinanceiros::cadastrarProdutoInvestimento(){
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
-    // Substituir c�digo seguinte pela implementacao do metodo.
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
+    // Mensagens a serem apresentadas na tela de cadastramento.
+    char texto_intro[]  = "Preencha os seguintes campos: ";
+    char texto_um[]     = "Codigo do Produto:";
+    char texto_dois[]   = "Classe do Produto:";
+    char texto_tres[]   = "Emissor:";
+    char texto_quatro[] = "Prazo:";
+    char texto_cinco[]  = "Data:";
+    char texto_seis[]   = "Taxa:";
+    char texto_sete[]   = "Horario:";
+    char texto_oito[]   = "Valor Minimo:";
+    char texto_incorreto[] = "Dados em formato incorreto. Digite algo.";
+    char texto_sucesso[]   = "Sucesso no cadastramento. Digite algo.";
+    char texto_falha[]     = "Falha no cadastramento. Digite algo.";
 
-    // Mensagens a serem apresentadas.
-    char texto[]="Servico cadastrar produto investimento nao implementado. Digite algo.";       // Mensagem a ser apresentada.
+    char campo1[80], campo2[80], campo3[80], campo4[80], campo5[80];                            // Cria campos para entrada dos dados.
+    char campo6[80], campo7[80], campo8[80];                                                    // Cria campos para entrada dos dados.
+    // Instancia os dominios.
 
-    CLR_SCR;                                                                                    // Limpa janela.
-    cout << texto << endl;                                                                      // Imprime nome do campo.
+    CodigoProduto codigoProduto;
+    Classe classe;
+    Emissor emissor;
+    Prazo prazo;
+    Data data;
+    Taxa taxa;
+    Horario horario;
+    ValorMinimo valorMinimo;
+
+    CLR_SCR;
+
+    cout << texto_intro << endl;
+    cout << texto_um << " ";
+    cin.getline(campo1, 80);
+    cout << texto_dois << " ";
+    cin.getline(campo2, 80);
+    cout << texto_tres << " ";
+    cin.getline(campo3, 80);
+    cout << texto_quatro<< " ";
+    cin.getline(campo4, 80);
+    cout << texto_cinco << " ";
+    cin.getline(campo5, 80);
+    cout << texto_seis << " ";
+    cin.getline(campo6, 80);
+    cout << texto_sete << " ";
+    cin.getline(campo7, 80);
+    cout << texto_oito << " ";
+    cin.getline(campo8, 80);
+
+    // -- Valores definidos para que testes sejam realizados
+    string campo_1, campo_2, campo_3, campo_4, campo_5, campo_6, campo_7, campo_8;
+    campo_1 = "123";
+    campo_2 = "CDB";
+    campo_3 = "Itau Personalite";
+    campo_4 = "12";
+    campo_5 = "01/10/2020";
+    campo_6 = "150";
+    campo_7 = "15:30";
+    campo_8 = "1000";
+
+    try{
+        codigoProduto.SetCodigoProduto(string(campo1));
+        classe.SetClasse(string(campo2));
+        emissor.SetEmissor(string(campo3));
+        prazo.SetPrazo(stoi(campo4));
+        data.SetData(string(campo5));
+        taxa.SetTaxa(stof(campo6));
+        horario.SetHorario(string(campo7));
+        valorMinimo.SetValorMinimo(stod(campo8));
+    }
+    catch(invalid_argument &exp){
+        cout << texto_incorreto << endl;                                                                // Informa formato incorreto.
+        getch();                                                                                // Leitura de caracter digitado.
+        return;
+    }
+
+
+    Produto produto(codigoProduto, classe, emissor,
+                 prazo, data, taxa, horario, valorMinimo);
+
+
+    if(cntr->cadastrarProdutoInvestimento(produto)){
+        cout << texto_sucesso << endl;                                                                    // Informa sucesso.
+        getch();
+        return;
+    }
+
+    cout << texto_falha << endl;                                                                            // Informa falha.
     getch();
+
+    return;
 
 }
 
 //--------------------------------------------------------------------------------------------
 
 void CntrApresentacaoProdutosFinanceiros::descadastrarProdutoInvestimento(){
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
-    // Substituir ccdigo seguinte pela implementacao do metodo.
-    //--------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------
+    CLR_SCR;
 
-    // Mensagens a serem apresentadas.
+    char texto_sucesso[]   = "Sucesso no descadastramento. Digite algo.";
+    char texto_falha[]     = "Falha no descadastramento. Digite algo.";
 
-    char texto[]="Servico descadastrar produto investimento nao implementado. Digite algo.";    // Mensagem a ser apresentada.
+    char numeroProduto[80];
+    cout << "Codigo do produto de investimento: ";
+    cin.getline(numeroProduto, 80);
+    CodigoProduto codigoProduto(numeroProduto);
 
-    CLR_SCR;                                                                                    // Limpa janela.
-    cout << texto << endl;                                                                      // Imprime nome do campo.
+    if(cntr->descadastrarProdutoInvestimento(codigoProduto)){
+        cout << texto_sucesso << endl;                                                                    // Informa sucesso.
+        getch();
+        return;
+    }
+
+    cout << texto_falha << endl;                                                                            // Informa falha.
     getch();
+
+    return;
 
 }
 

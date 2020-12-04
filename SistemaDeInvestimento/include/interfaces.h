@@ -83,8 +83,8 @@ class IServicoProdutosFinanceiros{
 public:
         virtual bool cadastrarConta(Conta) = 0;
         virtual Conta consultarConta(CPF) = 0;
-        //virtual bool cadastrarProdutoInvestimento(Produto) = 0;
-        //virtual bool descadastrarProdutoInvestimento(CodigoProduto) = 0;
+        virtual bool cadastrarProdutoInvestimento(Produto) = 0;
+        virtual bool descadastrarProdutoInvestimento(CodigoProduto) = 0;
         //virtual bool realizarAplicacao(Aplicacao) = 0;
         //virtual bool recuperarAplicacao(Aplicacao*) = 0;                        // Adaptar aos requisitos.
         virtual ~IServicoProdutosFinanceiros(){}
